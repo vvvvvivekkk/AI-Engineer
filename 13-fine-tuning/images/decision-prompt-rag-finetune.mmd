@@ -1,0 +1,11 @@
+flowchart TD
+    S[Model not doing what you want] --> P[Write a better prompt<br/>add a few examples]
+    P --> Q1{Good enough?}
+    Q1 -- yes --> D[Ship it, keep evaluating]
+    Q1 -- no --> Q2{Missing facts or<br/>private / fresh data?}
+    Q2 -- yes --> R[Add RAG]
+    R --> Q1
+    Q2 -- no --> Q3{Have hundreds of good<br/>examples and an eval?}
+    Q3 -- no --> C[Collect data first]
+    Q3 -- yes --> F[Fine-tune with LoRA / QLoRA]
+    F --> Q1
