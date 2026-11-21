@@ -1,0 +1,7 @@
+flowchart TD
+  S{Learning or prototyping?} -- yes --> F[FAISS or Chroma]
+  S -- no --> P{Already run PostgreSQL?}
+  P -- yes --> PG[pgvector]
+  P -- no --> O{Want zero ops, OK with cloud?}
+  O -- yes --> PC[Managed service e.g. Pinecone]
+  O -- no --> Q[Self-host Qdrant / Weaviate / Milvus]
