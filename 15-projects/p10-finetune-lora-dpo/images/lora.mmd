@@ -1,0 +1,6 @@
+flowchart LR
+  X[input] --> W[frozen weight W<br/>135M params, not trained]
+  X --> A[LoRA A<br/>small] --> B[LoRA B<br/>small]
+  W --> S((+))
+  B --> S
+  S --> Y[output]

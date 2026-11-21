@@ -1,0 +1,50 @@
+{
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "steps": 15,
+  "batch": 4,
+  "lr": 0.002,
+  "train_examples": 400,
+  "test_examples": 5,
+  "before_zero_shot": null,
+  "before_few_shot": {
+    "valid_json": 1.0,
+    "exact_match": 0.0,
+    "order_id": 0.6,
+    "product": 0.4,
+    "intent": 0.0,
+    "urgency": 0.8
+  },
+  "after_sft": {
+    "valid_json": 1.0,
+    "exact_match": 0.4,
+    "order_id": 0.6,
+    "product": 1.0,
+    "intent": 0.8,
+    "urgency": 0.8
+  },
+  "loss_curve": [
+    0.5188,
+    0.6947,
+    0.6305,
+    0.2411,
+    0.2515,
+    0.2937,
+    0.6223,
+    0.1613,
+    0.4413,
+    0.3319,
+    0.1783,
+    0.0963,
+    0.1166,
+    0.059,
+    0.2124
+  ],
+  "train_seconds": 103,
+  "sample_outputs": [
+    "{\"order_id\": \"ORD-12345\", \"product\": \"SmartKettle 2\", \"intent\": \"technical_support\", \"urgency\": \"medium\"}",
+    "{\"order_id\": \"ORD-51937\", \"product\": \"HomeCam 360\", \"intent\": \"refund\", \"urgency\": \"medium\"}",
+    "{\"order_id\": \"ORD-12345\", \"product\": \"SmartKettle 2\", \"intent\": \"refund\", \"urgency\": \"medium\"}",
+    "{\"order_id\": \"ORD-38223\", \"product\": \"SoundBuds X\", \"intent\": \"refund\", \"urgency\": \"medium\"}",
+    "{\"order_id\": \"ORD-14854\", \"product\": \"HomeCam 360\", \"intent\": \"refund\", \"urgency\": \"medium\"}"
+  ]
+}

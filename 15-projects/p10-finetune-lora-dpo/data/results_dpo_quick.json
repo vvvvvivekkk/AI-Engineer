@@ -1,0 +1,42 @@
+{
+  "start": "sft-adapter",
+  "pairs_file": "/home/claude/AI-Engineer/15-projects/p10-finetune-lora-dpo/data/dpo_train.jsonl",
+  "steps": 6,
+  "beta": 0.1,
+  "lr": 0.0002,
+  "train_pairs": 12,
+  "test_pairs": 40,
+  "heldout_chosen_more_likely_before": 0.925,
+  "heldout_chosen_more_likely_after": 0.925,
+  "heldout_implicit_reward_accuracy": 0.925,
+  "json_eval_before_dpo": {
+    "valid_json": 1.0,
+    "exact_match": 0.25,
+    "order_id": 0.5,
+    "product": 1.0,
+    "intent": 0.75,
+    "urgency": 0.75
+  },
+  "json_eval_after_dpo": {
+    "valid_json": 0.5,
+    "exact_match": 0.25,
+    "order_id": 0.5,
+    "product": 0.5,
+    "intent": 0.25,
+    "urgency": 0.5
+  },
+  "loss_curve": [
+    0.6947,
+    0.6583,
+    0.5796,
+    0.5054,
+    0.4549,
+    0.4867
+  ],
+  "sample_outputs": [
+    "{\"order_id\": \"ORD-12345\", \"product\": \"SmartKettle 2\", \"intent\": \"technical_support\", \"urgency\": \"medium\"}{\"{\"{\"{\"{\"{\"{\"",
+    "{\"order_id\": \"ORD-51937\", \"product\": \"HomeCam 360\", \"intent\": \"refund\", \"urgency\": \"medium\"}",
+    "{\"order_id\": \"ORD-2018-00000\", \"product\": \"SmartKettle 2\", \"intent\": \"refund\", \"urgency\": \"medium\"}{\"{\"{\""
+  ],
+  "seconds": 283
+}
