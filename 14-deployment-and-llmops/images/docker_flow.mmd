@@ -1,0 +1,8 @@
+flowchart LR
+    D[Dockerfile<br/>the recipe] -->|docker build| I[Image<br/>frozen package]
+    I -->|docker run| C1[Container 1]
+    I -->|docker run| C2[Container 2]
+    I -->|docker push| R[(Registry<br/>Docker Hub / ghcr.io)]
+    R -->|docker pull| S[Server]
+    S -->|docker run| C3[Container on server]
+    E[.env secrets] -.passed at run time.-> C1

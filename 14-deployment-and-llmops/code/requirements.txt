@@ -1,0 +1,8 @@
+# Pinned versions = exact versions, so every machine (your laptop, Docker, CI) installs the same thing.
+# These match the versions this module was tested with (late 2026). Update them deliberately, not by accident.
+fastapi==0.165.0
+uvicorn==0.54.0
+pydantic==2.13.5
+httpx==0.28.1
+python-dotenv==1.2.3
+pytest==9.1.1

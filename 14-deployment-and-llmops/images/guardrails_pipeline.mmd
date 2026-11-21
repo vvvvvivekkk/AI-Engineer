@@ -1,0 +1,11 @@
+flowchart LR
+    IN[User input] --> V[Validate<br/>length, type]
+    V --> INJ[Injection<br/>heuristics]
+    INJ --> PII[Redact PII]
+    PII --> LLM[LLM]
+    LLM --> SCH[Schema check<br/>pydantic]
+    SCH --> OUT2[Redact output]
+    OUT2 --> OUT[Reply]
+    V -.reject.-> B[400 + log]
+    INJ -.block.-> B
+    SCH -.retry or fallback.-> LLM
