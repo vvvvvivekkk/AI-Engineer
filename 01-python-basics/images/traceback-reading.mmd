@@ -1,0 +1,5 @@
+flowchart TD
+    L4["Read 1st - LAST line<br/>ZeroDivisionError: division by zero<br/>WHAT went wrong"] --> L3
+    L3["Read 2nd - frame just above<br/>line 3, in average<br/>WHERE it failed"] --> L2
+    L2["Read 3rd - line 6, in report<br/>who called average"] --> L1
+    L1["Read 4th - TOP frame: line 9, in module<br/>where the chain started"]

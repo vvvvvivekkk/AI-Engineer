@@ -1,0 +1,9 @@
+flowchart TD
+    T[Run the try block] --> Q{Exception raised?}
+    Q -- No --> EL[Run else block]
+    Q -- Yes --> M{Matches an<br/>except clause?}
+    M -- Yes --> EX[Run that except block]
+    M -- No --> CR[Program crashes<br/>with a traceback]
+    EL --> FI[Run finally block]
+    EX --> FI
+    FI --> C[Continue the program]

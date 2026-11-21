@@ -1,0 +1,8 @@
+flowchart TD
+    Q{What do you need?} --> A{Look up by a name/key?}
+    A -- Yes --> D[dict<br/>key: value]
+    A -- No --> B{Only unique items,<br/>order unimportant?}
+    B -- Yes --> S[set<br/>unique items]
+    B -- No --> C{Will it change<br/>after creation?}
+    C -- Yes --> L[list<br/>ordered, changeable]
+    C -- No --> T[tuple<br/>ordered, fixed]
