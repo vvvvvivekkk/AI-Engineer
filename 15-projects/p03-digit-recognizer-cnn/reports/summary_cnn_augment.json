@@ -1,0 +1,11 @@
+{
+  "cnn": {
+    "test_accuracy": 0.9926,
+    "wrong": 2,
+    "params": 38282,
+    "epochs_run": 60,
+    "best_epoch": 57,
+    "seconds": 70.6,
+    "augment": true
+  }
+}

@@ -1,0 +1,10 @@
+flowchart LR
+    A[data/digits.csv<br/>1,797 images 8x8] --> B[split<br/>70 / 15 / 15]
+    B --> C[DataLoader<br/>batches of 64]
+    C --> D{model}
+    D --> E[MLP<br/>flatten + dense]
+    D --> F[CNN<br/>conv + pool]
+    E --> G[training loop<br/>Adam + early stopping]
+    F --> G
+    G --> H[test set<br/>accuracy]
+    H --> I[reports/<br/>confusion, mistakes, filters]

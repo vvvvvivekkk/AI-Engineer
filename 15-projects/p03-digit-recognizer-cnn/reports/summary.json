@@ -1,0 +1,20 @@
+{
+  "mlp": {
+    "test_accuracy": 0.9704,
+    "wrong": 8,
+    "params": 9610,
+    "epochs_run": 60,
+    "best_epoch": 60,
+    "seconds": 77.7,
+    "augment": false
+  },
+  "cnn": {
+    "test_accuracy": 0.9778,
+    "wrong": 6,
+    "params": 38282,
+    "epochs_run": 40,
+    "best_epoch": 32,
+    "seconds": 191.5,
+    "augment": false
+  }
+}
