@@ -38,6 +38,7 @@ Important: many sign-up links on the web carry referral codes. The links below a
 
 - [Platform comparison](https://aitrainer.work/platforms) - pay, requirements and reviews side by side; start here to choose where to apply.
 - [Beginner's guide to AI training](https://aitrainer.work/guides/what-is-ai-training-beginner-guide) - what the work involves and who qualifies.
+- [AI training task examples & walkthrough](https://aitrainer.work/guides/ai-training-task-examples-and-walkthrough) - concrete examples of the rating, ranking and rewrite tasks you will actually do.
 - [How to find AI training jobs](https://aitrainer.work/guides/how-to-find-ai-training-jobs) - how to pick and sequence platforms.
 - [Is AI training legit or a scam?](https://aitrainer.work/guides/is-ai-training-legit-scam-guide) - warning signs and how to check a platform.
 - [What are rubrics in AI training?](https://aitrainer.work/guides/what-are-rubrics-ai-training) - the rubric grading tested in assessments; pairs with section 9.4.
