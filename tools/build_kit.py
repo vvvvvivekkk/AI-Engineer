@@ -24,6 +24,9 @@ from pathlib import Path
 REPO_SLUG = "vvvvvivekkk/AI-Engineer"   # GitHub owner/repo, used for Colab badges
 BRANCH = "main"                          # branch the Colab badge points at
 ROOT = Path(__file__).resolve().parents[1]
+# BUILD_ONLY=slides  -> build.py regenerates only the .pptx decks; diagrams, notebooks (with their
+# tested outputs), PDFs and workbooks are left untouched. Handy after changing slide styling.
+BUILD_ONLY = os.environ.get("BUILD_ONLY", "").strip().lower()
 PUPPETEER_CFG = ROOT / "tools" / "puppeteer.json"
 
 # Course colour palette (dark navy + teal accent), used on slides and charts
@@ -57,6 +60,8 @@ def mermaid(src: str, out_png: Path | str, scale: int = 2) -> Path:
     """Render a Mermaid diagram (text) to a PNG file using the mermaid CLI (mmdc).
     Also saves the .mmd source next to the PNG so trainers can edit it."""
     out_png = Path(out_png)
+    if BUILD_ONLY == "slides" and out_png.exists():
+        return out_png
     out_png.parent.mkdir(parents=True, exist_ok=True)
     mmd = out_png.with_suffix(".mmd")
     mmd.write_text(src.strip() + "\n", encoding="utf-8")
@@ -88,6 +93,8 @@ def notebook(cells: list[tuple[str, str]], out_path: Path | str) -> Path:
     from nbformat.v4 import new_code_cell, new_markdown_cell, new_notebook
 
     out_path = Path(out_path).resolve()
+    if BUILD_ONLY == "slides" and out_path.exists():
+        return out_path
     rel = out_path.relative_to(ROOT).as_posix()
     nb = new_notebook()
     nb.metadata["kernelspec"] = {"name": "python3", "display_name": "Python 3", "language": "python"}
@@ -191,11 +198,21 @@ def slides(deck: dict, out_path: Path | str) -> Path:
         textbox(s, Inches(0.5), Inches(0.18), W - Inches(1), Inches(0.8), sd["title"], 30, (255, 255, 255), True)
         textbox(s, W - Inches(1.2), H - Inches(0.5), Inches(1), Inches(0.4), str(i), 12, GREY)
 
-        has_side = bool(sd.get("image") or sd.get("code"))
-        text_w = Inches(6.6) if has_side else W - Inches(1.2)
         bullets = sd.get("bullets", [])
+        img_path = Path(sd["image"]) if sd.get("image") else None
+        wide = False
+        if img_path and img_path.exists():
+            try:
+                from PIL import Image
+                with Image.open(img_path) as im:
+                    wide = im.width / im.height > 1.8      # wide diagrams go full-width under the text
+            except Exception:  # noqa: BLE001
+                wide = False
+        has_side = bool((sd.get("image") and not wide) or sd.get("code"))
+        text_w = Inches(6.6) if has_side else W - Inches(1.2)
+        text_h = Inches(2.4) if (wide and bullets) else H - Inches(2.2)
         if bullets:
-            tb = s.shapes.add_textbox(Inches(0.6), Inches(1.4), text_w, H - Inches(2.2))
+            tb = s.shapes.add_textbox(Inches(0.6), Inches(1.4), text_w, text_h)
             tf = tb.text_frame
             tf.word_wrap = True
             for j, b in enumerate(bullets):
@@ -206,7 +223,13 @@ def slides(deck: dict, out_path: Path | str) -> Path:
                 p.font.size = Pt(22 if level == 0 else 18)
                 p.font.color.rgb = RGBColor(*(NAVY if level == 0 else GREY))
                 p.space_after = Pt(10)
-        if sd.get("image"):
+        if img_path and img_path.exists() and wide:
+            top = Inches(1.4) + (text_h if bullets else 0)
+            pic = s.shapes.add_picture(str(img_path), Inches(0.6), top)
+            ratio = min((W - Inches(1.2)) / pic.width, (H - top - Inches(0.6)) / pic.height, 1.6)
+            pic.width, pic.height = int(pic.width * ratio), int(pic.height * ratio)
+            pic.left = int((W - pic.width) / 2)
+        elif sd.get("image"):
             img = Path(sd["image"])
             if img.exists():
                 left = Inches(7.4) if bullets else Inches(1.5)
@@ -242,6 +265,8 @@ def pdf_from_markdown(md_path: Path | str, out_pdf: Path | str, title: str | Non
     """Convert a markdown file (with embedded PNG images) into a PDF handout with pandoc + xelatex.
     Images are resolved relative to the markdown file's folder."""
     md_path, out_pdf = Path(md_path).resolve(), Path(out_pdf).resolve()
+    if BUILD_ONLY == "slides" and out_pdf.exists():
+        return out_pdf
     out_pdf.parent.mkdir(parents=True, exist_ok=True)
     cmd = ["pandoc", str(md_path), "-o", str(out_pdf), "--pdf-engine=xelatex",
            "--resource-path", str(md_path.parent),
@@ -275,6 +300,8 @@ def workbook(sheets: dict[str, list[list]], out_path: Path | str, col_widths: di
     Header row is bold on navy, columns auto-sized, header frozen, auto-filter on.
     Cells whose text starts with '=' are kept as live Excel formulas.
     URLs are turned into clickable hyperlinks."""
+    if BUILD_ONLY == "slides" and Path(out_path).exists():
+        return Path(out_path)
     from openpyxl import Workbook
     from openpyxl.styles import Alignment, Font, PatternFill
     from openpyxl.utils import get_column_letter
