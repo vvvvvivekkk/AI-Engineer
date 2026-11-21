@@ -1,0 +1,11 @@
+flowchart LR
+    MD[curriculum *.md files] --> CH[chunk by heading<br/>+ word windows]
+    CH --> EM[embed<br/>all-MiniLM-L6-v2]
+    EM --> IX[(FAISS index)]
+    U[user question] --> RW[rewrite follow-up<br/>using memory]
+    RW --> RT[retrieve top-k]
+    IX --> RT
+    RT --> RR[optional reranker<br/>cross-encoder]
+    RR --> AN[answer: LLM or extractive]
+    AN --> OUT[answer + citations<br/>file > heading]
+    OUT --> UI[CLI or Gradio UI]
