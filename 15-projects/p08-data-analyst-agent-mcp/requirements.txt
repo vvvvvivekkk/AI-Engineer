@@ -1,0 +1,14 @@
+# P8 data-analyst agent + MCP server - every package pinned to an exact version.
+pandas==3.0.5
+numpy==2.5.3
+matplotlib==3.11.2
+mcp==2.3.0
+python-dotenv==1.2.3
+httpx==0.28.1
+pytest==9.1.1
+# local LLM provider (only for the optional JSON planner with the tiny local model)
+torch==2.15.0
+transformers==5.23.0
+# hosted providers with native tool calling (optional)
+anthropic==2.12.0
+openai==3.57.0

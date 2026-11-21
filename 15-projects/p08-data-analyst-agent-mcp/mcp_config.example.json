@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "data-analyst": {
+      "command": "python",
+      "args": ["-m", "src.mcp_server"],
+      "cwd": "/ABSOLUTE/PATH/TO/AI-Engineer/15-projects/p08-data-analyst-agent-mcp"
+    }
+  }
+}

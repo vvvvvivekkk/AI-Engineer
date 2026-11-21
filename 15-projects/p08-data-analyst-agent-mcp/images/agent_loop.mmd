@@ -1,0 +1,11 @@
+flowchart TD
+  A[question + history] --> B[planner.next_action]
+  B -->|final| Z[return answer]
+  B -->|invalid reply| R{2 in a row?}
+  R -- no --> A
+  R -- yes --> Z
+  B -->|tool + args| C[call_tool]
+  C -->|result or error| D[append to history]
+  D --> E{steps < max?}
+  E -- yes --> A
+  E -- no --> Z
