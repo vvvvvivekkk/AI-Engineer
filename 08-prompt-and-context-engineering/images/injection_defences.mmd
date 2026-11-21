@@ -1,0 +1,8 @@
+flowchart LR
+  U[Untrusted text: web page, email, tool result] --> L1[1 Tag as data]
+  L1 --> L2[2 Scan for attack phrases]
+  L2 --> M((Model with least-privilege tools))
+  M --> L4[4 Check output]
+  L4 --> L5{5 Risky action?}
+  L5 -- no --> OK[Show to user]
+  L5 -- yes --> H[Human approves]

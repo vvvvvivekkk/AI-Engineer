@@ -1,0 +1,25 @@
+version,fingerprint,id,input,expected,reply,format_ok,correct,seconds
+v1,425024fe,T01,I was charged twice for the same order,billing,The correct order for the ticket is:,False,False,14.71
+v1,425024fe,T02,My parcel has not arrived after 10 days,delivery,The customer service ticket is: My parcel,False,False,1.41
+v1,425024fe,T03,The zip on the jacket broke on day one,product,The zip on the jacket broke on day,False,False,3.31
+v1,425024fe,T04,"I cannot log in, password reset email never comes",account,The ticket is not logged in.,False,False,7.67
+v1,425024fe,T05,Please refund the extra fee on my card,billing,The correct order of the steps to follow,False,False,5.38
+v1,425024fe,T06,Courier left the box at the wrong house,delivery,Ticket: Courier left the wrong,False,False,1.31
+v1,425024fe,T07,How do I change the email on my profile?,account,To change the email address on your profile,False,False,1.24
+v1,425024fe,T08,The tent poles are shorter than described,product,The tent poles are shorter than described.,False,False,1.86
+v2,97728aa8,T01,I was charged twice for the same order,billing,I was charged twice for the same order,False,False,3.81
+v2,97728aa8,T02,My parcel has not arrived after 10 days,delivery,My parcel has not arrived after 1,False,False,2.41
+v2,97728aa8,T03,The zip on the jacket broke on day one,product,The zip on the jacket broke on day,False,False,4.61
+v2,97728aa8,T04,"I cannot log in, password reset email never comes",account,"I cannot log in, password reset email",False,False,7.04
+v2,97728aa8,T05,Please refund the extra fee on my card,billing,Ticket: Please refund the extra fee,False,False,4.22
+v2,97728aa8,T06,Courier left the box at the wrong house,delivery,Ticket: Courier left the box,False,False,8.45
+v2,97728aa8,T07,How do I change the email on my profile?,account,"To change the email on your profile,",False,False,17.4
+v2,97728aa8,T08,The tent poles are shorter than described,product,The tent poles are shorter than described.,False,False,4.39
+v3,459e07de,T01,I was charged twice for the same order,billing,product,True,False,3.77
+v3,459e07de,T02,My parcel has not arrived after 10 days,delivery,delivery,True,True,1.8
+v3,459e07de,T03,The zip on the jacket broke on day one,product,account,True,False,5.78
+v3,459e07de,T04,"I cannot log in, password reset email never comes",account,password reset email,False,False,8.19
+v3,459e07de,T05,Please refund the extra fee on my card,billing,billing,True,True,2.18
+v3,459e07de,T06,Courier left the box at the wrong house,delivery,account,True,False,2.62
+v3,459e07de,T07,How do I change the email on my profile?,account,email,False,False,8.89
+v3,459e07de,T08,The tent poles are shorter than described,product,product,True,True,7.79

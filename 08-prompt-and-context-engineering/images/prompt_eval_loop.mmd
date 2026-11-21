@@ -1,0 +1,8 @@
+flowchart LR
+  W[Write or change prompt] --> V[Save as new version]
+  V --> R[Run fixed test set]
+  R --> S[Score: exact, rules, judge]
+  S --> F[Read the failures]
+  F --> D{Good enough?}
+  D -- no --> W
+  D -- yes --> P[Ship and log fingerprint]
