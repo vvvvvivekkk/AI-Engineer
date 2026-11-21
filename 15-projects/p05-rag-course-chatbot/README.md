@@ -1,3 +1,8 @@
+<!-- nav:start -->
+> [🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P04 Sentiment: classic vs neural](../p04-sentiment-classic-vs-neural/README.md) · [P06 Response-rating & eval tool ➡️](../p06-response-rating-tool/README.md)  
+> **P05 · RAG chatbot over this course** · 🟡 Intermediate · best after module 09 · [▶️ Open in Colab](https://colab.research.google.com/github/vvvvvivekkk/AI-Engineer/blob/main/15-projects/p05-rag-course-chatbot/colab_quickstart.ipynb)
+<!-- nav:end -->
+
 # P5 - RAG chatbot over this course's own notes
 
 **Level:** Intermediate · **Modules used:** 07 (LLMs), 08 (prompting), 09 (RAG) · **Runs on:** CPU with no API key (first run downloads small Hugging Face models), or free Colab
@@ -149,3 +154,8 @@ Our own implementation; the sample docs and FAQ are written for this repo.
 3. Swap FAISS for Chroma with metadata filters ("only search module 09").
 4. Add an LLM-as-judge faithfulness check: does every sentence of the answer appear in the sources?
 5. Stream the LLM answer token by token in the Gradio UI.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P04 Sentiment: classic vs neural](../p04-sentiment-classic-vs-neural/README.md) · [P06 Response-rating & eval tool ➡️](../p06-response-rating-tool/README.md)
+<!-- nav:end -->

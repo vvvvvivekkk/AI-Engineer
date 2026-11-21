@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 12 Data Annotation & RLHF](../12-data-annotation-and-rlhf/README.md) · [14 Deployment & LLMOps ➡️](../14-deployment-and-llmops/README.md)  
+> **🎛️ Module 13 · Fine-tuning (LoRA / QLoRA)** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/13-fine-tuning-handout.pdf) · [🎞️ Slides](slides/13-fine-tuning.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 13 - Fine-tuning LLMs: SFT, LoRA and QLoRA
 
 > Read this file top to bottom before you teach. Every new word is in **bold** the first time it appears, followed by a plain-English meaning.
@@ -298,3 +304,8 @@ After training you have three options:
 - Quantisation stores weights in fewer bits; QLoRA = 4-bit NF4 frozen base + 16-bit LoRA adapters.
 - Evaluate with held-out loss, a before/after task metric, and by reading outputs.
 - Save the adapter, merge if you want a standalone model, push to the Hub only with a token from the environment.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 12 Data Annotation & RLHF](../12-data-annotation-and-rlhf/README.md) · [14 Deployment & LLMOps ➡️](../14-deployment-and-llmops/README.md)
+<!-- nav:end -->

@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 13 Fine-tuning (LoRA / QLoRA)](../13-fine-tuning/README.md) · [15 Projects ➡️](../15-projects/README.md)  
+> **🚢 Module 14 · Deployment & LLMOps** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/14-deployment-and-llmops-handout.pdf) · [🎞️ Slides](slides/14-deployment-and-llmops.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 14 — Deployment and LLMOps
 
 > **Goal of this lesson:** take an AI feature that works in a notebook and turn it into a small, safe, observable product that other people can use. By the end you will know what an API is, how to build one with FastAPI, how Docker packages it, how to put a quick web page on top, how open models are served at scale with vLLM, and how to watch, protect and ship the whole thing.
@@ -564,3 +570,8 @@ The second sheet of that workbook lists each monitoring metric with its definiti
 | PII | personal data that identifies someone |
 | CI/CD | automatic testing / automatic packaging and deployment of each change |
 | Secret manager | a service that safely stores and rotates keys and passwords |
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 13 Fine-tuning (LoRA / QLoRA)](../13-fine-tuning/README.md) · [15 Projects ➡️](../15-projects/README.md)
+<!-- nav:end -->

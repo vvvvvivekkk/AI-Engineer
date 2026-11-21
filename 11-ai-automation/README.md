@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 10 Agentic AI](../10-agentic-ai/README.md) · [12 Data Annotation & RLHF ➡️](../12-data-annotation-and-rlhf/README.md)  
+> **⚙️ Module 11 · AI Automation**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/11-ai-automation-handout.pdf) · [🎞️ Slides](slides/11-ai-automation.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 11 — AI Automation
 
 **Week 19 · about 8 hours of learner time · one 1–2 hour live session**
@@ -65,3 +71,8 @@ python tools/check_module.py 11-ai-automation --run
 ```
 
 The workflow files contain **no secrets** — only `REPLACE_WITH_YOUR_CREDENTIAL_ID` placeholders. Create your own credentials inside n8n after importing.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 10 Agentic AI](../10-agentic-ai/README.md) · [12 Data Annotation & RLHF ➡️](../12-data-annotation-and-rlhf/README.md)
+<!-- nav:end -->

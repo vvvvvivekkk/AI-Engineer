@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 07 LLMs & GenAI](../07-llms-and-genai/README.md) · [09 RAG (Retrieval-Augmented Generation) ➡️](../09-rag/README.md)  
+> **📝 Module 08 · Prompt & Context Engineering** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/08-prompt-and-context-engineering-handout.pdf) · [🎞️ Slides](slides/08-prompt-and-context-engineering.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 08 — Prompt and Context Engineering
 
 > **One-sentence summary:** a language model can only work with the words you put in front of it, so the craft of AI engineering is choosing *which* words, in *what* order, in *what* shape — and then testing that choice like any other code.
@@ -352,3 +358,8 @@ Use the template in [templates/system-prompt-template.md](templates/system-promp
 - **LLM-as-judge** — using a second model to grade outputs against a rubric.
 
 Next: module 09 (RAG) builds the "retrieved documents" part of the context window properly.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 07 LLMs & GenAI](../07-llms-and-genai/README.md) · [09 RAG (Retrieval-Augmented Generation) ➡️](../09-rag/README.md)
+<!-- nav:end -->

@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 11 AI Automation](../11-ai-automation/README.md) · [13 Fine-tuning (LoRA / QLoRA) ➡️](../13-fine-tuning/README.md)  
+> **🏷️ Module 12 · Data Annotation & RLHF** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/12-data-annotation-and-rlhf-handout.pdf) · [🎞️ Slides](slides/12-data-annotation-and-rlhf.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 12 - Data Annotation, RLHF and Evaluations
 
 > Read this file top to bottom before you teach. Every new word is in **bold** the first time it appears, followed by a plain-English meaning.
@@ -341,3 +347,8 @@ Almost every platform gives an unpaid **assessment** first. Tips that work:
 - DPO trains directly on preference pairs with one loss and two models - simpler and more stable.
 - Evals: benchmarks (cheap, can be contaminated), LLM-as-judge (fast, biased - control for it), human evals (gold standard, slow). Rubrics need observable criteria.
 - AI trainer jobs: careful reading, clear justifications, fact-checking, and passing qualification tests.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 11 AI Automation](../11-ai-automation/README.md) · [13 Fine-tuning (LoRA / QLoRA) ➡️](../13-fine-tuning/README.md)
+<!-- nav:end -->

@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 09 RAG (Retrieval-Augmented Generation)](../09-rag/README.md) · [11 AI Automation ➡️](../11-ai-automation/README.md)  
+> **🦾 Module 10 · Agentic AI**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/10-agentic-ai-handout.pdf) · [🎞️ Slides](slides/10-agentic-ai.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 10 — Agentic AI
 
 **Weeks 17–18 · about 8–10 hours of learner time · one 1–2 hour live session**
@@ -64,3 +70,8 @@ python tools/check_module.py 10-agentic-ai --run
 ```
 
 Versions checked while writing (late 2026): `langgraph` 1.2, `langchain-core` 1.8, `mcp` 2.3 (in `mcp` 1.x the server class is called `FastMCP` — the code handles both).
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 09 RAG (Retrieval-Augmented Generation)](../09-rag/README.md) · [11 AI Automation ➡️](../11-ai-automation/README.md)
+<!-- nav:end -->

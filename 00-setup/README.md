@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [01 Python Basics ➡️](../01-python-basics/README.md)  
+> **🛠️ Module 00 · Setup**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/00-setup-handout.pdf) · [🎞️ Slides](slides/00-setup.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 00 — Setup: tools, environment and accounts (week 1)
 
 Get a working AI-engineering toolkit on your own computer and in the cloud, and learn to keep secret API keys safe. Every later module assumes you finished this one.
@@ -63,3 +69,8 @@ source .venv/bin/activate          # Windows: .venv\Scripts\Activate.ps1
 python -m pip install python-dotenv jupyterlab
 python code/check_env.py
 ```
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [01 Python Basics ➡️](../01-python-basics/README.md)
+<!-- nav:end -->

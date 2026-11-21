@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 08 Prompt & Context Engineering](../08-prompt-and-context-engineering/README.md) · [10 Agentic AI ➡️](../10-agentic-ai/README.md)  
+> **🔎 Module 09 · RAG (Retrieval-Augmented Generation)**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/09-rag-handout.pdf) · [🎞️ Slides](slides/09-rag.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 09 — Retrieval-Augmented Generation (RAG) (weeks 15–16)
 
 **In one line:** build a complete, offline question-answering system over a company's documents — load, chunk, embed, index, search (vector + keyword), rerank, assemble a prompt with citations, generate, and measure how well it works.
@@ -65,3 +71,8 @@
 | Embeddings | `sentence-transformers/all-MiniLM-L6-v2` | ~90 MB, 384-number vectors |
 | Reranking | `cross-encoder/ms-marco-MiniLM-L-6-v2` | ~90 MB |
 | Generation (offline stand-in) | `HuggingFaceTB/SmolLM2-135M-Instruct` | ~270 MB — weak on purpose; set an API key for real answers |
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 08 Prompt & Context Engineering](../08-prompt-and-context-engineering/README.md) · [10 Agentic AI ➡️](../10-agentic-ai/README.md)
+<!-- nav:end -->

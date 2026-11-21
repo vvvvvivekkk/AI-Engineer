@@ -1,3 +1,8 @@
+<!-- nav:start -->
+> [🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P02 Regression & customer segmentation](../p02-regression-and-segmentation/README.md) · [P04 Sentiment: classic vs neural ➡️](../p04-sentiment-classic-vs-neural/README.md)  
+> **P03 · Digit recogniser (CNN)** · 🟢→🟡 · best after module 05 · [▶️ Open in Colab](https://colab.research.google.com/github/vvvvvivekkk/AI-Engineer/blob/main/15-projects/p03-digit-recognizer-cnn/colab_quickstart.ipynb)
+<!-- nav:end -->
+
 # P3 - Handwritten digit recogniser: MLP vs CNN in PyTorch
 
 **Level:** Beginner → Intermediate · **Module used:** 05 (deep learning) · **Runs on:** CPU in about 2 minutes (no GPU needed), or free Colab
@@ -112,3 +117,8 @@ Our own PyTorch reimplementation on bundled offline data.
 3. Export the CNN to **ONNX** (an open model format) with `torch.onnx.export` (needs `pip install onnx`) and run it with `onnxruntime`.
 4. Draw your own digit in an 8×8 grid and classify it.
 5. Train with a learning-rate scheduler (`torch.optim.lr_scheduler.ReduceLROnPlateau`).
+
+<!-- nav:start -->
+---
+[🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P02 Regression & customer segmentation](../p02-regression-and-segmentation/README.md) · [P04 Sentiment: classic vs neural ➡️](../p04-sentiment-classic-vs-neural/README.md)
+<!-- nav:end -->

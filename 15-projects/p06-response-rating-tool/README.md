@@ -1,3 +1,8 @@
+<!-- nav:start -->
+> [🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P05 RAG chatbot over this course](../p05-rag-course-chatbot/README.md) · [P07 Document Q&A API (FastAPI + Docker) ➡️](../p07-doc-qa-api/README.md)  
+> **P06 · Response-rating & eval tool** · 🟡 Intermediate · best after module 12 · [▶️ Open in Colab](https://colab.research.google.com/github/vvvvvivekkk/AI-Engineer/blob/main/15-projects/p06-response-rating-tool/colab_quickstart.ipynb)
+<!-- nav:end -->
+
 # P6 - Response-rating tool (annotation -> preference data -> LLM-judge check)
 
 **Level:** Intermediate · **Modules:** 12 (data annotation and RLHF), feeds 13-14 · **Runs on:** any CPU, no API key
@@ -113,3 +118,8 @@ All code here is our own small reimplementation.
 - Add "gold honeypot" items and warn raters whose accuracy on them drops.
 - Use the rubric scores: train a small model to predict the winner from the four score differences.
 - Feed `data/preferences_hh.jsonl` into P10's DPO step.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P05 RAG chatbot over this course](../p05-rag-course-chatbot/README.md) · [P07 Document Q&A API (FastAPI + Docker) ➡️](../p07-doc-qa-api/README.md)
+<!-- nav:end -->

@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [01 Python Basics ➡️](../01-python-basics/README.md)  
+> **🛠️ Module 00 · Setup** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/00-setup-handout.pdf) · [🎞️ Slides](slides/00-setup.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 00 — Setting up your AI engineering toolkit
 
 This lesson assumes you have **never opened a terminal**. By the end you will have Python installed, an editor ready, a GitHub account connected, a clean project folder with its own private set of packages, and a safe way to store secret API keys. Every later module depends on this one, so take it slowly.
@@ -661,3 +667,8 @@ It prints your Python version, whether you are inside a virtual environment, whi
 - One **virtual environment** per project; never commit `.venv`.
 - **pip** installs packages; **requirements.txt** with pinned versions rebuilds the environment anywhere.
 - Keys live in **environment variables**, loaded from a **`.env`** file by **python-dotenv**. `.env` is in `.gitignore`; `.env.example` is committed. If a key leaks, revoke it first.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [01 Python Basics ➡️](../01-python-basics/README.md)
+<!-- nav:end -->

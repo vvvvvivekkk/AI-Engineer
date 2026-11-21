@@ -1,3 +1,8 @@
+<!-- nav:start -->
+> [🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P01 ML classifier pipeline](../p01-ml-classifier-pipeline/README.md) · [P03 Digit recogniser (CNN) ➡️](../p03-digit-recognizer-cnn/README.md)  
+> **P02 · Regression & customer segmentation** · 🟢 Beginner · best after module 04 · [▶️ Open in Colab](https://colab.research.google.com/github/vvvvvivekkk/AI-Engineer/blob/main/15-projects/p02-regression-and-segmentation/colab_quickstart.ipynb)
+<!-- nav:end -->
+
 # P2 - Regression (with hand-written gradient descent) and customer segmentation
 
 **Level:** Beginner · **Modules used:** 03 (math intuition), 04 (machine learning) · **Runs on:** any CPU or free Colab, about 15 seconds
@@ -120,3 +125,8 @@ Our own code on bundled and synthetic offline data.
 3. Tune Ridge's `alpha` with `RidgeCV`, and boosting's settings with `GridSearchCV`.
 4. Put `avg_basket` back into segmentation (maybe after a log transform) and see how the clusters change.
 5. Try `DBSCAN` or `AgglomerativeClustering` on the same customers and compare silhouettes.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P01 ML classifier pipeline](../p01-ml-classifier-pipeline/README.md) · [P03 Digit recogniser (CNN) ➡️](../p03-digit-recognizer-cnn/README.md)
+<!-- nav:end -->

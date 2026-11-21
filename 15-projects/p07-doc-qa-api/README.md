@@ -1,3 +1,8 @@
+<!-- nav:start -->
+> [🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P06 Response-rating & eval tool](../p06-response-rating-tool/README.md) · [P08 Data-analyst agent + MCP server ➡️](../p08-data-analyst-agent-mcp/README.md)  
+> **P07 · Document Q&A API (FastAPI + Docker)** · 🟡→🔴 · best after module 09 + 14 · [▶️ Open in Colab](https://colab.research.google.com/github/vvvvvivekkk/AI-Engineer/blob/main/15-projects/p07-doc-qa-api/colab_quickstart.ipynb)
+<!-- nav:end -->
+
 # P7 - Document Q&A with citations, shipped as an API
 
 **Level:** Intermediate -> Advanced · **Modules:** 09 (RAG), 14 (deployment) · **Runs on:** any CPU, no API key
@@ -127,3 +132,8 @@ All code here is our own small reimplementation.
 - Tune `CONF_THRESHOLD` on a separate question set and plot refusals vs wrong answers.
 - Replace FAISS with Qdrant or Chroma so the index survives restarts.
 - Serve your fine-tuned model from P10 through Ollama and set `ANSWER_MODE=llm`.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P06 Response-rating & eval tool](../p06-response-rating-tool/README.md) · [P08 Data-analyst agent + MCP server ➡️](../p08-data-analyst-agent-mcp/README.md)
+<!-- nav:end -->

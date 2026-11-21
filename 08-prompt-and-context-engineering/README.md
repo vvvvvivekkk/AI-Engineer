@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 07 LLMs & GenAI](../07-llms-and-genai/README.md) · [09 RAG (Retrieval-Augmented Generation) ➡️](../09-rag/README.md)  
+> **📝 Module 08 · Prompt & Context Engineering**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/08-prompt-and-context-engineering-handout.pdf) · [🎞️ Slides](slides/08-prompt-and-context-engineering.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 08 — Prompt and Context Engineering (week 14)
 
 **In one line:** learn to write prompts that work, assemble the right context for every model call, defend against prompt injection, and test prompts like code — then study how real AI products structure their system prompts and write your own.
@@ -63,3 +69,8 @@
 ## A note on the offline model
 
 The notebooks use **SmolLM2-135M-Instruct**, a very small model, so they run anywhere for free. Its answers are often poor. That is deliberate and useful: weak models make the effect of good prompting easy to see (for example, few-shot examples took its format-following from 0% to 75% on our test set). With a real API key the same code calls a strong model.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 07 LLMs & GenAI](../07-llms-and-genai/README.md) · [09 RAG (Retrieval-Augmented Generation) ➡️](../09-rag/README.md)
+<!-- nav:end -->

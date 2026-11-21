@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 08 Prompt & Context Engineering](../08-prompt-and-context-engineering/README.md) · [10 Agentic AI ➡️](../10-agentic-ai/README.md)  
+> **🔎 Module 09 · RAG (Retrieval-Augmented Generation)** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/09-rag-handout.pdf) · [🎞️ Slides](slides/09-rag.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 09 — Retrieval-Augmented Generation (RAG)
 
 > **One-sentence summary:** RAG means *find the relevant passages in your own documents first, then give them to the language model with the question*, so it answers from your facts — and can show where each fact came from.
@@ -265,3 +271,8 @@ Advanced techniques to explore later: **query rewriting** (an LLM rephrases the 
 - **Faithfulness** — every claim in the answer is supported by the retrieved sources.
 
 Next: module 10 turns retrieval into one *tool* that an agent can decide to use.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 08 Prompt & Context Engineering](../08-prompt-and-context-engineering/README.md) · [10 Agentic AI ➡️](../10-agentic-ai/README.md)
+<!-- nav:end -->

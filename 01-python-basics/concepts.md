@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 00 Setup](../00-setup/README.md) · [02 Python for Data ➡️](../02-python-for-data/README.md)  
+> **🐍 Module 01 · Python Basics** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/01-python-basics-handout.pdf) · [🎞️ Slides](slides/01-python-basics.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 01 — Python basics: from zero to confident
 
 This lesson teaches the core of the Python language. It is written for someone who has never programmed. Every example is short and runnable: type it into a notebook cell or a `.py` file and run it. Reading code is not enough. Change the numbers, break things on purpose, and see what happens.
@@ -800,3 +806,8 @@ It uses files, strings, a loop, a function, a dict, `try`/`except` and an f-stri
 | Files | `with open(path, mode, encoding="utf-8") as f:`; `pathlib.Path`; `json` |
 | Imports | `import x`, `from x import y`, `import x as z`; your own `.py` files are modules |
 | Classes | Blueprints; `__init__` sets attributes; methods use `self` |
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 00 Setup](../00-setup/README.md) · [02 Python for Data ➡️](../02-python-for-data/README.md)
+<!-- nav:end -->

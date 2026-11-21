@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 00 Setup](../00-setup/README.md) · [02 Python for Data ➡️](../02-python-for-data/README.md)  
+> **🐍 Module 01 · Python Basics**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/01-python-basics-handout.pdf) · [🎞️ Slides](slides/01-python-basics.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 01 — Python basics (weeks 2–3)
 
 Zero-to-confident Python for future AI engineers. You learn the core language with many small runnable examples, practise reading error messages calmly, and finish with a mini-project.
@@ -66,3 +72,8 @@ python code/basics_tour.py
 python code/traceback_demo.py
 python code/text_adventure.py
 ```
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 00 Setup](../00-setup/README.md) · [02 Python for Data ➡️](../02-python-for-data/README.md)
+<!-- nav:end -->

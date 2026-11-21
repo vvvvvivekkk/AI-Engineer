@@ -1,3 +1,8 @@
+<!-- nav:start -->
+> [🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [P02 Regression & customer segmentation ➡️](../p02-regression-and-segmentation/README.md)  
+> **P01 · ML classifier pipeline** · 🟢 Beginner · best after module 04 · [▶️ Open in Colab](https://colab.research.google.com/github/vvvvvivekkk/AI-Engineer/blob/main/15-projects/p01-ml-classifier-pipeline/colab_quickstart.ipynb)
+<!-- nav:end -->
+
 # P1 - Classic classifiers in a proper scikit-learn Pipeline
 
 **Level:** Beginner · **Modules used:** 02 (pandas), 03 (math intuition), 04 (machine learning) · **Runs on:** any laptop CPU or free Colab, about 20 seconds
@@ -137,3 +142,8 @@ This code is our own reimplementation on bundled offline data.
 3. Save the tuned pipeline with `joblib.dump` and write a tiny `predict.py` that loads it and classifies one new row.
 4. Add `RepeatedStratifiedKFold` and compare how much the scores move.
 5. Plot random-forest feature importances for wine and explain the top three features.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [P02 Regression & customer segmentation ➡️](../p02-regression-and-segmentation/README.md)
+<!-- nav:end -->

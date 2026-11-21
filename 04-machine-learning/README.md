@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 03 Math for AI](../03-math-for-ai/README.md) · [05 Deep Learning ➡️](../05-deep-learning/README.md)  
+> **🎯 Module 04 · Machine Learning**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/04-machine-learning-handout.pdf) · [🎞️ Slides](slides/04-machine-learning.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 04 — Machine Learning (weeks 7–8)
 
 Classic machine learning with **scikit-learn**: teaching computers to learn patterns from examples. This is the foundation that deep learning, NLP and LLM work all build on.
@@ -68,3 +74,8 @@ python 04_pipeline_gridsearch_save.py
 ```
 
 Tested with Python 3.13 and scikit-learn 1.9 (as of late 2026). Older scikit-learn versions (1.4+) should also work.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 03 Math for AI](../03-math-for-ai/README.md) · [05 Deep Learning ➡️](../05-deep-learning/README.md)
+<!-- nav:end -->

@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 01 Python Basics](../01-python-basics/README.md) · [03 Math for AI ➡️](../03-math-for-ai/README.md)  
+> **📊 Module 02 · Python for Data**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/02-python-for-data-handout.pdf) · [🎞️ Slides](slides/02-python-for-data.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 02 — Python for Data (NumPy, pandas, matplotlib, Excel)
 
 **Weeks 4–5 of the course · about 8–12 hours of study for a learner · two 2-hour teaching sessions**
@@ -61,3 +67,8 @@ Scripts and notebooks write their results into an `outputs/` folder, which git i
 python 02-python-for-data/build.py
 python tools/check_module.py 02-python-for-data --run
 ```
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 01 Python Basics](../01-python-basics/README.md) · [03 Math for AI ➡️](../03-math-for-ai/README.md)
+<!-- nav:end -->

@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 10 Agentic AI](../10-agentic-ai/README.md) · [12 Data Annotation & RLHF ➡️](../12-data-annotation-and-rlhf/README.md)  
+> **⚙️ Module 11 · AI Automation** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/11-ai-automation-handout.pdf) · [🎞️ Slides](slides/11-ai-automation.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 11 — AI automation: concepts
 
 > Read once, top to bottom, before teaching. New words are **bolded** and explained the first time they appear. The notebooks let you run each idea offline; the `workflows/` folder holds three n8n workflows you can import.
@@ -369,3 +375,8 @@ The Excel calculator does this with live formulas; plug in your own numbers. LLM
 | ROI / payback | Gain vs cost / months until the build cost is earned back |
 
 Next: open `notebooks/01-automation-vs-agents-python.ipynb`.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 10 Agentic AI](../10-agentic-ai/README.md) · [12 Data Annotation & RLHF ➡️](../12-data-annotation-and-rlhf/README.md)
+<!-- nav:end -->

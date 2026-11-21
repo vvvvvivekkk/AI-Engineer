@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 15 Projects](../15-projects/README.md)  
+> **💼 Module 16 · Careers**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/16-careers-handout.pdf) · [🎞️ Slides](slides/16-careers.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 16 — Careers in AI (week 24)
 
 Turn the skills from this course into a job: understand the roles, close your skill gaps, build a portfolio, write a resume and LinkedIn profile, find openings (including AI-trainer work) and prepare for interviews.
@@ -57,3 +63,8 @@ None strictly — but the module is most useful after modules 07–15, because y
 | `build.py`, `notebook_sources.py` | regenerate everything |
 
 Rebuild: `python 16-careers/build.py` from the repo root.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 15 Projects](../15-projects/README.md)
+<!-- nav:end -->

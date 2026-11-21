@@ -1,3 +1,8 @@
+<!-- nav:start -->
+> [🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P08 Data-analyst agent + MCP server](../p08-data-analyst-agent-mcp/README.md) · [P10 Fine-tune: LoRA SFT + DPO ➡️](../p10-finetune-lora-dpo/README.md)  
+> **P09 · Support-inbox automation** · 🔴 Advanced · best after module 11 · [▶️ Open in Colab](https://colab.research.google.com/github/vvvvvivekkk/AI-Engineer/blob/main/15-projects/p09-support-inbox-automation/colab_quickstart.ipynb)
+<!-- nav:end -->
+
 # P9 - AI automation: support-inbox triage with human approval
 
 **Level:** Advanced · **Module:** 11 (AI automation) · **Runs on:** any CPU, no API key
@@ -135,3 +140,8 @@ All code here is our own small reimplementation.
 - Add an "edit rate" metric: compare approved drafts with the original drafts.
 - Add a Gmail node instead of IMAP and a Google Sheets log in the n8n workflow.
 - Use the 200 labelled emails as extra training data for P10's fine-tuning.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P08 Data-analyst agent + MCP server](../p08-data-analyst-agent-mcp/README.md) · [P10 Fine-tune: LoRA SFT + DPO ➡️](../p10-finetune-lora-dpo/README.md)
+<!-- nav:end -->

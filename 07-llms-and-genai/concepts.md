@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 06 NLP & Transformers](../06-nlp-and-transformers/README.md) · [08 Prompt & Context Engineering ➡️](../08-prompt-and-context-engineering/README.md)  
+> **✨ Module 07 · LLMs & GenAI** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/07-llms-and-genai-handout.pdf) · [🎞️ Slides](slides/07-llms-and-genai.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 07 - LLMs and Generative AI
 
 This lesson explains what a large language model really does, how its settings (temperature, top-p, context window) change its behaviour, how it is trained, and how to use one from Python — through the OpenAI, Anthropic and Google Gemini APIs, and on your own computer with Ollama. It ends with how to count tokens, estimate cost and choose a model.
@@ -457,3 +463,8 @@ There is no single best model. Choose by testing against your own task. Question
 3. Run `notebooks/03-tokens-cost-and-local-models.ipynb` and open `excel/07-llm-cost-calculator.xlsx`.
 4. If you have a computer where you can install software, install Ollama and run `code/ollama_rest.py` and `code/ollama_client.py`.
 5. Do `exercises.md`.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 06 NLP & Transformers](../06-nlp-and-transformers/README.md) · [08 Prompt & Context Engineering ➡️](../08-prompt-and-context-engineering/README.md)
+<!-- nav:end -->

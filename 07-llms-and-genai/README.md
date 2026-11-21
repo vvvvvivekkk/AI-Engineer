@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 06 NLP & Transformers](../06-nlp-and-transformers/README.md) · [08 Prompt & Context Engineering ➡️](../08-prompt-and-context-engineering/README.md)  
+> **✨ Module 07 · LLMs & GenAI**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/07-llms-and-genai-handout.pdf) · [🎞️ Slides](slides/07-llms-and-genai.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 07 - LLMs and Generative AI
 
 **Week 13 of the course.** What a large language model really does, how its settings change its behaviour, how it is trained, and how to use one from Python: through the OpenAI, Anthropic and Gemini APIs, and locally with Ollama. Also: counting tokens, estimating cost, and choosing a model.
@@ -72,3 +78,8 @@ Model names, prices, context sizes and SDK features change every few months. Thi
 python 07-llms-and-genai/build.py
 python tools/check_module.py 07-llms-and-genai --run
 ```
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 06 NLP & Transformers](../06-nlp-and-transformers/README.md) · [08 Prompt & Context Engineering ➡️](../08-prompt-and-context-engineering/README.md)
+<!-- nav:end -->
