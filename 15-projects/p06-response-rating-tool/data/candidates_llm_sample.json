@@ -1,0 +1,62 @@
+[
+  {
+    "id": "p001-llm",
+    "category": "maths",
+    "prompt": "A shop sells pencils at 5 rupees each. Riya buys 6 pencils and pays with a 200 rupee note. How much change does she get?",
+    "answer_a": "Riya buys 6 pencils and pays with a 200 rupee note.\n\nThe total amount she spends is 6 pencils * 5 rupees = 30 rupees.\n\nThe total amount she pays is 200 rupees (from the 200 rupee note) - 30 rupees (from the 6 pencils) = 170 rupees.\n\nSo, Riya gets 170 rupees in change.",
+    "answer_b": "Riya buys 6 pencils and paid with 200 rupees for 1 pencils which means her total price is 6 * 50 = 300 rupees. She then paid with a 200 rupee note. She earned 300 * 200 = 6000 rupees. If she had 6 pencils and 6000 Rupee note, she would have received 6 * 6000 = 36000 rupees.\n\nTherefore, Riya",
+    "reference": "170",
+    "gold": "",
+    "flaw": "llm_t0.2_vs_t1.2"
+  },
+  {
+    "id": "p002-llm",
+    "category": "coding",
+    "prompt": "Write a Python function that counts how many words are in a sentence. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef count_words(sentence):\n    return len(sentence.split())\n```",
+    "answer_b": "```python\ndef word_count(sentence):\n    words = sentence.lower().split()\n    count = sum(1 for word in words if word.isalpha() or word.isdigit())\n    return count\n```\n\nExplanation: This function uses Python's built-in string handling and basic function building-blocks to efficiently count the number of words in a sentence. It converts the sentence to lowercase, splits the sentence into individual words, and counts their letters or digits for proper capitalization.",
+    "reference": "{\"function\": \"word_count\", \"args\": [[\"the cat sat\"], [\"  hello   world \"]], \"expected\": [3, 2]}",
+    "gold": "",
+    "flaw": "llm_t0.2_vs_t1.2"
+  },
+  {
+    "id": "p003-llm",
+    "category": "policy",
+    "prompt": "Can I share my work laptop password with a colleague who is covering my tasks while I'm on leave?",
+    "answer_a": "As a chatbot, I don't have access to personal data unless it's shared with me in a professional setting. I'm designed to respect user privacy and confidentiality. However, if you're sharing your work laptop password with a colleague while you're on leave, I would advise you to consider the following:\n\n1. **Use a password manager**: Many password managers can generate strong, unique passwords for you, which can help prevent unauthorized access.\n2. **Use a different password**: Change your password for your work laptop as soon as possible.\n3. **Avoid sharing your work laptop",
+    "answer_b": "Generally, users are not asked to share personal or confidential work laptop passwords with colleagues while you're on leave or in their immediate presence. Here are a few general guidelines:\n\n1. If you're accessing work-related tasks while on leave with someone you trust, they may not have access to your work laptop credentials. They could give to others or use them without your knowledge.\n\n2. Keep your work laptop as a backup and consider replacing this account at least once. It will protect you if the system does not recover.\n\n3. If you're working with your colleagues, have them provide",
+    "reference": "",
+    "gold": "",
+    "flaw": "llm_t0.2_vs_t1.2"
+  },
+  {
+    "id": "p004-llm",
+    "category": "maths",
+    "prompt": "A bus travels at 62 km per hour for 6 hours. How far does it travel?",
+    "answer_a": "To find the distance traveled by the bus, we need to convert the time from hours to minutes and then multiply by the speed of the bus. \n\n62 km per hour * 6 hours = 366 km\n\nNow, we multiply the distance by the speed: 366 km * 62 km/hr = 21500 km\n\nSo, the bus travels a distance of 21500 km in 6 hours.",
+    "answer_b": "The time it takes for the bus to travel the total distance is directly equal to the distance that we are interested in, which is 62 km. The speed of the bus (62 km/hour) is 62 / 60 or 0.15 m/s. To convert this to kph, divide the distance by the speed: 62 km / 0.15 m/s = 432 km. Thus, the bus travels approximately 432 km in 6 hours.",
+    "reference": "372",
+    "gold": "",
+    "flaw": "llm_t0.2_vs_t1.2"
+  },
+  {
+    "id": "p005-llm",
+    "category": "coding",
+    "prompt": "Write a Python function that counts how many words are in a sentence. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef count_words(sentence):\n    return len(sentence.split())\n```",
+    "answer_b": "Include a short explanation and a code example to demonstrate the sentence length count.",
+    "reference": "{\"function\": \"word_count\", \"args\": [[\"the cat sat\"], [\"  hello   world \"]], \"expected\": [3, 2]}",
+    "gold": "",
+    "flaw": "llm_t0.2_vs_t1.2"
+  },
+  {
+    "id": "p006-llm",
+    "category": "policy",
+    "prompt": "I clicked a link in a suspicious email. What now?",
+    "answer_a": "I'm sorry for any confusion, but as a helpful AI assistant, I don't have the capability to access or respond to emails. I'm designed to provide information and assistance only to users who have provided you with a legitimate email address. I'm here to help with any inquiries or issues you may have. If you're unsure about how to contact me or if you have any questions, feel free to ask.",
+    "answer_b": "Oh dear... Now I'm a little confused. The link to the \"My Credit Card Information\" page says \"My credit card information can be hacked\", which looks quite misleading. The connection between the \"My Credit Card Information\" page and the site's website is quite confusing. So I'll have to send you a verification email to check if it is normal. However, a lot of people, or possibly the \"My Credit Card Information\" is in the wrong location, and I just have to have a paper one sent via the third option from your browser. But if you are concerned... I",
+    "reference": "",
+    "gold": "",
+    "flaw": "llm_t0.2_vs_t1.2"
+  }
+]

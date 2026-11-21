@@ -1,0 +1,12 @@
+flowchart LR
+  G[make_data.py<br/>100 prompts x 2 answers] --> C[(candidates.json)]
+  C --> APP[Streamlit app.py<br/>rater picks A / B / tie<br/>+ 4-criterion rubric]
+  C --> SIM[simulate_raters.py<br/>demo humans]
+  APP --> R[(ratings.jsonl)]
+  SIM --> R
+  C --> J[judge.py<br/>rule or LLM judge<br/>asked in both orders]
+  J --> JR[(judge_*.jsonl)]
+  R --> K[agreement.py<br/>Cohen's kappa]
+  JR --> K
+  R --> X[export: preferences_hh.jsonl<br/>chosen / rejected]
+  X --> P10[P10 DPO]

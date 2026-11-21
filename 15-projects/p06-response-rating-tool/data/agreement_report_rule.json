@@ -1,0 +1,77 @@
+{
+  "judge": "judge_rule",
+  "pairs": {
+    "sim_rater_1 vs sim_rater_2": {
+      "n": 100,
+      "agreement": 0.75,
+      "kappa": 0.563
+    },
+    "judge_rule vs sim_rater_1": {
+      "n": 100,
+      "agreement": 0.86,
+      "kappa": 0.737
+    },
+    "judge_rule vs sim_rater_2": {
+      "n": 100,
+      "agreement": 0.82,
+      "kappa": 0.672
+    },
+    "sim_rater_1 vs gold": {
+      "n": 100,
+      "agreement": 0.86,
+      "kappa": 0.737
+    },
+    "sim_rater_2 vs gold": {
+      "n": 100,
+      "agreement": 0.82,
+      "kappa": 0.672
+    },
+    "judge_rule vs gold": {
+      "n": 100,
+      "agreement": 1.0,
+      "kappa": 1.0
+    }
+  },
+  "by_category_vs_sim_rater_1": {
+    "coding": {
+      "n": 33,
+      "agreement": 0.939,
+      "kappa": 0.879
+    },
+    "maths": {
+      "n": 34,
+      "agreement": 0.882,
+      "kappa": 0.775
+    },
+    "policy": {
+      "n": 33,
+      "agreement": 0.758,
+      "kappa": 0.555
+    }
+  },
+  "confusion_matrix": {
+    "rows_judge_cols_sim_rater_1": [
+      [
+        46,
+        2,
+        5
+      ],
+      [
+        5,
+        40,
+        2
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "labels": [
+      "A",
+      "B",
+      "tie"
+    ]
+  },
+  "judge_position_consistency": 1.0
+}
