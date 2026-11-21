@@ -1,0 +1,6 @@
+flowchart LR
+    X[Inputs] -->|forward pass| M[Model]
+    M --> P[Predictions]
+    P --> L[Loss vs true labels]
+    L -.->|backward pass: gradients| M
+    M -.-> W[Optimizer updates weights]

@@ -1,0 +1,8 @@
+flowchart LR
+    I[Image 1x8x8] --> C1[Conv 3x3, 16 filters + ReLU: 16x8x8]
+    C1 --> P1[MaxPool 2x2: 16x4x4]
+    P1 --> C2[Conv 3x3, 32 filters + ReLU: 32x4x4]
+    C2 --> P2[MaxPool 2x2: 32x2x2]
+    P2 --> F[Flatten: 128]
+    F --> D[Dropout]
+    D --> O[Linear 128 to 10 logits]
