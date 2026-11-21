@@ -1,0 +1,10 @@
+flowchart TD
+    subgraph R[RLHF with PPO]
+      R1[Preference pairs] --> R2[Train reward model]
+      R2 --> R3[Generate answers<br/>score them, PPO update]
+      R3 --> R4[Aligned model]
+    end
+    subgraph D[DPO]
+      D1[Preference pairs] --> D2[One supervised loss<br/>policy vs frozen reference]
+      D2 --> D3[Aligned model]
+    end

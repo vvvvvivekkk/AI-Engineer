@@ -1,0 +1,16 @@
+flowchart LR
+    P[Pre-trained LLM] --> S1
+    subgraph S1[Stage 1: SFT]
+      D1[Human-written<br/>demonstrations] --> M1[SFT model]
+    end
+    subgraph S2[Stage 2: Reward model]
+      D2[Humans compare<br/>answer A vs B] --> RM[Reward model<br/>outputs a score]
+    end
+    subgraph S3[Stage 3: PPO]
+      PO[Policy writes answers] --> SC[Reward minus<br/>KL penalty]
+      SC --> PO
+    end
+    M1 --> S2
+    M1 --> S3
+    RM --> SC
+    S3 --> F[Aligned assistant]

@@ -1,0 +1,23 @@
+<!--
+  label_studio_config.xml - a Label Studio "labeling config" for comparing two chatbot answers.
+  Paste it into Label Studio: Project -> Settings -> Labeling Interface -> Code.
+  Each task (one row of your imported data) needs fields: prompt, answer_a, answer_b.
+-->
+<View>
+  <!-- Show the prompt the user asked -->
+  <Header value="Prompt"/>
+  <Text name="prompt" value="$prompt"/>
+  <!-- Show the two answers side by side -->
+  <View style="display: flex; gap: 1em">
+    <View style="flex: 1"><Header value="Answer A"/><Text name="a" value="$answer_a"/></View>
+    <View style="flex: 1"><Header value="Answer B"/><Text name="b" value="$answer_b"/></View>
+  </View>
+  <!-- The preference choice (exactly one) -->
+  <Choices name="preference" toName="prompt" choice="single" required="true">
+    <Choice value="A is better"/>
+    <Choice value="B is better"/>
+    <Choice value="Tie"/>
+  </Choices>
+  <!-- A required written justification, like on AI trainer platforms -->
+  <TextArea name="reason" toName="prompt" placeholder="Why? Point to specific evidence." required="true"/>
+</View>

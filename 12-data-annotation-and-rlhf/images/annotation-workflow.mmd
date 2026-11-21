@@ -1,0 +1,9 @@
+flowchart LR
+    A[Raw data<br/>texts, images, chats] --> B[Write guidelines]
+    B --> C[Pilot: 2-3 annotators<br/>label 50 items]
+    C --> D{Agreement<br/>good enough?}
+    D -- no --> E[Read disagreements<br/>fix guidelines]
+    E --> C
+    D -- yes --> F[Label at scale<br/>with gold questions]
+    F --> G[Review and adjudicate]
+    G --> H[(Labelled dataset)]
