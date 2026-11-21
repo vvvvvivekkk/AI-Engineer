@@ -1,0 +1,9 @@
+flowchart TD
+    A["Call the API"] --> B{"Success?"}
+    B -- yes --> Z["Use the answer"]
+    B -- no --> C{"Temporary error?<br/>429, 5xx, 529, timeout"}
+    C -- "no (400, 401, 404)" --> X["Stop: fix the request<br/>or the key"]
+    C -- yes --> D{"Attempts left?"}
+    D -- no --> Y["Give up gracefully<br/>message / fallback model"]
+    D -- yes --> W["Wait 1s, 2s, 4s ...<br/>+ random jitter"]
+    W --> A

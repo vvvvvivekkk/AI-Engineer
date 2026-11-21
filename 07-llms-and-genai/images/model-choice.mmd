@@ -1,0 +1,10 @@
+flowchart TD
+    A{"Must data stay<br/>on your machines?"} -- yes --> L["Open-weight model<br/>Ollama / own server"]
+    A -- no --> B{"How hard is the task?"}
+    B -- "simple: tag, extract, route" --> S["Small, cheap, fast tier"]
+    B -- "hard: reasoning, code, long reports" --> F["Frontier / top tier"]
+    S --> C{"Passes your test set?"}
+    C -- no --> F
+    C -- yes --> D["Estimate monthly cost<br/>with the calculator"]
+    F --> D
+    D --> E["Ship, log usage,<br/>re-check every few months"]
