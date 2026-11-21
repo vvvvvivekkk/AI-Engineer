@@ -66,6 +66,7 @@ def roadmap_png(out: Path) -> None:
     plt.close(fig)
 
 
+WHY: dict[str, str] = {}
 LINK_RE = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
 BARE_RE = re.compile(r"(?<![(\[<])(https?://[^\s)|>\]]+)")
 
@@ -75,12 +76,41 @@ def module_links(md: Path) -> list[tuple[str, str]]:
     text = md.read_text(encoding="utf-8")
     pairs = [(t.strip(), u.rstrip(".,")) for t, u in LINK_RE.findall(text)]
     seen = {u for _, u in pairs}
+    for line in text.splitlines():           # remember the author's one-line "why" next to each link
+        links = LINK_RE.findall(line)
+        if len(links) == 1:
+            rest = LINK_RE.sub("", line)
+            rest = re.sub(r"[|*_`]", " ", rest).strip(" -–—:\t")
+            rest = re.sub(r"\s{2,}", " ", rest).strip(" -–—:")
+            if len(rest) > 8:
+                WHY.setdefault(links[0][1].rstrip(".,"), rest)
     for u in BARE_RE.findall(text):
         u = u.rstrip(".,")
         if u not in seen and "colab.research.google.com" not in u and "img.shields" not in u:
             pairs.append(("", u))
             seen.add(u)
     return pairs
+
+
+def guess_meta(url: str, module: str) -> tuple[str, str, str]:
+    """Best-guess (type, level, free/paid) for links that are not in the curated catalogue.
+    Marked with '(auto)' so maintainers know to review them."""
+    u = url.lower()
+    if "github.com" in u:
+        t = "repo"
+    elif "arxiv.org" in u or "openreview" in u or "aclanthology" in u:
+        t = "paper"
+    elif "youtube.com" in u or "youtu.be" in u:
+        t = "video"
+    elif any(k in u for k in ("docs.", "/docs", "readthedocs", "documentation", "/reference", "/api")):
+        t = "docs"
+    elif any(k in u for k in ("course", "learn", "academy", "/tutorial")):
+        t = "course"
+    else:
+        t = "article"
+    num = int(module[:2]) if module[:2].isdigit() else 0
+    level = "beginner" if num <= 3 else ("intermediate" if num <= 9 else "intermediate-advanced")
+    return f"{t} (auto)", f"{level} (auto)", "Free (auto)"
 
 
 def resources_master(out: Path) -> int:
@@ -98,8 +128,12 @@ def resources_master(out: Path) -> int:
             continue
         for title, url in module_links(res):
             c = catalog.get(url, {})
-            rows[(mod.name, url)] = [mod.name, title or c.get("title", ""), url, c.get("type", ""),
-                                     c.get("level", ""), c.get("free_paid", ""), c.get("source", ""), c.get("why", "")]
+            if c:
+                t, lv, fp, srcno = c["type"], c["level"], c["free_paid"], c["source"]
+            else:
+                (t, lv, fp), srcno = guess_meta(url, mod.name), "module author"
+            rows[(mod.name, url)] = [mod.name, title or c.get("title", "") or url, url, t, lv, fp, srcno,
+                                     c.get("why", "") or WHY.get(url, "")]
     # 2) curated catalogue entries not already used, under their planned module
     for url, c in catalog.items():
         key = (c["module"], url)

@@ -1,0 +1,11 @@
+flowchart LR
+  P1[P1 Classifier pipeline] --> P3[P3 Digit CNN]
+  P2[P2 Regression + segments] --> P3
+  P3 --> P4[P4 Sentiment]
+  P4 --> P5[P5 RAG chatbot]
+  P5 -->|retriever| P7[P7 Doc Q&A API]
+  P5 -->|help articles| P9[P9 Inbox automation]
+  P6[P6 Rating tool] -->|preference pairs| P10[P10 LoRA + DPO]
+  P9 -->|emails| P10
+  P8[P8 Agent + MCP]
+  P10 -->|serve model| P7
