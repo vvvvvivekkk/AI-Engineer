@@ -18,6 +18,7 @@ import re
 import shutil
 import subprocess
 import tempfile
+from contextlib import contextmanager
 from pathlib import Path
 
 REPO_SLUG = "vvvvvivekkk/AI-Engineer"   # GitHub owner/repo, used for Colab badges
@@ -30,6 +31,23 @@ NAVY = (0x1B, 0x26, 0x3B)
 TEAL = (0x0F, 0x9D, 0x9A)
 LIGHT = (0xF4, 0xF6, 0xF8)
 GREY = (0x5A, 0x63, 0x70)
+
+
+@contextmanager
+def _machine_lock(name: str):
+    """Serialise heavy jobs (headless Chrome, notebook kernels) across parallel builders,
+    so several people/agents building at once don't exhaust a small machine's RAM."""
+    try:
+        import fcntl
+    except ImportError:  # Windows: no locking needed for single-user builds
+        yield
+        return
+    with open(f"/tmp/ai-engineer-{name}.lock", "w") as fh:
+        fcntl.flock(fh, fcntl.LOCK_EX)
+        try:
+            yield
+        finally:
+            fcntl.flock(fh, fcntl.LOCK_UN)
 
 
 # --------------------------------------------------------------------------
@@ -45,7 +63,8 @@ def mermaid(src: str, out_png: Path | str, scale: int = 2) -> Path:
     cmd = ["mmdc", "-i", str(mmd), "-o", str(out_png), "-b", "white", "-s", str(scale)]
     if PUPPETEER_CFG.exists():
         cmd[1:1] = ["-p", str(PUPPETEER_CFG)]
-    subprocess.run(cmd, check=True, capture_output=True, timeout=180)
+    with _machine_lock("mermaid"):
+        subprocess.run(cmd, check=True, capture_output=True, timeout=180)
     return out_png
 
 
@@ -106,10 +125,11 @@ def run_notebook(path: Path | str, timeout: int = 900) -> tuple[bool, str]:
     nb = nbformat.read(str(path), as_version=4)
     client = NotebookClient(nb, timeout=timeout, kernel_name="python3",
                             resources={"metadata": {"path": str(path.parent)}})
-    try:
-        client.execute()
-    except Exception as e:  # noqa: BLE001
-        return False, f"{type(e).__name__}: {str(e)[-1500:]}"
+    with _machine_lock("notebook"):
+        try:
+            client.execute()
+        except Exception as e:  # noqa: BLE001
+            return False, f"{type(e).__name__}: {str(e)[-1500:]}"
     nbformat.write(nb, str(path))
     return True, "ok"
 
