@@ -1,0 +1,7 @@
+flowchart TD
+    SYS[System Python 3.12<br/>installed once] --> V1[project-a/.venv<br/>pandas 1.5]
+    SYS --> V2[project-b/.venv<br/>pandas 2.2]
+    SYS --> V3[project-c/.venv<br/>torch + transformers]
+    V1 --> R1[requirements.txt]
+    V2 --> R2[requirements.txt]
+    V3 --> R3[requirements.txt]

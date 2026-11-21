@@ -1,0 +1,6 @@
+flowchart LR
+    W[Working folder<br/>your edited files] -- git add --> S[Staging area<br/>next snapshot]
+    S -- git commit --> L[Local repo<br/>history in .git]
+    L -- git push --> R[GitHub<br/>remote: origin]
+    R -- git pull --> W
+    R -- git clone --> W
