@@ -1,0 +1,36 @@
+# Secrets - never commit real keys
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Models / large data produced while running notebooks
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.gguf
+models/
+outputs/
+checkpoints/
+wandb/
+mlruns/
+chroma_db/
+*.faiss
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
