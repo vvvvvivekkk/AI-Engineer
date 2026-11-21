@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 15 Projects](../15-projects/README.md)  
+> **💼 Module 16 · Careers** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/16-careers-handout.pdf) · [🎞️ Slides](slides/16-careers.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 16 — Careers in AI
 
 > **Goal of this lesson:** understand the main AI job roles and what people in them actually do all day, see which skills each role needs, build a portfolio that proves those skills, write a resume and LinkedIn profile that get past the first filter, find openings (including AI-trainer work), and prepare for every common interview round. Templates, a skills matrix, a 137-question interview bank and three offline notebooks support each step.
@@ -432,3 +438,8 @@ Consistency beats intensity: an hour every day for 90 days outperforms a frantic
 | System design interview | designing a whole system aloud, judged on structure and trade-offs |
 | Referral | an employee recommending you for a role |
 | Total compensation | salary + bonus + equity + benefits |
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 15 Projects](../15-projects/README.md)
+<!-- nav:end -->

@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 04 Machine Learning](../04-machine-learning/README.md) · [06 NLP & Transformers ➡️](../06-nlp-and-transformers/README.md)  
+> **🧬 Module 05 · Deep Learning** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/05-deep-learning-handout.pdf) · [🎞️ Slides](slides/05-deep-learning.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 05 — Deep Learning with PyTorch
 
 > **Before you start.** You should be comfortable with module 04 (train/test split, overfitting, accuracy, the fit-then-predict idea) and the "slope" and "gradient descent" ideas from module 03. Every new word is defined the first time it appears.
@@ -412,3 +418,8 @@ For the tiny 8×8 digit models in this module, a GPU is **not** faster — the d
 | Early stopping | Stop when validation loss stops improving; keep the best weights |
 | state_dict | Dictionary of a model's learned weights |
 | Device / CUDA | Where tensors live (CPU or GPU) / NVIDIA's GPU software |
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 04 Machine Learning](../04-machine-learning/README.md) · [06 NLP & Transformers ➡️](../06-nlp-and-transformers/README.md)
+<!-- nav:end -->

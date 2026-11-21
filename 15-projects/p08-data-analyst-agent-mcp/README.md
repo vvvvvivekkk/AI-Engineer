@@ -1,3 +1,8 @@
+<!-- nav:start -->
+> [🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P07 Document Q&A API (FastAPI + Docker)](../p07-doc-qa-api/README.md) · [P09 Support-inbox automation ➡️](../p09-support-inbox-automation/README.md)  
+> **P08 · Data-analyst agent + MCP server** · 🔴 Advanced · best after module 10 · [▶️ Open in Colab](https://colab.research.google.com/github/vvvvvivekkk/AI-Engineer/blob/main/15-projects/p08-data-analyst-agent-mcp/colab_quickstart.ipynb)
+<!-- nav:end -->
+
 # P8 - Tool-using data-analyst agent with an MCP server
 
 **Level:** Advanced · **Module:** 10 (agentic AI) · **Runs on:** any CPU, no API key (deterministic planner by default)
@@ -118,3 +123,8 @@ All code here is our own small reimplementation.
 - Add a `final_answer` check: ask a second model whether the answer is supported by the trajectory.
 - Rebuild the loop in LangGraph with a human-approval step before any chart is saved.
 - Serve the MCP server over HTTP (`mcp.run("streamable-http")`) and connect from another machine.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P07 Document Q&A API (FastAPI + Docker)](../p07-doc-qa-api/README.md) · [P09 Support-inbox automation ➡️](../p09-support-inbox-automation/README.md)
+<!-- nav:end -->

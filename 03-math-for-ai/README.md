@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 02 Python for Data](../02-python-for-data/README.md) · [04 Machine Learning ➡️](../04-machine-learning/README.md)  
+> **📐 Module 03 · Math for AI**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/03-math-for-ai-handout.pdf) · [🎞️ Slides](slides/03-math-for-ai.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 03 — Math for AI (intuition only)
 
 **Week 6 of the course · about 6–8 hours of study for a learner · one 2-hour teaching session (or two shorter ones)**
@@ -54,3 +60,8 @@ Scripts and notebooks save extra output (for example the frames they draw) into 
 python 03-math-for-ai/build.py
 python tools/check_module.py 03-math-for-ai --run
 ```
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 02 Python for Data](../02-python-for-data/README.md) · [04 Machine Learning ➡️](../04-machine-learning/README.md)
+<!-- nav:end -->

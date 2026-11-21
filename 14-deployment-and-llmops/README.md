@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 13 Fine-tuning (LoRA / QLoRA)](../13-fine-tuning/README.md) · [15 Projects ➡️](../15-projects/README.md)  
+> **🚢 Module 14 · Deployment & LLMOps**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/14-deployment-and-llmops-handout.pdf) · [🎞️ Slides](slides/14-deployment-and-llmops.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 14 — Deployment and LLMOps (weeks 22–23)
 
 Turn an AI feature that works in a notebook into a small product other people can use safely: an API, a container, a web page, model serving, tracing, monitoring, guardrails, CI/CD and secrets.
@@ -56,3 +62,8 @@ After this module you can:
 | `build.py`, `notebook_sources.py` | regenerate images, notebooks, slides, PDF and Excel |
 
 Rebuild everything: `python 14-deployment-and-llmops/build.py` from the repo root.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 13 Fine-tuning (LoRA / QLoRA)](../13-fine-tuning/README.md) · [15 Projects ➡️](../15-projects/README.md)
+<!-- nav:end -->

@@ -1,3 +1,8 @@
+<!-- nav:start -->
+> [🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P03 Digit recogniser (CNN)](../p03-digit-recognizer-cnn/README.md) · [P05 RAG chatbot over this course ➡️](../p05-rag-course-chatbot/README.md)  
+> **P04 · Sentiment: classic vs neural** · 🟡 Intermediate · best after module 06 · [▶️ Open in Colab](https://colab.research.google.com/github/vvvvvivekkk/AI-Engineer/blob/main/15-projects/p04-sentiment-classic-vs-neural/colab_quickstart.ipynb)
+<!-- nav:end -->
+
 # P4 - Review sentiment: classic vs neural vs zero-shot transformers
 
 **Level:** Intermediate · **Modules used:** 05 (deep learning), 06 (NLP and transformers) · **Runs on:** CPU in about 5 minutes (first run downloads two small models), or free Colab
@@ -120,3 +125,8 @@ Our own reimplementation on synthetic offline data.
 3. Add 10 sarcastic examples to the training data and see which models improve on the challenge set.
 4. Run `--zero-shot llm` with a hosted model and compare cost per 1,000 reviews.
 5. Turn it into a spam detector: add spammy templates ("WIN a FREE prize, click now") as a third class.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P03 Digit recogniser (CNN)](../p03-digit-recognizer-cnn/README.md) · [P05 RAG chatbot over this course ➡️](../p05-rag-course-chatbot/README.md)
+<!-- nav:end -->

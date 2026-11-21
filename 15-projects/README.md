@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 14 Deployment & LLMOps](../14-deployment-and-llmops/README.md) · [16 Careers ➡️](../16-careers/README.md)  
+> **🏗️ Module 15 · Projects**  
+> 
+<!-- nav:end -->
+
 # 15 — Projects
 
 Ten portfolio projects, from beginner to advanced. Each one is a small, real system you can run, explain in an interview, and extend. They were picked from ideas in the source repositories (mainly source 6; see [SOURCES.md](../SOURCES.md)). **We reimplemented every one ourselves on small offline data**, so nothing needs to be downloaded except a few small Hugging Face models.
@@ -28,3 +34,8 @@ Projects that use an LLM default to `LLM_PROVIDER=local`, a tiny Hugging Face mo
 
 ## Assessment tip for trainers
 Grade projects with the **"How to explain it in an interview"** section of each README. Ask students to give the 60-second pitch and answer two of the listed questions.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 14 Deployment & LLMOps](../14-deployment-and-llmops/README.md) · [16 Careers ➡️](../16-careers/README.md)
+<!-- nav:end -->

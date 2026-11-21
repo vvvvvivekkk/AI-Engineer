@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 02 Python for Data](../02-python-for-data/README.md) · [04 Machine Learning ➡️](../04-machine-learning/README.md)  
+> **📐 Module 03 · Math for AI** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/03-math-for-ai-handout.pdf) · [🎞️ Slides](slides/03-math-for-ai.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 03 — Math for AI (intuition only)
 
 > **Goal of this lesson:** understand, in pictures and plain words, the handful of maths ideas that appear again and again in machine learning and large language models: vectors, dot products, cosine similarity, matrices, probability, softmax, derivatives, gradients, gradient descent and loss functions. There are **no proofs** here. You will compute everything with NumPy in the notebooks and see it in a spreadsheet.
@@ -416,3 +422,8 @@ That is machine learning in miniature. Module 04 does it with scikit-learn, Modu
 2. Open `excel/math-in-a-spreadsheet.xlsx` and change the input cells; watch the formulas update.
 3. Do `exercises.md`. Solutions are in `solutions/`.
 4. Continue to Module 04 (machine learning), where these tools start making predictions.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 02 Python for Data](../02-python-for-data/README.md) · [04 Machine Learning ➡️](../04-machine-learning/README.md)
+<!-- nav:end -->

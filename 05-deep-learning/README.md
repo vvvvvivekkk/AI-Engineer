@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 04 Machine Learning](../04-machine-learning/README.md) · [06 NLP & Transformers ➡️](../06-nlp-and-transformers/README.md)  
+> **🧬 Module 05 · Deep Learning**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/05-deep-learning-handout.pdf) · [🎞️ Slides](slides/05-deep-learning.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 05 — Deep Learning with PyTorch (weeks 9–10)
 
 Neural networks from first principles, built and trained with **PyTorch**. You will write the training loop that every modern AI model — up to and including large language models — is trained with.
@@ -68,3 +74,8 @@ python 04_early_stopping.py
 ```
 
 Tested with Python 3.13 and PyTorch 2.15 (CPU build) as of late 2026. Any PyTorch 2.x should work.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 04 Machine Learning](../04-machine-learning/README.md) · [06 NLP & Transformers ➡️](../06-nlp-and-transformers/README.md)
+<!-- nav:end -->

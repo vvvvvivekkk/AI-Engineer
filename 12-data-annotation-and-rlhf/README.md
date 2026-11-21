@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 11 AI Automation](../11-ai-automation/README.md) · [13 Fine-tuning (LoRA / QLoRA) ➡️](../13-fine-tuning/README.md)  
+> **🏷️ Module 12 · Data Annotation & RLHF**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/12-data-annotation-and-rlhf-handout.pdf) · [🎞️ Slides](slides/12-data-annotation-and-rlhf.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 12 - Data Annotation, RLHF and Evaluations (week 20)
 
 This module explains where an AI model's "taste" comes from: humans labelling data, comparing answers, and grading outputs. You will label data yourself, measure how much annotators agree (Cohen's kappa), train a tiny **reward model** (a model that scores answers), compute the **DPO** loss (a simpler way to teach a model human preferences), design an evaluation **rubric** (scoring guide), and learn what **AI trainer** jobs involve and how to get one.
@@ -69,3 +75,8 @@ Nothing here needs a key. If you want notebook 04 and `code/llm_judge.py` to use
 | `build.py` | Regenerates images, notebooks, slides, PDF and Excel |
 
 Rebuild everything: `python 12-data-annotation-and-rlhf/build.py` (from the repo root).
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 11 AI Automation](../11-ai-automation/README.md) · [13 Fine-tuning (LoRA / QLoRA) ➡️](../13-fine-tuning/README.md)
+<!-- nav:end -->

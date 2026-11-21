@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 03 Math for AI](../03-math-for-ai/README.md) · [05 Deep Learning ➡️](../05-deep-learning/README.md)  
+> **🎯 Module 04 · Machine Learning** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/04-machine-learning-handout.pdf) · [🎞️ Slides](slides/04-machine-learning.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 04 — Machine Learning: the Core Ideas
 
 > **Read this first.** This lesson assumes you can write basic Python (module 01), have used pandas and matplotlib a little (module 02), and know what a "slope" is (module 03). Nothing else. Every new word is defined the first time it appears.
@@ -490,3 +496,8 @@ Everything in later modules builds on these ideas. Neural networks (module 05) a
 | Cross-validation | Repeating the train/test split k times and averaging |
 | Pipeline | Preprocessing + model chained into one object |
 | Data leakage | Test information sneaking into training |
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 03 Math for AI](../03-math-for-ai/README.md) · [05 Deep Learning ➡️](../05-deep-learning/README.md)
+<!-- nav:end -->

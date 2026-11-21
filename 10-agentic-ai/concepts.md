@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 09 RAG (Retrieval-Augmented Generation)](../09-rag/README.md) · [11 AI Automation ➡️](../11-ai-automation/README.md)  
+> **🦾 Module 10 · Agentic AI** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/10-agentic-ai-handout.pdf) · [🎞️ Slides](slides/10-agentic-ai.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 10 — Agentic AI: concepts
 
 > Read this from top to bottom once before you teach. Every new word is **bolded** and explained the first time it appears. The notebooks then let you *see* each idea running.
@@ -420,3 +426,8 @@ A realistic agent you might build at work:
 | HITL | A human approves risky steps |
 
 Next: open `notebooks/01-tools-and-function-calling.ipynb`.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 09 RAG (Retrieval-Augmented Generation)](../09-rag/README.md) · [11 AI Automation ➡️](../11-ai-automation/README.md)
+<!-- nav:end -->

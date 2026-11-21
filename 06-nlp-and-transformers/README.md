@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 05 Deep Learning](../05-deep-learning/README.md) · [07 LLMs & GenAI ➡️](../07-llms-and-genai/README.md)  
+> **💬 Module 06 · NLP & Transformers**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/06-nlp-and-transformers-handout.pdf) · [🎞️ Slides](slides/06-nlp-and-transformers.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 06 - NLP and Transformers
 
 **Weeks 11-12 of the course.** How computers read text: tokens, embeddings, attention and the transformer, then real models from Hugging Face running on a laptop.
@@ -64,3 +70,8 @@ Models are downloaded once from the Hugging Face Hub and cached (usually in `~/.
 python 06-nlp-and-transformers/build.py
 python tools/check_module.py 06-nlp-and-transformers --run
 ```
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 05 Deep Learning](../05-deep-learning/README.md) · [07 LLMs & GenAI ➡️](../07-llms-and-genai/README.md)
+<!-- nav:end -->

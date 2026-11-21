@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 05 Deep Learning](../05-deep-learning/README.md) · [07 LLMs & GenAI ➡️](../07-llms-and-genai/README.md)  
+> **💬 Module 06 · NLP & Transformers** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/06-nlp-and-transformers-handout.pdf) · [🎞️ Slides](slides/06-nlp-and-transformers.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 06 - NLP and Transformers
 
 This lesson explains how computers turn human text into numbers, how they compare the meaning of sentences, and how the **transformer** (the design behind ChatGPT, Claude and Gemini) reads text. You need no maths beyond "multiply and add". Every new word is defined the first time it appears.
@@ -331,3 +337,8 @@ Every model on the Hub has a **licence** (the legal terms of use) shown on its c
 3. Run `notebooks/03-hugging-face-pipelines.ipynb`.
 4. Try `exercises.md`. Solutions are in `solutions/`.
 5. Module 07 turns the "next-token probabilities" at the end of section 6 into full chatbots and API calls.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 05 Deep Learning](../05-deep-learning/README.md) · [07 LLMs & GenAI ➡️](../07-llms-and-genai/README.md)
+<!-- nav:end -->

@@ -1,3 +1,8 @@
+<!-- nav:start -->
+> [🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P09 Support-inbox automation](../p09-support-inbox-automation/README.md)  
+> **P10 · Fine-tune: LoRA SFT + DPO** · 🔴 Advanced · best after module 13 · [▶️ Open in Colab](https://colab.research.google.com/github/vvvvvivekkk/AI-Engineer/blob/main/15-projects/p10-finetune-lora-dpo/colab_quickstart.ipynb)
+<!-- nav:end -->
+
 # P10 - Fine-tune a small model: LoRA SFT, then DPO
 
 **Level:** Advanced · **Module:** 13 (fine-tuning) · **Runs on:** CPU (small demo) or a free Colab T4 GPU (full TRL recipe)
@@ -143,3 +148,8 @@ All code here is our own small reimplementation.
 - Add P9's 200 labelled emails as a harder test set (different wording from the training templates).
 - Try `loss_type="ipo"` in `DPOConfig` and compare with standard DPO.
 - Serve the GGUF model through Ollama and plug it into P9 as `EXTRACT_METHOD=llm` with `LLM_PROVIDER=ollama`.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../../README.md) · [🏗️ All projects](../README.md) · [⬅️ P09 Support-inbox automation](../p09-support-inbox-automation/README.md)
+<!-- nav:end -->

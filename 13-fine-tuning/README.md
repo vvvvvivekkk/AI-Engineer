@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 12 Data Annotation & RLHF](../12-data-annotation-and-rlhf/README.md) · [14 Deployment & LLMOps ➡️](../14-deployment-and-llmops/README.md)  
+> **🎛️ Module 13 · Fine-tuning (LoRA / QLoRA)**  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/13-fine-tuning-handout.pdf) · [🎞️ Slides](slides/13-fine-tuning.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 13 - Fine-tuning LLMs: SFT, LoRA and QLoRA (week 21)
 
 This module teaches you to change how a language model behaves by training it a little more on your own examples. You will learn when fine-tuning is the right tool (and when prompting or RAG is better), how to prepare chat-format training data, how **LoRA** (Low-Rank Adaptation - training small add-on matrices instead of the whole model) works down to the matrix maths, how **quantisation** (storing weights in fewer bits) makes **QLoRA** possible, and how to evaluate, merge and share what you trained.
@@ -72,3 +78,8 @@ No key is needed. Pushing to the Hugging Face Hub is optional and needs an `HF_T
 | `build.py` | Regenerates images, notebooks, slides, PDF and Excel |
 
 Rebuild everything: `python 13-fine-tuning/build.py` (from the repo root). Notebook outputs (adapters, merged models) are written to `notebooks/outputs/`, which you can delete at any time.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 12 Data Annotation & RLHF](../12-data-annotation-and-rlhf/README.md) · [14 Deployment & LLMOps ➡️](../14-deployment-and-llmops/README.md)
+<!-- nav:end -->

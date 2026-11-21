@@ -1,3 +1,9 @@
+<!-- nav:start -->
+> [🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 01 Python Basics](../01-python-basics/README.md) · [03 Math for AI ➡️](../03-math-for-ai/README.md)  
+> **📊 Module 02 · Python for Data** · [📋 Module overview](README.md)  
+> [📖 Lesson](concepts.md) · [📄 PDF handout](pdf/02-python-for-data-handout.pdf) · [🎞️ Slides](slides/02-python-for-data.pptx) · [📓 Notebooks](notebooks/) · [✍️ Exercises](exercises.md) · [✅ Solutions](solutions/) · [🧑‍🏫 Trainer notes](trainer-notes.md) · [🔗 Resources](resources.md)
+<!-- nav:end -->
+
 # Module 02 — Python for Data: NumPy, pandas, matplotlib and Excel
 
 > **Goal of this lesson:** by the end you can load a CSV or Excel file into Python, clean it, answer questions about it with a few lines of code, draw clear charts, and save the results back to Excel. These are the everyday skills of anyone who works with data, including AI engineers.
@@ -523,3 +529,8 @@ Notebook 04 runs this whole recipe on the sales and students data.
 2. Try the exercises in `exercises.md` (easy → hard). Solutions are in `solutions/`.
 3. Keep `excel/pandas-cheatsheet.xlsx` open while you work.
 4. Move on to Module 03 (Math for AI), where arrays become vectors and matrices.
+
+<!-- nav:start -->
+---
+[🏠 Course home](../README.md) · [🗺️ Roadmap](../ROADMAP.md) · [⬅️ 01 Python Basics](../01-python-basics/README.md) · [03 Math for AI ➡️](../03-math-for-ai/README.md)
+<!-- nav:end -->
