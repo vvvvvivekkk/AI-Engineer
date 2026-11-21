@@ -1,0 +1,32 @@
+# docker-compose.yml - start the API (and, optionally, Ollama) with one command:
+#   docker compose up --build
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: .env          # copy .env.example to .env first
+        required: false
+    environment:
+      DOCS_DIR: /app/data/pdfs
+      LOG_FILE: /app/logs/requests.jsonl
+      OLLAMA_HOST: http://ollama:11434
+    volumes:
+      - ./data/pdfs:/app/data/pdfs   # drop new PDFs here, then POST /ingest
+      - ./logs:/app/logs             # request traces survive container restarts
+    restart: unless-stopped
+
+  # Optional local LLM for ANSWER_MODE=llm with LLM_PROVIDER=ollama.
+  # Start with:  docker compose --profile ollama up --build
+  # then pull a model once:  docker compose exec ollama ollama pull qwen2.5:1.5b
+  ollama:
+    image: ollama/ollama:latest
+    profiles: ["ollama"]
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+
+volumes:
+  ollama:

@@ -1,0 +1,6 @@
+flowchart LR
+  U[client / curl / browser] -->|HTTP :8000| API[FastAPI container<br/>uvicorn src.api:app]
+  API --> PDF[(volume: data/pdfs)]
+  API --> LOG[(volume: logs)]
+  API -. ANSWER_MODE=llm .-> O[Ollama container<br/>optional profile]
+  API -. or .-> H[Hosted API<br/>Anthropic / OpenAI]

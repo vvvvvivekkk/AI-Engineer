@@ -1,0 +1,79 @@
+{
+  "chunks": 22,
+  "questions": 43,
+  "retrieval": {
+    "bm25": {
+      "recall@1": 0.947,
+      "mrr": 0.961,
+      "recall@3": 0.974
+    },
+    "vector": {
+      "recall@1": 0.974,
+      "mrr": 0.987,
+      "recall@3": 1.0
+    },
+    "hybrid": {
+      "recall@1": 1.0,
+      "mrr": 1.0,
+      "recall@3": 1.0
+    }
+  },
+  "answers": {
+    "answered_when_answerable": 1.0,
+    "refused_when_unanswerable": 0.8,
+    "citation_accuracy": 1.0,
+    "faithfulness_proxy": 1.0
+  },
+  "examples": [
+    {
+      "q": "How many days of paid annual leave do full-time employees get?",
+      "a": "Full-time employees receive 24 days of paid annual leave per calendar year. [leave-policy.pdf p.1] Up to 5 unused annual leave days may be carried over into the next year. [leave-policy.pdf p.1]",
+      "confidence": 0.78
+    },
+    {
+      "q": "When do carried-over leave days expire?",
+      "a": "Up to 5 unused annual leave days may be carried over into the next year. [leave-policy.pdf p.1] Carried-over days expire on 31 March. [leave-policy.pdf p.1]",
+      "confidence": 0.834
+    },
+    {
+      "q": "After how many consecutive sick days is a doctor's note required?",
+      "a": "A doctor's note is required for absences longer than 3 consecutive days. [leave-policy.pdf p.2]",
+      "confidence": 0.645
+    },
+    {
+      "q": "How many weeks of paid parental leave do secondary caregivers receive?",
+      "a": "Secondary caregivers receive 6 weeks of paid parental leave. [leave-policy.pdf p.2] Primary caregivers receive 26 weeks of paid parental leave. [leave-policy.pdf p.2]",
+      "confidence": 0.834
+    },
+    {
+      "q": "Within how many days must expense claims be submitted?",
+      "a": "Expense claims must be submitted in the finance tool within 30 days of the purchase, with an itemised receipt attached. [expense-policy.pdf p.1]",
+      "confidence": 0.747
+    },
+    {
+      "q": "What is the company's policy on bringing dogs to the office?",
+      "a": "Not found in the documents.",
+      "confidence": 0.266
+    },
+    {
+      "q": "How many parking spaces does the Berlin office have?",
+      "a": "Not found in the documents.",
+      "confidence": 0.28
+    },
+    {
+      "q": "What is the stock price of Northwind Labs?",
+      "a": "Not found in the documents.",
+      "confidence": 0.129
+    },
+    {
+      "q": "Who won the company football tournament last year?",
+      "a": "Not found in the documents.",
+      "confidence": 0.121
+    },
+    {
+      "q": "What is the Wi-Fi password for guests?",
+      "a": "Passwords must be at least 14 characters long and must never be shared, including with colleagues or IT staff. [security-policy.pdf p.1]",
+      "confidence": 0.355
+    }
+  ]
+}

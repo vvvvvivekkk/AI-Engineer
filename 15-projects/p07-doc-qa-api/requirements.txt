@@ -1,0 +1,19 @@
+# P7 document Q&A API - every package pinned to an exact version.
+fastapi==0.165.0
+uvicorn==0.54.0
+pydantic==2.13.5
+python-multipart==0.0.32
+pypdf==6.17.0
+reportlab==5.0.1
+rank-bm25==0.2.2
+faiss-cpu==1.16.0
+numpy==2.5.3
+torch==2.15.0
+sentence-transformers==6.3.0
+transformers==5.23.0
+python-dotenv==1.2.3
+httpx==0.28.1
+pytest==9.1.1
+# optional LLM providers for ANSWER_MODE=llm
+anthropic==2.12.0
+openai==3.57.0
