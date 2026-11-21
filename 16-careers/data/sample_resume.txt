@@ -1,0 +1,34 @@
+ANANYA RAO
+Bengaluru, India | ananya.rao@example.com | linkedin.com/in/ananya-rao-example | github.com/ananya-rao-example
+
+SUMMARY
+Final-year computer science student building LLM applications. Built and deployed two RAG chatbots and a sentiment classifier.
+
+SKILLS
+Languages: Python, SQL, JavaScript
+ML/AI: scikit-learn, PyTorch, Hugging Face transformers, sentence-transformers, embeddings
+LLM tooling: OpenAI API, prompt engineering, FAISS, RAG
+Tools: Git, GitHub, Jupyter, VS Code, Streamlit
+
+PROJECTS
+Campus Policy Assistant (Python, FAISS, Streamlit)
+- Built a retrieval-augmented chatbot over 800 pages of university regulations using MiniLM embeddings and FAISS.
+- Evaluated retrieval on 50 hand-written questions; improved hit rate from 0.68 to 0.84 by tuning chunk size.
+- Deployed a Streamlit demo used by 120 students in the first week.
+
+Movie Review Sentiment Classifier (PyTorch, Hugging Face)
+- Fine-tuned DistilBERT on 25,000 reviews reaching 91% accuracy on the test set.
+- Wrote a Jupyter report comparing it with a TF-IDF logistic regression baseline (86%).
+
+EXPERIENCE
+AI Trainer (freelance), remote - 2026
+- Rated and ranked LLM responses on coding tasks against detailed rubrics; maintained a top-quartile quality score.
+
+Teaching Assistant, Data Structures course - 2025
+- Ran weekly lab sessions for 40 students and wrote Python practice problems.
+
+EDUCATION
+B.Tech Computer Science, Example Institute of Technology, 2023-2027, CGPA 8.4/10
+
+ACHIEVEMENTS
+Top 5 of 60 teams, college GenAI hackathon (2026)

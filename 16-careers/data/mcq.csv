@@ -1,0 +1,34 @@
+category,question,A,B,C,D,correct,explanation
+Python,What does [x*2 for x in range(3)] produce?,"[0, 2, 4]","[2, 4, 6]","[0, 1, 2]","(0, 2, 4)",A,"range(3) gives 0, 1, 2; each is doubled; square brackets make a list."
+Python,Which type can be used as a dictionary key?,list,dict,tuple of strings,set,C,Keys must be hashable (immutable); a tuple of strings is.
+Python,Average time complexity of a dictionary lookup?,O(n),O(log n),O(1),O(n log n),C,Dictionaries are hash tables: constant time on average.
+Python,What is printed by: def f(a=[]): a.append(1); return a; f(); print(f()),[1],"[1, 1]",[],Error,B,The default list is created once and shared between calls.
+Python,Which is best for thousands of concurrent network calls in one process?,multiprocessing,asyncio,a for-loop,recursion,B,asyncio handles many I/O waits efficiently in a single thread.
+Machine Learning,A spam filter flags 10 emails; 8 are spam. What is its precision?,0.2,0.8,1.25,Cannot tell,B,Precision = true positives / predicted positives = 8/10.
+Machine Learning,"Training accuracy 99%, validation accuracy 70%. Most likely problem?",Underfitting,Overfitting,Perfect model,Too little training,B,A large train-validation gap is the classic sign of overfitting.
+Machine Learning,Which model does NOT need feature scaling?,k-NN,Logistic regression with L2,Random forest,SVM,C,"Tree splits compare values within one feature, so scale does not matter."
+Machine Learning,Fitting a scaler on the full dataset before splitting causes...,Faster training,Data leakage,Underfitting,Nothing,B,Test-set statistics leak into training; fit preprocessing on training data only.
+Machine Learning,ROC-AUC of 0.5 means...,Perfect,Random guessing,Always wrong,50% accuracy exactly,B,AUC 0.5 = the model ranks positives above negatives no better than chance.
+Deep Learning,Which call clears old gradients in PyTorch?,loss.backward(),optimizer.step(),optimizer.zero_grad(),model.eval(),C,"Gradients accumulate by default, so they are zeroed before each backward pass."
+Deep Learning,Why use ReLU instead of no activation?,Faster disk access,Adds non-linearity,Removes need for data,Reduces parameters,B,"Without non-linearity, stacked layers collapse into one linear function."
+Deep Learning,Dropout is active during...,Training only,Inference only,Both,Neither,A,It regularises training; model.eval() turns it off.
+Deep Learning,Validation loss rises while training loss falls. Best first action?,Train longer,Early stopping / regularise,Raise learning rate,Remove validation set,B,This is overfitting; stop at the best validation epoch or regularise.
+LLMs,Roughly how many characters is one English token?,1,3-4,10,50,B,A common rule of thumb is about four characters per token.
+LLMs,"For extracting fields into JSON, temperature should be...",High,Low,Exactly 2,Irrelevant,B,"Low temperature gives focused, repeatable outputs."
+LLMs,"Which adds private, changing knowledge without retraining?",Fine-tuning,RAG,Quantisation,Higher temperature,B,RAG retrieves documents at question time.
+LLMs,LoRA trains...,All weights,Small added low-rank matrices,Only the tokenizer,Only embeddings,B,The base model is frozen; small adapter matrices are trained.
+LLMs,DPO differs from classic RLHF because it...,Needs no human data,Skips the separate reward model and RL loop,Only works on images,Uses higher temperature,B,DPO trains directly on chosen/rejected pairs.
+RAG,Hybrid search combines...,Two LLMs,Keyword (BM25) and vector search,CPU and GPU,Train and test data,B,Keywords catch exact terms; vectors catch paraphrases.
+RAG,A reranker is typically a...,Bi-encoder,Cross-encoder,Tokenizer,Vector database,B,Cross-encoders read query and passage together for more accurate scoring.
+RAG,Faithfulness measures whether...,Retrieval was fast,Answer claims are supported by retrieved text,The user was happy,Chunks are small,B,Faithfulness = grounded in the provided context.
+RAG,After changing the embedding model you must...,Do nothing,Re-embed all documents,Only re-embed new docs,Delete metadata,B,Vectors from different models are not comparable.
+Agents,"In tool calling, who executes the tool?",The LLM,Your application code,The user,The vector DB,B,The model only requests a call; your code runs it and returns the result.
+Agents,Steps are fixed and known in advance. Best design?,Multi-agent system,Autonomous agent,Fixed workflow / chain,Fine-tuning,C,"Workflows are cheaper, faster and more predictable when the path is known."
+Agents,MCP standardises...,GPU drivers,How AI apps connect to tools and data,Model training,Tokenisation,B,MCP servers expose tools/resources that MCP clients can use.
+LLMOps,p95 latency of 3 s means...,Average is 3 s,95% of requests finish within 3 s,5% finish within 3 s,Max is 3 s,B,Percentile definition.
+LLMOps,Which errors should be retried?,400 Bad Request,422 Validation,429 and 5xx,401 Unauthorized,C,Only temporary failures are worth retrying.
+LLMOps,Where should a production API key live?,In the Dockerfile,In the front-end,In a secret manager / env var,In a public notebook,C,"Keep secrets out of code, images and browsers."
+LLMOps,vLLM's continuous batching mainly improves...,Model accuracy,GPU utilisation / throughput,Tokenisation,Disk usage,B,Slots are refilled every step so the GPU stays busy.
+AI Trainer & Data,Cohen's kappa measures...,Model accuracy,Agreement between two annotators beyond chance,Token count,Latency,B,It corrects raw agreement for chance.
+AI Trainer & Data,A 'job' asks you to pay a registration fee first. This is...,Normal,A red flag,Required by law,A bonus,B,Legitimate platforms do not charge you to work.
+Behavioural,STAR stands for...,"Skills, Tools, Aims, Results","Situation, Task, Action, Result","Start, Try, Analyse, Repeat","Story, Theme, Arc, Resolution",B,The standard structure for behavioural answers.

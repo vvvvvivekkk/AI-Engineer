@@ -1,0 +1,23 @@
+Junior AI Engineer (LLM Applications) - Example Tech, Remote
+
+About the role
+You will build and ship LLM-powered features used by thousands of customers: retrieval-augmented generation (RAG) over product documentation, AI agents that call internal tools, and the APIs that serve them.
+
+What you will do
+- Design and build RAG pipelines: chunking, embeddings, vector database, hybrid search and reranking.
+- Build agents with tool calling using LangGraph, with human-in-the-loop approval for risky actions.
+- Expose features through Python APIs built with FastAPI, packaged with Docker and deployed via CI/CD (GitHub Actions).
+- Create evaluation datasets and automated evals; track quality, latency and cost in production with observability tools such as Langfuse.
+- Add guardrails: input validation, PII redaction and prompt injection defences.
+- Collaborate with product managers and write clear documentation.
+
+What we are looking for
+- Strong Python and Git skills; experience writing tests with pytest.
+- Hands-on experience with LLM APIs (OpenAI, Anthropic or similar), prompt engineering and structured outputs.
+- Experience with RAG and a vector database (FAISS, Qdrant, pgvector or similar).
+- Familiarity with Docker, REST APIs and cloud deployment.
+- Understanding of evaluation methods for LLM applications.
+- Good communication skills.
+
+Nice to have
+- Fine-tuning experience (LoRA), Kubernetes, SQL, open-source contributions.
