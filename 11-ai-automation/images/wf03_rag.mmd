@@ -1,0 +1,6 @@
+flowchart LR
+    Q([Question webhook]) --> S[Search knowledge base]
+    S --> F{Found context?}
+    F -->|yes| L[Answer with LLM]
+    L --> R1([Reply with answer])
+    F -->|no| R2([Reply no answer])

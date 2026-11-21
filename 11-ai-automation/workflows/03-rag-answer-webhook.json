@@ -1,0 +1,196 @@
+{
+  "name": "03 RAG answer bot (webhook -> search -> LLM -> respond)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "ask",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "acea1e4c-4782-47e9-9f0d-be2e82965f58",
+      "name": "Question webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        300
+      ],
+      "webhookId": "4202a76d-0fd1-4834-be57-302b376386ae"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8000/search",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ question: $json.body.question, k: 2 }) }}",
+        "options": {
+          "timeout": 10000
+        }
+      },
+      "id": "7f1f19f2-f393-499f-b30f-69af155483a6",
+      "name": "Search knowledge base",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        300
+      ],
+      "notes": "Calls code/webhook_receiver.py /search. From n8n in Docker, host.docker.internal reaches your laptop; with npx use http://127.0.0.1:8000/search"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "061c9f1d-33e4-40a0-8b8f-d178173db235",
+              "leftValue": "={{ $json.context.length }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "4ffd1ee1-7c81-4b7b-9789-e25912f2a78c",
+      "name": "Found context?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        480,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: 'gpt-5-mini', messages: [ { role: 'system', content: 'Answer the question using ONLY the context. If the context does not contain the answer, say you do not know. Keep it under 60 words.' }, { role: 'user', content: 'Context:\\n' + $json.context.join('\\n') + '\\n\\nQuestion: ' + $json.question } ] }) }}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "eee55212-dcca-41c0-a1b8-bebf0c09f183",
+      "name": "Answer with LLM",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        720,
+        200
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "REPLACE_WITH_YOUR_CREDENTIAL_ID",
+          "name": "OpenAI header auth (Authorization: Bearer ...)"
+        }
+      },
+      "notes": "Model name is a placeholder - check the provider's models page. Credential: Header Auth with Name=Authorization, Value=Bearer YOUR_KEY."
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ answer: $json.choices[0].message.content, sources: $('Search knowledge base').item.json.context }) }}",
+        "options": {}
+      },
+      "id": "10f891f1-fa89-40e8-b0d0-97015ffe356d",
+      "name": "Reply with answer",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        960,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ answer: \"Sorry, I could not find that in our documents.\", sources: [] }) }}",
+        "options": {}
+      },
+      "id": "c8800a58-64d1-4ba8-a274-3d6e297046ca",
+      "name": "Reply no answer",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        720,
+        420
+      ]
+    }
+  ],
+  "connections": {
+    "Question webhook": {
+      "main": [
+        [
+          {
+            "node": "Search knowledge base",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search knowledge base": {
+      "main": [
+        [
+          {
+            "node": "Found context?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Found context?": {
+      "main": [
+        [
+          {
+            "node": "Answer with LLM",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Reply no answer",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Answer with LLM": {
+      "main": [
+        [
+          {
+            "node": "Reply with answer",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}

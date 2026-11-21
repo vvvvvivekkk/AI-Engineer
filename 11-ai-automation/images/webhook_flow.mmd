@@ -1,0 +1,7 @@
+flowchart LR
+    S[Sender app] -->|POST + signature| V{Signature OK?}
+    V -->|no| X[401 reject]
+    V -->|yes| D{Seen event id?}
+    D -->|yes| DUP[200 duplicate]
+    D -->|no| OK[200 accepted]
+    OK --> BG[Background work: LLM, Slack]

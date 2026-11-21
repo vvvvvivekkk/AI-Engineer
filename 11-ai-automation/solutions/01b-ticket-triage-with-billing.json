@@ -1,0 +1,296 @@
+{
+  "name": "01b Support ticket triage with billing branch",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "support-ticket",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "id": "80ff537c-900e-4faf-aa91-b00742d32b72",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        300
+      ],
+      "webhookId": "01da109b-c0d9-43d0-9516-71c8374a63a2"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: 'gpt-5-mini', response_format: { type: 'json_object' }, messages: [ { role: 'system', content: 'You classify customer support tickets. Reply ONLY with JSON like {\"category\": \"urgent\", \"reason\": \"short reason\"}. category must be one of: urgent, billing, general.' }, { role: 'user', content: 'Subject: ' + $json.body.subject + '\\nMessage: ' + $json.body.message } ] }) }}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "75986949-4a61-4c41-bbbb-fcdc6b53a247",
+      "name": "Classify with LLM",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        300
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "REPLACE_WITH_YOUR_CREDENTIAL_ID",
+          "name": "OpenAI header auth (Authorization: Bearer ...)"
+        }
+      },
+      "notes": "Model name is a placeholder - check the provider's models page. Credential: Header Auth with Name=Authorization, Value=Bearer YOUR_KEY."
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "88ea65c1-71dd-4d5e-96bf-a52bad54bf7a",
+              "name": "category",
+              "value": "={{ JSON.parse($json.choices[0].message.content).category }}",
+              "type": "string"
+            },
+            {
+              "id": "7b834f2b-4ec4-4251-985f-88f107660def",
+              "name": "reason",
+              "value": "={{ JSON.parse($json.choices[0].message.content).reason }}",
+              "type": "string"
+            },
+            {
+              "id": "263fae85-0126-4d59-9a42-c32e767441d7",
+              "name": "email",
+              "value": "={{ $('Webhook').item.json.body.email }}",
+              "type": "string"
+            },
+            {
+              "id": "a57bd0ff-c877-416d-b593-ecfb3670e4fc",
+              "name": "subject",
+              "value": "={{ $('Webhook').item.json.body.subject }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "553ef4fb-3f9d-4cbd-bdfa-1490dc19f19c",
+      "name": "Parse category",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        480,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "#support-urgent",
+          "mode": "name"
+        },
+        "text": "=:rotating_light: URGENT ticket from {{ $json.email }}\n*{{ $json.subject }}*\nWhy: {{ $json.reason }}",
+        "otherOptions": {}
+      },
+      "id": "945d1463-07b9-489f-bc1c-992bfd0d5aea",
+      "name": "Alert Slack",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [
+        960,
+        180
+      ],
+      "credentials": {
+        "slackApi": {
+          "id": "REPLACE_WITH_YOUR_CREDENTIAL_ID",
+          "name": "Slack account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fromEmail": "bot@example.com",
+        "toEmail": "support@example.com",
+        "subject": "=[{{ $json.category }}] {{ $json.subject }}",
+        "emailFormat": "text",
+        "text": "=New {{ $json.category }} ticket from {{ $json.email }}.\nReason: {{ $json.reason }}",
+        "options": {}
+      },
+      "id": "e21d064d-3b6d-471a-a832-59c4af5b6d3a",
+      "name": "Email support team",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        960,
+        420
+      ],
+      "credentials": {
+        "smtp": {
+          "id": "REPLACE_WITH_YOUR_CREDENTIAL_ID",
+          "name": "SMTP account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose"
+                },
+                "conditions": [
+                  {
+                    "id": "a10e08b2-dc16-4db8-b926-396004b7b964",
+                    "leftValue": "={{ $json.category }}",
+                    "rightValue": "urgent",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose"
+                },
+                "conditions": [
+                  {
+                    "id": "c7f1aa53-c4c9-4652-a1bd-148ab4bf8d50",
+                    "leftValue": "={{ $json.category }}",
+                    "rightValue": "billing",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra"
+        }
+      },
+      "id": "ca6f79b2-6d00-4a7e-996a-4e45627d0fdf",
+      "name": "Route by category",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        720,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "fromEmail": "bot@example.com",
+        "toEmail": "billing@example.com",
+        "subject": "=[{{ $json.category }}] {{ $json.subject }}",
+        "emailFormat": "text",
+        "text": "=New {{ $json.category }} ticket from {{ $json.email }}.\nReason: {{ $json.reason }}",
+        "options": {}
+      },
+      "id": "d43fe7f9-df6d-4e16-8439-86990099e19e",
+      "name": "Email billing team",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        960,
+        560
+      ],
+      "credentials": {
+        "smtp": {
+          "id": "REPLACE_WITH_YOUR_CREDENTIAL_ID",
+          "name": "SMTP account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Classify with LLM",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Classify with LLM": {
+      "main": [
+        [
+          {
+            "node": "Parse category",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse category": {
+      "main": [
+        [
+          {
+            "node": "Route by category",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Route by category": {
+      "main": [
+        [
+          {
+            "node": "Alert Slack",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Email billing team",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Email support team",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}
