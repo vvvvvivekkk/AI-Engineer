@@ -1,0 +1,17 @@
+flowchart TB
+    subgraph S1[1 Supervisor]
+      direction LR
+      R[Request] --> B{Boss agent}
+      B --> W1[Billing]
+      B --> W2[Tech]
+    end
+    subgraph S2[2 Handoff]
+      direction LR
+      I[Intake] --> T2[Tech] --> F[Follow-up]
+    end
+    subgraph S3[3 Debate]
+      direction LR
+      P1[Agent A] --> J{Judge}
+      P2[Agent B] --> J
+    end
+    S1 ~~~ S2 ~~~ S3

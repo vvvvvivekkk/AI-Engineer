@@ -1,0 +1,8 @@
+flowchart LR
+    subgraph Host app e.g. Claude Desktop
+      M[LLM] --- C1[MCP client 1]
+      M --- C2[MCP client 2]
+    end
+    C1 <-->|stdio| S1[Server: study notes]
+    C2 <-->|HTTP| S2[Server: GitHub]
+    S1 --> P[Tools / Resources / Prompts]

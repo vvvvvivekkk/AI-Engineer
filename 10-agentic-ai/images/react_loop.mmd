@@ -1,0 +1,7 @@
+flowchart TD
+    Q([Question]) --> T[Thought: what do I need?]
+    T --> A[Action: tool and input]
+    A --> O[Observation: tool result]
+    O --> D{Enough to answer?}
+    D -->|no| T
+    D -->|yes| F([Final Answer])

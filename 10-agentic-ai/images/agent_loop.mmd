@@ -1,0 +1,5 @@
+flowchart LR
+    U([User goal]) --> L[LLM decides next step]
+    L -->|tool call| C[Your code runs the tool]
+    C -->|tool result| L
+    L -->|final answer| A([Answer to user])

@@ -1,0 +1,9 @@
+flowchart TD
+    A[Model requests tool] --> B{On allow-list?}
+    B -->|no| X[Block + log]
+    B -->|yes| R{Risk level}
+    R -->|read| RUN[Run tool]
+    R -->|write or money| H{Human approves?}
+    H -->|yes| RUN
+    H -->|no| D[Decline + tell model]
+    RUN --> LOG[(Audit log)]
