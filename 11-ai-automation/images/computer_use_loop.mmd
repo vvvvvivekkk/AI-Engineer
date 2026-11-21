@@ -1,0 +1,6 @@
+flowchart LR
+    G([Goal]) --> M[Model]
+    SS[Screenshot] --> M
+    M -->|action: click, type, key| EX[Executor in sandbox VM]
+    EX --> SS
+    M -->|done| R([Answer])

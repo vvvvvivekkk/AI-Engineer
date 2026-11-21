@@ -1,0 +1,13 @@
+flowchart LR
+  Q[Business question] --> L[agent.py loop<br/>max steps, error handling]
+  L <--> P[Planner<br/>scripted / Claude / GPT / Ollama]
+  L --> T[tools.py]
+  T --> S[sql_query<br/>read-only guard]
+  T --> C[python_calc<br/>AST-checked pandas]
+  T --> G[make_chart<br/>PNG]
+  T --> N[search_notes]
+  S --> DB[(sales.db)]
+  N --> NO[(notes/*.md)]
+  L --> LOG[(trajectories.jsonl)]
+  M[mcp_server.py] --> T
+  CL[MCP client<br/>Claude Desktop / Code] <--> M

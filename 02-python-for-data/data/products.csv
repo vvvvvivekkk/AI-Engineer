@@ -1,0 +1,13 @@
+product_id,product_name,category,unit_price
+P001,Wireless Mouse,Electronics,799
+P002,Bluetooth Headphones,Electronics,2499
+P003,USB-C Charger,Electronics,1199
+P004,A5 Notebook (5 pack),Stationery,249
+P005,Gel Pen Set,Stationery,149
+P006,Desk Organizer,Stationery,599
+P007,Steel Water Bottle,Home,449
+P008,Ceramic Mug Set,Home,699
+P009,LED Desk Lamp,Home,1499
+P010,Cotton T-Shirt,Clothing,499
+P011,Hoodie,Clothing,1299
+P012,Backpack,Clothing,1799

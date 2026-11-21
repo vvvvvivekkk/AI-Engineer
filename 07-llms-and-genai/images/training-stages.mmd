@@ -1,0 +1,9 @@
+flowchart LR
+    D1[("Trillions of tokens<br/>web, books, code")] --> P["1. Pre-training<br/>predict next token"]
+    P --> BM["Base model<br/>continues text"]
+    D2[("Example conversations<br/>written by people")] --> S["2. Instruction tuning (SFT)"]
+    BM --> S
+    S --> IM["Instruct / chat model"]
+    D3[("Human preferences<br/>answer A better than B")] --> R["3. RLHF or DPO"]
+    IM --> R
+    R --> AM["Assistant you use<br/>helpful, safer"]

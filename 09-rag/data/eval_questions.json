@@ -1,0 +1,237 @@
+[
+ {
+  "id": "Q01",
+  "question": "How many days do I have to send back an item?",
+  "reference_answer": "30 days from delivery (60 for Gold members).",
+  "source": "01-returns-policy.md",
+  "key_facts": [
+   "30"
+  ]
+ },
+ {
+  "id": "Q02",
+  "question": "Can I return a gas canister that I already opened?",
+  "reference_answer": "No, opened fuel canisters cannot be returned.",
+  "source": "01-returns-policy.md",
+  "key_facts": [
+   "fuel"
+  ]
+ },
+ {
+  "id": "Q03",
+  "question": "How long until my refund shows up on my card?",
+  "reference_answer": "Usually 5 to 10 business days after inspection.",
+  "source": "01-returns-policy.md",
+  "key_facts": [
+   "5",
+   "10"
+  ]
+ },
+ {
+  "id": "Q04",
+  "question": "My boots are too small, can I get a bigger size for free?",
+  "reference_answer": "Yes, size exchanges are free within 30 days (60 for Gold).",
+  "source": "02-exchanges.md",
+  "key_facts": [
+   "free"
+  ]
+ },
+ {
+  "id": "Q05",
+  "question": "How long do you hold the replacement item during an exchange?",
+  "reference_answer": "7 days.",
+  "source": "02-exchanges.md",
+  "key_facts": [
+   "7"
+  ]
+ },
+ {
+  "id": "Q06",
+  "question": "How much does standard delivery cost?",
+  "reference_answer": "$4.95, free on orders over $75.",
+  "source": "03-shipping-and-delivery.md",
+  "key_facts": [
+   "4.95"
+  ]
+ },
+ {
+  "id": "Q07",
+  "question": "Is express shipping available to island addresses?",
+  "reference_answer": "No, express is not available for islands and remote areas.",
+  "source": "03-shipping-and-delivery.md",
+  "key_facts": [
+   "not available"
+  ]
+ },
+ {
+  "id": "Q08",
+  "question": "My parcel arrived crushed, what should I do?",
+  "reference_answer": "Photograph box and item and report within 48 hours via Orders.",
+  "source": "03-shipping-and-delivery.md",
+  "key_facts": [
+   "48"
+  ]
+ },
+ {
+  "id": "Q09",
+  "question": "How long is the guarantee on a tent?",
+  "reference_answer": "5 years.",
+  "source": "04-warranty.md",
+  "key_facts": [
+   "5 years"
+  ]
+ },
+ {
+  "id": "Q10",
+  "question": "Does the warranty cover damage from washing my jacket wrong?",
+  "reference_answer": "No, improper washing is not covered.",
+  "source": "04-warranty.md",
+  "key_facts": [
+   "not covered"
+  ]
+ },
+ {
+  "id": "Q11",
+  "question": "How much does it cost to replace a jacket zip?",
+  "reference_answer": "Typically $25 (free if under warranty).",
+  "source": "05-repairs-service.md",
+  "key_facts": [
+   "25"
+  ]
+ },
+ {
+  "id": "Q12",
+  "question": "How long do repairs take in summer?",
+  "reference_answer": "Up to 4 weeks in the busy season (May to August).",
+  "source": "05-repairs-service.md",
+  "key_facts": [
+   "4 weeks"
+  ]
+ },
+ {
+  "id": "Q13",
+  "question": "Can I pay with Bitcoin?",
+  "reference_answer": "No, cryptocurrency is not accepted.",
+  "source": "06-payments-and-billing.md",
+  "key_facts": [
+   "cryptocurrency"
+  ]
+ },
+ {
+  "id": "Q14",
+  "question": "My payment failed, will you try again?",
+  "reference_answer": "Yes, it is retried once automatically after 10 minutes.",
+  "source": "06-payments-and-billing.md",
+  "key_facts": [
+   "10 minutes"
+  ]
+ },
+ {
+  "id": "Q15",
+  "question": "Can I split a $200 order into several payments?",
+  "reference_answer": "Yes, orders over $150 can be paid in 4 interest-free instalments.",
+  "source": "06-payments-and-billing.md",
+  "key_facts": [
+   "4"
+  ]
+ },
+ {
+  "id": "Q16",
+  "question": "I bought a jacket last week and saw it cheaper elsewhere. Can I get the difference back?",
+  "reference_answer": "Yes, within 14 days after purchase if conditions are met.",
+  "source": "07-price-match.md",
+  "key_facts": [
+   "14"
+  ]
+ },
+ {
+  "id": "Q17",
+  "question": "How much is the yearly membership?",
+  "reference_answer": "Gold costs $49 per year.",
+  "source": "08-gold-membership.md",
+  "key_facts": [
+   "49"
+  ]
+ },
+ {
+  "id": "Q18",
+  "question": "How many points do Gold members earn per dollar?",
+  "reference_answer": "2 points per dollar.",
+  "source": "08-gold-membership.md",
+  "key_facts": [
+   "2 points"
+  ]
+ },
+ {
+  "id": "Q19",
+  "question": "What deposit do you take when I rent a tent?",
+  "reference_answer": "A refundable $100 deposit per rental order.",
+  "source": "09-gear-rental.md",
+  "key_facts": [
+   "100"
+  ]
+ },
+ {
+  "id": "Q20",
+  "question": "The password reset link does not work anymore, why?",
+  "reference_answer": "The link is valid for only 1 hour.",
+  "source": "10-account-and-privacy.md",
+  "key_facts": [
+   "1 hour"
+  ]
+ },
+ {
+  "id": "Q21",
+  "question": "How do I get my account deleted?",
+  "reference_answer": "From Account settings > Privacy; completed within 30 days.",
+  "source": "10-account-and-privacy.md",
+  "key_facts": [
+   "30 days"
+  ]
+ },
+ {
+  "id": "Q22",
+  "question": "What do I get for bringing old clothes to recycle?",
+  "reference_answer": "A $10 voucher per bag, valid 3 months on purchases over $50.",
+  "source": "11-sustainability.md",
+  "key_facts": [
+   "10"
+  ]
+ },
+ {
+  "id": "Q23",
+  "question": "Is the Hillcrest shop open on Sunday?",
+  "reference_answer": "No, Hillcrest is closed on Sundays.",
+  "source": "12-stores-and-hours.md",
+  "key_facts": [
+   "closed"
+  ]
+ },
+ {
+  "id": "Q24",
+  "question": "What are the phone support hours?",
+  "reference_answer": "Monday to Friday 9:00 to 17:00.",
+  "source": "13-customer-support.md",
+  "key_facts": [
+   "9:00"
+  ]
+ },
+ {
+  "id": "Q25",
+  "question": "When do gift cards expire?",
+  "reference_answer": "3 years from purchase.",
+  "source": "14-gift-cards.md",
+  "key_facts": [
+   "3 years"
+  ]
+ },
+ {
+  "id": "Q26",
+  "question": "My headlamp serial starts with TG3-26A, what should I do?",
+  "reference_answer": "Stop using it and return it for a full refund, even without a receipt.",
+  "source": "15-safety-recalls.md",
+  "key_facts": [
+   "refund"
+  ]
+ }
+]

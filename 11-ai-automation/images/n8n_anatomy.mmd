@@ -1,0 +1,9 @@
+flowchart LR
+    TR([Trigger node]) --> N1[Node: HTTP Request]
+    N1 --> N2[Node: Set]
+    N2 --> IF{Node: IF}
+    IF -->|true| N3[Node: Slack]
+    IF -->|false| N4[Node: Email]
+    CR[(Credentials store)] -.-> N1
+    CR -.-> N3
+    N4 -.-> EX[(Execution log)]

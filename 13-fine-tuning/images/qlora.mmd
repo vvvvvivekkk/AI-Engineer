@@ -1,0 +1,10 @@
+flowchart LR
+    X[Input tokens] --> L
+    subgraph L[One layer during QLoRA training]
+      W[Frozen base weights<br/>stored in 4-bit NF4] --> DQ[Dequantise to 16-bit<br/>on the fly]
+      AD[LoRA adapter A, B<br/>16-bit, trainable]
+      DQ --> SUM((+))
+      AD --> SUM
+    end
+    SUM --> Y[Output]
+    Y -. gradients flow only to .-> AD

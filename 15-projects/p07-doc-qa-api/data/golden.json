@@ -1,0 +1,260 @@
+[
+  {
+    "question": "How many days of paid annual leave do full-time employees get?",
+    "doc": "leave-policy.pdf",
+    "page": 1,
+    "evidence": "Full-time employees receive 24 days of paid annual leave per calendar year. Leave is requested in the HR portal at least 10 working days in advance."
+  },
+  {
+    "question": "When do carried-over leave days expire?",
+    "doc": "leave-policy.pdf",
+    "page": 1,
+    "evidence": "Up to 5 unused annual leave days may be carried over into the next year. Carried-over days expire on 31 March."
+  },
+  {
+    "question": "After how many consecutive sick days is a doctor's note required?",
+    "doc": "leave-policy.pdf",
+    "page": 2,
+    "evidence": "Employees may take 12 days of paid sick leave per year. A doctor's note is required for absences longer than 3 consecutive days."
+  },
+  {
+    "question": "How many weeks of paid parental leave do secondary caregivers receive?",
+    "doc": "leave-policy.pdf",
+    "page": 2,
+    "evidence": "Primary caregivers receive 26 weeks of paid parental leave. Secondary caregivers receive 6 weeks of paid parental leave."
+  },
+  {
+    "question": "Within how many days must expense claims be submitted?",
+    "doc": "expense-policy.pdf",
+    "page": 1,
+    "evidence": "Expense claims must be submitted in the finance tool within 30 days of the purchase, with an itemised receipt attached."
+  },
+  {
+    "question": "What is the daily meal allowance when travelling?",
+    "doc": "expense-policy.pdf",
+    "page": 1,
+    "evidence": "When travelling, meals are reimbursed up to 60 dollars per day. Alcohol is never reimbursed."
+  },
+  {
+    "question": "How many times per year can the missing-receipt form be used?",
+    "doc": "expense-policy.pdf",
+    "page": 2,
+    "evidence": "If a receipt is lost, complete the missing-receipt form and get approval from your line manager. This is allowed at most twice per year."
+  },
+  {
+    "question": "Which purchases need approval from a director?",
+    "doc": "expense-policy.pdf",
+    "page": 2,
+    "evidence": "Purchases above 1,000 dollars need written approval from a director before the money is spent."
+  },
+  {
+    "question": "What is the minimum password length?",
+    "doc": "security-policy.pdf",
+    "page": 1,
+    "evidence": "Passwords must be at least 14 characters long and must never be shared, including with colleagues or IT staff."
+  },
+  {
+    "question": "Which app is used for multi-factor authentication?",
+    "doc": "security-policy.pdf",
+    "page": 1,
+    "evidence": "Multi-factor authentication is mandatory for email, the VPN and all cloud tools. Use the Northwind Authenticator app."
+  },
+  {
+    "question": "What extension is the security hotline?",
+    "doc": "security-policy.pdf",
+    "page": 2,
+    "evidence": "Report suspicious emails with the Report Phish button in the mail client. If you clicked a link, call the security hotline on extension 4444 immediately."
+  },
+  {
+    "question": "Where should found USB drives be handed in?",
+    "doc": "security-policy.pdf",
+    "page": 2,
+    "evidence": "Unknown USB drives must not be plugged into any company device. Hand found devices to the security desk on floor 2."
+  },
+  {
+    "question": "What time do new starters arrive on their first day?",
+    "doc": "onboarding-guide.pdf",
+    "page": 1,
+    "evidence": "New starters arrive at 9:30 on their first day and meet their onboarding buddy at the reception desk."
+  },
+  {
+    "question": "Where do new starters collect their laptop?",
+    "doc": "onboarding-guide.pdf",
+    "page": 1,
+    "evidence": "Your laptop is set up by IT before day one. Collect it from the IT bar on floor 3."
+  },
+  {
+    "question": "How long do new starters have to finish the security e-learning?",
+    "doc": "onboarding-guide.pdf",
+    "page": 2,
+    "evidence": "All new starters must finish the security and data-privacy e-learning modules within their first 14 days."
+  },
+  {
+    "question": "How long is the probation period?",
+    "doc": "onboarding-guide.pdf",
+    "page": 2,
+    "evidence": "The probation period lasts 6 months. A review meeting with your manager takes place at month 3 and month 6."
+  },
+  {
+    "question": "How many days per week can employees work remotely?",
+    "doc": "remote-work-policy.pdf",
+    "page": 1,
+    "evidence": "Employees who have passed probation may work remotely up to 3 days per week, agreed with their manager."
+  },
+  {
+    "question": "How much is the home office allowance?",
+    "doc": "remote-work-policy.pdf",
+    "page": 1,
+    "evidence": "A one-off home office allowance of 400 dollars is paid for a desk, chair or monitor."
+  },
+  {
+    "question": "How many days per year can employees work from another country?",
+    "doc": "remote-work-policy.pdf",
+    "page": 2,
+    "evidence": "Working from another country is allowed for up to 20 working days per year and needs HR approval in advance."
+  },
+  {
+    "question": "What are the core collaboration hours?",
+    "doc": "remote-work-policy.pdf",
+    "page": 2,
+    "evidence": "Core collaboration hours are 10:00 to 15:00 local time, when everyone should be reachable."
+  },
+  {
+    "question": "Which portal is used to book business travel?",
+    "doc": "travel-policy.pdf",
+    "page": 1,
+    "evidence": "All business travel is booked through the TravelDesk portal. Flights must be booked at least 14 days ahead where possible."
+  },
+  {
+    "question": "When is premium economy allowed?",
+    "doc": "travel-policy.pdf",
+    "page": 1,
+    "evidence": "Economy class is used for flights under 6 hours. Premium economy is allowed for flights of 6 hours or longer."
+  },
+  {
+    "question": "What is the hotel limit per night in high-cost cities?",
+    "doc": "travel-policy.pdf",
+    "page": 2,
+    "evidence": "Hotel stays are reimbursed up to 180 dollars per night in most cities and 250 dollars per night in high-cost cities."
+  },
+  {
+    "question": "Above what value must supplier gifts be declared?",
+    "doc": "code-of-conduct.pdf",
+    "page": 1,
+    "evidence": "Gifts from suppliers worth more than 50 dollars must be declined or declared to the compliance team."
+  },
+  {
+    "question": "Who must you tell about a conflict of interest?",
+    "doc": "code-of-conduct.pdf",
+    "page": 1,
+    "evidence": "Any personal relationship with a supplier or candidate must be disclosed to your manager and the compliance team."
+  },
+  {
+    "question": "How can concerns be raised anonymously?",
+    "doc": "code-of-conduct.pdf",
+    "page": 2,
+    "evidence": "Concerns can be raised anonymously through the SpeakUp line, which is run by an independent company."
+  },
+  {
+    "question": "Who is allowed to speak for Northwind publicly?",
+    "doc": "code-of-conduct.pdf",
+    "page": 2,
+    "evidence": "Do not share confidential company information on social media. Only the communications team speaks for Northwind publicly."
+  },
+  {
+    "question": "How often are laptops replaced?",
+    "doc": "it-equipment-policy.pdf",
+    "page": 1,
+    "evidence": "Laptops are replaced every 4 years, or sooner if they fail and cannot be repaired."
+  },
+  {
+    "question": "Can you install software on a company laptop without approval?",
+    "doc": "it-equipment-policy.pdf",
+    "page": 1,
+    "evidence": "Reasonable personal use of company laptops is allowed, but no software may be installed without IT approval."
+  },
+  {
+    "question": "How quickly must a lost device be reported?",
+    "doc": "it-equipment-policy.pdf",
+    "page": 2,
+    "evidence": "Report a lost or stolen device to the IT service desk within 24 hours so it can be wiped remotely."
+  },
+  {
+    "question": "How much are leavers charged for an unreturned laptop?",
+    "doc": "it-equipment-policy.pdf",
+    "page": 2,
+    "evidence": "Leavers must return all equipment on their last working day. Unreturned laptops are charged at 900 dollars."
+  },
+  {
+    "question": "How long are customer records kept?",
+    "doc": "data-privacy-policy.pdf",
+    "page": 1,
+    "evidence": "Customer records are kept for 7 years after the end of the contract and then deleted."
+  },
+  {
+    "question": "Where should customer data requests be forwarded?",
+    "doc": "data-privacy-policy.pdf",
+    "page": 2,
+    "evidence": "Requests from customers to see or delete their data must be forwarded to privacy@northwind.example within 2 working days."
+  },
+  {
+    "question": "How quickly must a suspected data breach be reported?",
+    "doc": "data-privacy-policy.pdf",
+    "page": 2,
+    "evidence": "A suspected data breach must be reported to the privacy team within 1 hour of discovery."
+  },
+  {
+    "question": "In which months do performance reviews happen?",
+    "doc": "performance-review-policy.pdf",
+    "page": 1,
+    "evidence": "Performance reviews happen twice a year, in June and December."
+  },
+  {
+    "question": "How many points does the performance rating scale have?",
+    "doc": "performance-review-policy.pdf",
+    "page": 1,
+    "evidence": "Each review uses a 4-point scale: below expectations, meets, exceeds, and outstanding."
+  },
+  {
+    "question": "When do pay rises take effect?",
+    "doc": "performance-review-policy.pdf",
+    "page": 2,
+    "evidence": "Pay rises are decided in the December review and take effect from 1 February."
+  },
+  {
+    "question": "How large is the yearly learning budget?",
+    "doc": "performance-review-policy.pdf",
+    "page": 2,
+    "evidence": "Every employee has a learning budget of 1,200 dollars per year for courses, books and conferences."
+  },
+  {
+    "question": "What is the company's policy on bringing dogs to the office?",
+    "doc": null,
+    "page": null,
+    "evidence": null
+  },
+  {
+    "question": "How many parking spaces does the Berlin office have?",
+    "doc": null,
+    "page": null,
+    "evidence": null
+  },
+  {
+    "question": "What is the stock price of Northwind Labs?",
+    "doc": null,
+    "page": null,
+    "evidence": null
+  },
+  {
+    "question": "Who won the company football tournament last year?",
+    "doc": null,
+    "page": null,
+    "evidence": null
+  },
+  {
+    "question": "What is the Wi-Fi password for guests?",
+    "doc": null,
+    "page": null,
+    "evidence": null
+  }
+]

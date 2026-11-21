@@ -1,0 +1,41 @@
+text,label,kind
+"Oh wonderful, it stopped working after two days. Just what I needed.",negative,sarcasm
+"Great, another charger that melts. Thanks a lot.",negative,sarcasm
+Fantastic way to waste forty dollars.,negative,sarcasm
+I just love waiting three weeks for a package that arrives crushed.,negative,sarcasm
+"Best paperweight I have ever bought, since it does nothing else.",negative,sarcasm
+"Sure, if you enjoy burnt toast every morning, this is perfect.",negative,sarcasm
+"Wow, the strap snapped on day one. Superb engineering.",negative,sarcasm
+Truly amazing how fast the paint peeled off.,negative,sarcasm
+"Exceeded my expectations, sturdy and elegant.",positive,unseen_words
+"Brilliant gadget, it works flawlessly.",positive,unseen_words
+"Delighted with this purchase, top notch craftsmanship.",positive,unseen_words
+"Comfortable, quiet and gorgeous.",positive,unseen_words
+A joy to use every single day.,positive,unseen_words
+Shoddy stitching and it smells weird.,negative,unseen_words
+"Mediocre at best, frankly a letdown.",negative,unseen_words
+"It leaks, it rattles and it overheats.",negative,unseen_words
+"Dreadful experience, the seller ignored my emails.",negative,unseen_words
+Junk. Fell apart in a week.,negative,unseen_words
+I can't say I'm unhappy with it.,positive,negation
+Never had a single problem with this kettle.,positive,negation
+Nothing about this blender is good.,negative,negation
+"I wouldn't call it great, or even okay.",negative,negation
+No complaints whatsoever.,positive,negation
+"Not the worst lamp, not the best either, but I kept it and use it daily.",positive,negation
+Hardly works and barely charges.,negative,negation
+I don't regret this at all.,positive,negation
+Not once did it fail me.,positive,negation
+"It isn't anything like the photos, and not in a good way.",negative,negation
+"Pricey, but honestly worth it for the quality.",positive,mixed
+Looks beautiful but broke within a month.,negative,mixed
+"Slow delivery, yet the headphones sound incredible.",positive,mixed
+"Lovely colour, shame it doesn't actually hold water.",negative,mixed
+"The box was damaged, however the keyboard itself is excellent.",positive,mixed
+"Cheap price, cheap quality. You get what you pay for.",negative,mixed
+"A little heavy, but it is the most reliable backpack I've owned.",positive,mixed
+"Nice design, terrible battery, I sent it back.",negative,mixed
+"Customer service was rude, but they replaced it and the new one is great.",positive,mixed
+"Started strong, then died after the warranty ended.",negative,mixed
+"Five stars for looks, zero stars for function.",negative,mixed
+It took a while to set up but now I use it every day and love it.,positive,mixed

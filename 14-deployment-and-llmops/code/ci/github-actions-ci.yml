@@ -1,0 +1,55 @@
+# github-actions-ci.yml - a CI/CD pipeline for the FastAPI app.
+#
+# HOW TO USE: GitHub only runs workflow files that live in  .github/workflows/  at the ROOT of a repo.
+# Copy this file to  .github/workflows/ci.yml  in your own project repo.
+#
+# CI = Continuous Integration: every push / pull request is tested automatically.
+# CD = Continuous Delivery/Deployment: if tests pass on main, build and publish the Docker image.
+
+name: ci                                  # the name shown in the GitHub "Actions" tab
+
+on:                                       # WHEN to run
+  push:
+    branches: [main]
+  pull_request:                           # every pull request, before it is merged
+
+jobs:
+  test:                                   # job 1: lint + tests
+    runs-on: ubuntu-latest                # a fresh Linux virtual machine provided by GitHub
+    steps:
+      - uses: actions/checkout@v4         # download the repo's code onto the machine
+      - uses: actions/setup-python@v5     # install Python
+        with:
+          python-version: "3.13"
+          cache: pip                      # reuse downloaded packages between runs (faster)
+      - name: Install dependencies
+        run: pip install -r requirements.txt ruff
+      - name: Lint (style and simple bugs)
+        run: ruff check app tests         # ruff = a fast linter; fails the job on problems
+      - name: Run tests
+        run: python -m pytest -q          # tests use the offline model, so no API key is needed
+        env:
+          APP_ENV: ci
+
+  docker:                                 # job 2: build and push the image (the "CD" part)
+    needs: test                           # only runs if the test job passed
+    if: github.ref == 'refs/heads/main'   # only on the main branch, not on pull requests
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write                     # allows pushing to GitHub Container Registry (ghcr.io)
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}   # a short-lived token GitHub creates for each run
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ghcr.io/${{ github.repository }}:latest,ghcr.io/${{ github.repository }}:${{ github.sha }}
+      # A real deploy step would go here, e.g. tell your cloud host to pull the new image.
+      # Secrets such as a deploy key come from: repo Settings -> Secrets and variables -> Actions,
+      # and are used as ${{ secrets.MY_DEPLOY_KEY }} - never written in this file.

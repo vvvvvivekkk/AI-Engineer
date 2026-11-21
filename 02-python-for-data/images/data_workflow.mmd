@@ -1,0 +1,7 @@
+flowchart LR
+    A[Load<br/>CSV / Excel] --> B[Inspect<br/>shape, info, describe]
+    B --> C[Clean<br/>duplicates, blanks, types]
+    C --> D[Transform<br/>new columns, merge]
+    D --> E[Analyse<br/>groupby, pivot]
+    E --> F[Visualise<br/>matplotlib]
+    F --> G[Save<br/>CSV / Excel report]

@@ -1,0 +1,335 @@
+module,title,url,type,level,free_paid,source,why
+00-setup,Python downloads,https://www.python.org/downloads/,tool,beginner,Free,official,"The one place to get a clean, current Python installer for any OS."
+00-setup,Python 3 documentation,https://docs.python.org/3/,docs,beginner,Free,official,"Reference for the language and standard library, and also covers installing and using `venv`."
+00-setup,uv (Python package & project manager),https://docs.astral.sh/uv/,docs,beginner,Free,official,"A fast, single-binary way to create virtual environments and pin dependencies, so a learner's setup is reproducible."
+00-setup,Visual Studio Code docs,https://code.visualstudio.com/docs,docs,beginner,Free,official,"Covers the editor we assume throughout: Python extension, notebooks, integrated terminal, Git panel."
+00-setup,Project Jupyter,https://jupyter.org,tool,beginner,Free,official,"Notebooks are where most data and ML exercises happen, and this site explains JupyterLab and its kernels."
+00-setup,Google Colab,https://colab.research.google.com,tool,beginner,Free (paid tiers),official,"Lets you run notebooks with a free GPU in the browser, which helps learners whose laptops are weak."
+00-setup,Kaggle Learn / Notebooks,https://www.kaggle.com/learn/overview,course,beginner,Free,8,"Free hosted notebooks with GPU quota and short hands-on micro-courses, so learners can start without installing anything."
+00-setup,Pro Git (book),https://git-scm.com/book/en/v2,docs,beginner,Free,8,"The full, free, official Git book. Chapters 1–3 are enough for the course."
+00-setup,git – the simple guide,http://rogerdudler.github.io/git-guide/,article,beginner,Free,8,A one-page cheat-sheet of the dozen Git commands beginners actually use.
+00-setup,Atlassian Git tutorials,https://www.atlassian.com/git/tutorials/comparing-workflows,article,beginner,Free,8,Clear diagrams of branching and pull-request workflows for teamwork.
+00-setup,Intro to Git and GitHub (video playlist),https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV,video,beginner,Free,8,Friendly video walk-through for learners who prefer watching to reading.
+00-setup,GitHub Student Developer Pack,https://education.github.com/pack,tool,beginner,Free (students),8,"Free Copilot, cloud credits and domains for students, which cuts tooling costs to near zero."
+00-setup,Docker documentation,https://docs.docker.com/,docs,intermediate,Free,8,"Containers come back in the deployment module, so learners should install Docker early."
+00-setup,Docker overview,https://docs.docker.com/get-started/overview/,docs,beginner,Free,8,A short conceptual intro to images and containers before any hands-on work.
+00-setup,Python Tutor (code visualiser),https://pythontutor.com/visualize.html#mode=edit,tool,beginner,Free,8,"Steps through code line by line and draws the variables, which is great for debugging mental models."
+00-setup,Ollama,https://ollama.com,tool,beginner,Free,official,"Runs open LLMs locally with one command, so learners can do the LLM modules offline and without API costs."
+00-setup,Google AI for Developers (Gemini API keys),https://ai.google.dev,docs,beginner,Free tier,official,"Has a free-tier API key path, which lets learners call a hosted LLM without a credit card."
+00-setup,OpenRouter,https://openrouter.ai/,tool,beginner,Pay-as-you-go (some free models),8,"One API key gives access to many hosted models, which makes it easy to compare providers."
+01-python-basics,The Python Tutorial (official),https://docs.python.org/3/tutorial/,docs,beginner,Free,official,"The language's own walkthrough: accurate, current, and organised the way the language is designed."
+01-python-basics,Automate the Boring Stuff with Python,https://automatetheboringstuff.com/,course,beginner,Free (online),8,"Teaches Python through practical scripts (files, spreadsheets, web), which makes a natural bridge to the automation module."
+01-python-basics,Python for Everybody (Coursera),https://www.coursera.org/specializations/python,course,beginner,Free to audit,8,"A gentle, well-paced course written for people with no programming background."
+01-python-basics,Google's Python Class,https://developers.google.com/edu/python/,course,beginner,Free,8,"Short and dense, with exercises. Good for people who already code in another language."
+01-python-basics,Think Python 2e (PDF),http://greenteapress.com/thinkpython2/thinkpython2.pdf,article,beginner,Free,8,"A free textbook that explains *why* things work, not only how."
+01-python-basics,A Byte of Python,https://python.swaroopch.com/,docs,beginner,Free,8,A compact free book for a fast first pass over the whole language.
+01-python-basics,Corey Schafer Python tutorials,https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU,video,beginner,Free,8,"Clear, practical videos from basics to OOP, virtualenvs and file handling."
+01-python-basics,Python course by IIT Madras (video),https://www.youtube.com/watch?v=8ndsDXohLMQ&list=PLZ2ps__7DhBb2cXAu5PevO_mzgS3Fj3Fs,video,beginner,Free,8,"A university-style lecture series, useful for learners who want a structured syllabus."
+01-python-basics,"CS50x (Harvard, edX)",https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x,course,beginner,Free (cert paid),8,"General CS foundations (memory, algorithms) that make later debugging far easier."
+01-python-basics,freeCodeCamp,https://www.freecodecamp.org/,course,beginner,Free,8,Free interactive curriculum. Its Python and scientific-computing tracks have graded projects.
+01-python-basics,Khan Academy Computing,https://www.khanacademy.org/computing,course,beginner,Free,8,Very gentle CS basics for absolute beginners.
+01-python-basics,Real Python,https://realpython.com/,article,beginner–intermediate,Freemium,8,"Deep, well-edited articles on specific topics (decorators, typing, packaging) for when you get stuck."
+01-python-basics,Python Tutor,https://pythontutor.com/visualize.html#mode=edit,tool,beginner,Free,8,"Draws what each line does to memory, which helps beginners understand references and loops."
+01-python-basics,A Whirlwind Tour of Python,https://github.com/jakevdp/WhirlwindTourOfPython,repo,beginner,Free,8,Notebook-based crash course that leads straight into the data-science stack in module 02.
+01-python-basics,Project Euler,https://projecteuler.net/,tool,intermediate,Free,8,"Maths-flavoured problems that build loop, function and efficiency skills."
+01-python-basics,TheAlgorithms/Python,https://github.com/TheAlgorithms/Python,repo,intermediate,Free,8,Readable reference implementations of classic algorithms to study and compare against.
+01-python-basics,Learning Python: From Zero to Hero,https://medium.freecodecamp.org/learning-python-from-zero-to-hero-120ea540b567,article,beginner,Free,8,A single-article overview to skim before or after a course.
+01-python-basics,awesome-python,https://github.com/vinta/awesome-python,repo,intermediate,Free,6,"Curated map of the Python library ecosystem, for finding the right package for a task."
+01-python-basics,30 Python projects solved and explained,https://amankharwal.medium.com/30-python-projects-solved-and-explained-563fd7473003,article,beginner,Free (Medium limits),6,Small project ideas to practise on once the syntax is familiar.
+02-python-for-data,NumPy documentation,https://numpy.org/doc/stable/,docs,beginner,Free,official,"Arrays, broadcasting and vectorised maths are the foundation every ML library builds on."
+02-python-for-data,pandas documentation,https://pandas.pydata.org/docs/,docs,beginner,Free,official,"The official user guide for loading, cleaning, joining and grouping tabular data."
+02-python-for-data,Matplotlib documentation,https://matplotlib.org/stable/,docs,beginner,Free,official,"The standard plotting library, with a gallery to copy patterns from."
+02-python-for-data,scikit-learn: dataset loaders,https://scikit-learn.org/stable/,docs,beginner,Free,official,"Its bundled `load_*` datasets (iris, wine, digits, breast_cancer, diabetes) work offline and are ideal for exercises."
+02-python-for-data,Python Data Science Handbook,https://github.com/jakevdp/PythonDataScienceHandbook,repo,beginner–intermediate,Free,8,"A free notebook book covering NumPy, pandas, Matplotlib and scikit-learn in one consistent style."
+02-python-for-data,CS231n Python & NumPy tutorial,http://cs231n.github.io/python-numpy-tutorial/,article,beginner,Free,8,A crisp one-page NumPy primer written for people heading into deep learning.
+02-python-for-data,pandas cheat sheet (PDF),https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf,docs,beginner,Free,8,"A two-page visual reference for reshaping, filtering and grouping operations."
+02-python-for-data,"Summarising, aggregating and grouping in pandas",https://www.shanelynn.ie/summarising-aggregation-and-grouping-data-in-python-pandas/,article,intermediate,Free,8,"Worked examples of `groupby`, where most beginners get stuck."
+02-python-for-data,pandas tutorial (Kaggle notebook),https://www.kaggle.com/junaaaaloo/pandas-tutorial,course,beginner,Free,8,A runnable notebook you can fork and experiment with directly in the browser.
+02-python-for-data,Kaggle Learn,https://www.kaggle.com/learn/overview,course,beginner,Free,8,"Short pandas, data-visualisation and data-cleaning micro-courses with auto-graded exercises."
+02-python-for-data,Applied Data Science with Python (Coursera),https://www.coursera.org/specializations/data-science-python,course,intermediate,Free to audit,8,"A longer structured track covering plotting, ML, text and networks in Python."
+02-python-for-data,Intro to Python for Data Science (DataCamp),https://www.datacamp.com/courses/intro-to-python-for-data-science,course,beginner,Freemium,8,Interactive in-browser exercises for learners who like instant feedback.
+02-python-for-data,OSSU Data Science curriculum,https://github.com/ossu/data-science,repo,intermediate,Free,8,A self-taught roadmap that shows where data skills sit within a full curriculum.
+02-python-for-data,UCI Machine Learning Repository,https://archive.ics.uci.edu/datasets,tool,beginner,Free,8,"A classic source of small, well-documented tabular datasets. Download once, then use offline."
+02-python-for-data,Kaggle (datasets & competitions),https://www.kaggle.com/,tool,beginner,Free,8,Thousands of real datasets plus public notebooks showing how others explored them.
+02-python-for-data,Data Analysis & ML Projects (rhiever),https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects,repo,intermediate,Free,6,Example notebooks of end-to-end exploratory analysis done well.
+02-python-for-data,5 web scraping projects with Python,https://amankharwal.medium.com/5-web-scraping-projects-with-python-4bcc25ff039,article,intermediate,Free (Medium limits),6,"Project ideas for collecting your own data, which feeds into later RAG and automation work."
+03-math-for-ai,Khan Academy — Statistics & Probability,https://www.khanacademy.org/math/statistics-probability,course,beginner,Free,8,"Covers distributions, expectation, variance and hypothesis testing from scratch, with practice questions."
+03-math-for-ai,Khan Academy — Derivatives,https://www.khanacademy.org/math/calculus-1/cs1-derivatives-definition-and-basic-rules,course,beginner,Free,8,"The single calculus idea gradient descent depends on, explained slowly."
+03-math-for-ai,Khan Academy — Partial derivatives,https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives,course,beginner–intermediate,Free,8,"Extends derivatives to many variables, which is exactly what a gradient is."
+03-math-for-ai,Linear algebra lecture playlist,https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8,video,intermediate,Free,8,"A full university linear-algebra lecture series (vectors, matrices, eigenvalues) linked from source 8's ML maths list."
+03-math-for-ai,Desmos: line from slope & intercept,https://www.desmos.com/calculator/5kn5x8f7zk,tool,beginner,Free,8,"An interactive graph that makes y = mx + b, and so linear regression, tangible."
+03-math-for-ai,Linear regression from scratch,https://www.cs.toronto.edu/~frossard/post/linear_regression/,article,beginner,Free,8,"Connects the cost function, its derivative and the update step in code."
+03-math-for-ai,Logistic regression from scratch,https://medium.com/@martinpella/logistic-regression-from-scratch-in-python-124c5636b8ac,article,intermediate,Free (Medium limits),8,Shows the sigmoid and log-loss maths turning into a working classifier.
+03-math-for-ai,Neural Networks and Deep Learning (Nielsen),http://neuralnetworksanddeeplearning.com/,article,intermediate,Free,8,The clearest free explanation of backpropagation as the chain rule.
+03-math-for-ai,Dive into Deep Learning (D2L),https://d2l.ai/,docs,intermediate,Free,8,"Includes a maths appendix (linear algebra, calculus, probability) tied directly to runnable code."
+03-math-for-ai,Neural Networks: Zero to Hero (Karpathy),https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ,video,intermediate,Free,9,"The first video builds autograd by hand, which gives the most intuitive picture of derivatives in ML."
+03-math-for-ai,Stanford CS229,http://cs229.stanford.edu/,course,advanced,Free,8,The course site has linear-algebra and probability review notes written for ML students.
+03-math-for-ai,CS229 cheat sheets,https://github.com/afshinea/stanford-cs-229-machine-learning,repo,intermediate,Free,8,"Compact refreshers on probability, statistics and linear algebra to keep at hand."
+03-math-for-ai,Andrew Ng ML notes,https://github.com/ashishpatel26/Andrew-NG-Notes,repo,beginner,Free,6,"Hand-written-style notes on the maths behind classic ML, good for revision."
+03-math-for-ai,An Introduction to Statistical Learning (book site),https://www.statlearning.com,docs,intermediate,Free (official PDF),official,The standard gentle statistics-for-ML textbook. Use the official site rather than the third-party PDF mirror linked in source 8.
+03-math-for-ai,Colah's blog,http://colah.github.io/,article,intermediate,Free,8,"Visual essays (for example, backprop on computational graphs) that build intuition."
+03-math-for-ai,Mathematical Introduction to Deep Learning,https://arxiv.org/abs/2103.11201,paper,advanced,Free,8,A rigorous treatment for learners who want proofs after the intuition.
+03-math-for-ai,NumPy linear algebra docs,https://numpy.org/doc/stable/,docs,beginner,Free,official,`numpy.linalg` lets learners check every hand calculation in code.
+04-machine-learning,scikit-learn documentation,https://scikit-learn.org/stable/,docs,beginner,Free,official,"User guide plus API docs for every classic algorithm, pipeline, metric and cross-validation tool."
+04-machine-learning,Google Machine Learning Crash Course,https://developers.google.com/machine-learning/crash-course/ml-intro,course,beginner,Free,8,"A fast, visual intro to loss, generalisation, features and classification metrics."
+04-machine-learning,"Machine Learning (Andrew Ng, Coursera)",https://www.coursera.org/learn/machine-learning,course,beginner,Free to audit,8,The best-known first ML course. It builds intuition before code.
+04-machine-learning,Kaggle Learn — Intro to Machine Learning,https://www.kaggle.com/learn/machine-learning,course,beginner,Free,8,Hands-on decision trees and random forests on real data within a couple of hours.
+04-machine-learning,Stanford CS229,http://cs229.stanford.edu/,course,advanced,Free,8,The rigorous version: derivations of the major algorithms for learners who want depth.
+04-machine-learning,Machine Learning Recipes (Josh Gordon),https://www.youtube.com/playlist?list=PLOU2XLYxmsIIuiBfYad6rFYQU_jL2ryal,video,beginner,Free,8,Short videos that build a classifier from scratch with scikit-learn.
+04-machine-learning,Intro to Machine Learning (Udacity),https://www.udacity.com/course/intro-to-machine-learning--ud120,course,beginner,Free,8,"Project-driven coverage of naive Bayes, SVMs, trees, regression and clustering."
+04-machine-learning,Machine Learning with Python (sentdex),https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v,video,intermediate,Free,8,Implements several algorithms from scratch alongside the library versions.
+04-machine-learning,ML YouTube Courses (dair-ai),https://github.com/dair-ai/ML-YouTube-Courses,repo,beginner–advanced,Free,1,"An index of free university ML lecture series on YouTube, for choosing a deeper course."
+04-machine-learning,ML Course Notes (dair-ai),https://github.com/dair-ai/ML-Course-Notes,repo,intermediate,Free,1,Community lecture notes that pair with the video courses.
+04-machine-learning,Machine Learning Tutorials (ujjwalkarn),https://github.com/ujjwalkarn/Machine-Learning-Tutorials,repo,intermediate,Free,"8, 6","A topic-by-topic link collection for each algorithm, for when you need another explanation."
+04-machine-learning,awesome-machine-learning,https://github.com/josephmisiti/awesome-machine-learning,repo,intermediate,Free,"6, 8","A large map of ML libraries by language, for picking tools."
+04-machine-learning,10 ML projects on classification,https://medium.datadriveninvestor.com/10-machine-learning-projects-on-classification-with-python-9261add2e8a7,article,beginner,Free (Medium limits),6,Classification project ideas to practise the train / evaluate loop.
+04-machine-learning,10 ML projects on regression,https://amankharwal.medium.com/10-machine-learning-projects-on-regression-with-python-e5494615a0d0,article,beginner,Free (Medium limits),6,"Regression project ideas, ready-made scenarios for exercises."
+04-machine-learning,Unsupervised learning algorithms explained,https://amankharwal.medium.com/all-unsupervised-machine-learning-algorithms-explained-aecf1ba95d8b,article,intermediate,Free (Medium limits),6,A survey of clustering and dimensionality reduction with example code.
+04-machine-learning,awesome-machine-learning-interpretability,https://github.com/jphall663/awesome-machine-learning-interpretability,repo,advanced,Free,6,"Tools for explaining model predictions (SHAP, LIME and others), increasingly expected in industry."
+04-machine-learning,Kaggle Competitions,https://www.kaggle.com/competitions,tool,intermediate,Free,8,Real leaderboards and public notebooks to learn feature engineering from.
+04-machine-learning,Elicit ML reading list,https://github.com/elicit/machine-learning-list,repo,advanced,Free,9,A curated reading path from ML fundamentals to modern LLM papers.
+04-machine-learning,Designing Machine Learning Systems (Chip Huyen),https://www.amazon.com/Designing-Machine-Learning-Systems-Production-Ready/dp/1098107969,article,advanced,Paid (book),9,"How ML works in production: data, features, monitoring. The bridge to LLMOps."
+05-deep-learning,PyTorch tutorials,https://pytorch.org/tutorials/,docs,beginner–advanced,Free,official,"The official tensors → autograd → training-loop path, in the framework the course uses."
+05-deep-learning,PyTorch (home & docs),https://pytorch.org/,docs,intermediate,Free,8,"API reference for `torch.nn`, optimisers and data loaders."
+05-deep-learning,Practical Deep Learning for Coders (fast.ai),https://course.fast.ai/,course,beginner,Free,"8, 9","Top-down: get a working model first, then open up how it works. Very motivating."
+05-deep-learning,Neural Networks: Zero to Hero (Karpathy),https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ,video,intermediate,Free,9,"Builds backprop, MLPs and a small GPT by hand, which removes the ""magic""."
+05-deep-learning,Deep Learning Specialization (Coursera),https://www.coursera.org/specializations/deep-learning,course,intermediate,Free to audit,8,"Systematic bottom-up theory: initialisation, regularisation, CNNs, sequence models."
+05-deep-learning,Dive into Deep Learning (D2L),https://d2l.ai/,docs,intermediate,Free,8,A free interactive textbook with runnable PyTorch code for every chapter.
+05-deep-learning,Neural Networks and Deep Learning (Nielsen),http://neuralnetworksanddeeplearning.com/,article,beginner,Free,8,Gentle prose explanation of how and why networks learn.
+05-deep-learning,"Deep Neural Networks with PyTorch (Coursera, IBM)",https://www.coursera.org/learn/deep-neural-networks-with-pytorch,course,intermediate,Free to audit,8,A structured PyTorch-first course for learners who want graded exercises.
+05-deep-learning,"Deep Learning with Python, 2nd ed. (Chollet)",https://www.manning.com/books/deep-learning-with-python-second-edition,article,intermediate,Paid (book),8,"A well-written Keras-based book, strong on practical intuition."
+05-deep-learning,Keras,https://keras.io/,docs,beginner,Free,8,A high-level API that is handy for quick experiments and for reading Keras-based tutorials.
+05-deep-learning,TensorFlow,https://tensorflow.org,docs,intermediate,Free,8,"Still common in industry and mobile deployment, so worth recognising."
+05-deep-learning,TensorFlow Zero to Hero (mrdbourke),https://github.com/mrdbourke/tensorflow-deep-learning,repo,beginner,Free,6,A full notebook course with many small CV and NLP projects.
+05-deep-learning,Fashion-MNIST,https://github.com/zalandoresearch/fashion-mnist,repo,beginner,Free,8,A small drop-in MNIST replacement for a first CNN that is still a real challenge.
+05-deep-learning,learnopencv,https://github.com/spmallick/learnopencv,repo,intermediate,Free,6,"Practical computer-vision recipes (detection, segmentation, pose) with code."
+05-deep-learning,awesome-computer-vision,https://github.com/jbhuang0604/awesome-computer-vision,repo,intermediate,Free,6,"A map of CV courses, papers and libraries for going deeper into vision."
+05-deep-learning,365 Days Computer Vision Learning,https://github.com/ashishpatel26/365-Days-Computer-Vision-Learning-Linkedin-Post,repo,intermediate,Free,6,Bite-sized daily CV topics that work as a revision feed.
+05-deep-learning,deep-learning-drizzle,https://github.com/kmario23/deep-learning-drizzle,repo,intermediate–advanced,Free,6,"An index of free university DL, CV, NLP and RL lecture series."
+05-deep-learning,20 deep learning projects with Python,https://thecleverprogrammer.com/2020/11/22/deep-learning-projects-with-python/,article,beginner,Free,6,Project ideas to practise CNNs and RNNs on.
+05-deep-learning,Deep Learning in Production,https://github.com/The-AI-Summer/Deep-Learning-In-Production,repo,advanced,Free,6,"Turning a notebook model into a served, tested application, which leads into module 14."
+05-deep-learning,NVIDIA Deep Learning Institute,https://developer.nvidia.com/dli,course,intermediate,Free & Paid,8,GPU-focused hands-on labs and certificates.
+06-nlp-and-transformers,Hugging Face Learn (LLM / NLP course),https://huggingface.co/learn,course,beginner–intermediate,Free,official,"The standard hands-on route through tokenizers, Transformers, datasets and fine-tuning."
+06-nlp-and-transformers,Hugging Face course (source repo),https://github.com/huggingface/course,repo,beginner,Free,1,"The course content as notebooks, which can be run offline."
+06-nlp-and-transformers,Transformers course chapter 1,https://huggingface.co/course/chapter1,course,beginner,Free,8,The direct entry point: what Transformers are and how to use `pipeline()`.
+06-nlp-and-transformers,huggingface/transformers,https://github.com/huggingface/transformers,repo,intermediate,Free,1,The library itself. Reading its examples teaches the real API.
+06-nlp-and-transformers,Hugging Face model hub,https://huggingface.co/models,tool,beginner,Free,8,Browse and try thousands of pretrained models. Small ones run on CPU.
+06-nlp-and-transformers,Stanford CS25 — Transformers United,https://web.stanford.edu/class/cs25/,course,advanced,Free,8,Guest lectures from researchers on where Transformer research is heading.
+06-nlp-and-transformers,Neural Networks: Zero to Hero (Karpathy),https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ,video,intermediate,Free,9,"Later videos build a character-level GPT, the clearest view of attention in code."
+06-nlp-and-transformers,A Hacker's Guide to Language Models (Jeremy Howard),https://www.youtube.com/watch?v=jkrNMKz9pWU,video,intermediate,Free,9,"A practical, code-first tour of how LMs work and how to use them."
+06-nlp-and-transformers,Build a Large Language Model (From Scratch),https://www.manning.com/books/build-a-large-language-model-from-scratch,article,intermediate,Paid (book),9,"A step-by-step book building tokenizer, attention and GPT training in PyTorch."
+06-nlp-and-transformers,Treasure of Transformers,https://github.com/ashishpatel26/Treasure-of-Transformers,repo,intermediate,Free,6,"A catalogue of 125+ Transformer model families with links, for orientation."
+06-nlp-and-transformers,ML Papers Explained (dair-ai),https://github.com/dair-ai/ML-Papers-Explained,repo,intermediate,Free,1,"Plain-language explanations of landmark papers (BERT, GPT, T5 and others)."
+06-nlp-and-transformers,awesome-nlp,https://github.com/keon/awesome-nlp,repo,intermediate,Free,6,"A broad map of NLP courses, libraries and datasets."
+06-nlp-and-transformers,awesome-sentence-embedding,https://github.com/Separius/awesome-sentence-embedding,repo,intermediate,Free,6,"Background on embeddings, the bridge to semantic search and RAG."
+06-nlp-and-transformers,NLP beginner projects,https://github.com/positivepeng/nlp-beginner-projects,repo,beginner,Free,6,"Small classic NLP exercises (text classification, NER) with reference code."
+06-nlp-and-transformers,6 sentiment analysis projects,https://amankharwal.medium.com/6-sentiment-analysis-projects-with-python-1fdd3d43d90f,article,beginner,Free (Medium limits),6,"Sentiment is the ""hello world"" of NLP, and these give ready scenarios."
+06-nlp-and-transformers,20 NLP projects with Python,https://medium.com/coders-camp/20-machine-learning-projects-on-nlp-582effe73b9c,article,beginner–intermediate,Free (Medium limits),6,More NLP project ideas from summarisation to keyword extraction.
+06-nlp-and-transformers,The Super Duper NLP Repo,https://notebooks.quantumstat.com/,repo,intermediate,Free,6,A searchable index of Colab notebooks for NLP tasks.
+06-nlp-and-transformers,Cohere LLM University,https://academy.cohere.com/,course,beginner,Free,8,"Short vendor-neutral-ish lessons on embeddings, semantic search and generation."
+06-nlp-and-transformers,Mastering LLMs (AssemblyAI video),https://www.youtube.com/watch?v=zjkBMFhNj_g,video,beginner,Free,8,A one-video overview of how LLMs are built and used.
+07-llms-and-genai,Anthropic (Claude) API docs,https://docs.anthropic.com/en/docs/welcome,docs,beginner,"Free docs, paid API",9,"Official reference for Messages, tool use, prompt caching and model choice."
+07-llms-and-genai,OpenAI platform docs,https://platform.openai.com/docs/concepts,docs,beginner,"Free docs, paid API",9,"Core concepts (tokens, models, chat format) behind the API most tutorials assume."
+07-llms-and-genai,Gemini API (Google AI for Developers),https://ai.google.dev/gemini-api,docs,beginner,Free tier,9,"Has a generous free tier, so learners can do every exercise at zero cost."
+07-llms-and-genai,Ollama,https://ollama.com,tool,beginner,Free,official,"Local, private, offline model serving with an OpenAI-compatible endpoint. Our default for offline labs."
+07-llms-and-genai,Anthropic courses,https://github.com/anthropics/courses/tree/master,course,beginner,Free,9,"Notebook courses on API fundamentals, prompting and tool use, from the model vendor."
+07-llms-and-genai,Anthropic cookbook,https://github.com/anthropics/anthropic-cookbook,repo,intermediate,Free,1,"Copy-ready recipes for common patterns (classification, RAG, tool use, vision)."
+07-llms-and-genai,OpenAI Cookbook,https://cookbook.openai.com/,repo,intermediate,Free,9,"A large set of worked examples, many of which transfer to other providers."
+07-llms-and-genai,Generative AI for Beginners (Microsoft),https://github.com/microsoft/generative-ai-for-beginners,course,beginner,Free,1,A multi-lesson structured course on building GenAI apps end to end.
+07-llms-and-genai,LLM Course (mlabonne),https://github.com/mlabonne/llm-course,course,intermediate,Free,1,"A roadmap plus Colab notebooks covering LLM fundamentals, the ""LLM scientist"" track and the ""LLM engineer"" track."
+07-llms-and-genai,Generative AI with LLMs (Coursera),https://www.coursera.org/learn/generative-ai-with-llms,course,intermediate,Free to audit,8,"A short course on the LLM lifecycle: pretraining, fine-tuning, RLHF, deployment."
+07-llms-and-genai,LLM Bootcamp (Full Stack Deep Learning),https://fullstackdeeplearning.com/llm-bootcamp/,video,intermediate,Free,"9, 8","Recorded lectures on building LLM products, including UX, evaluation and deployment."
+07-llms-and-genai,The Rise of the AI Engineer,https://www.latent.space/p/ai-engineer,article,beginner,Free,9,Defines the AI-engineer role this curriculum is training for.
+07-llms-and-genai,Patterns for Building LLM-based Systems,https://eugeneyan.com/writing/llm-patterns/,article,intermediate,Free,9,"A catalogue of the recurring patterns (evals, RAG, caching, guardrails) with trade-offs."
+07-llms-and-genai,What We've Learned From A Year of Building with LLMs,https://applied-llms.org/,article,intermediate,Free,9,"Hard-won practitioner lessons on tactics, operations and strategy."
+07-llms-and-genai,LiteLLM,https://github.com/BerriAI/litellm,tool,intermediate,Free (OSS),"1, 7, 9","One OpenAI-style interface to 100+ providers, so swapping models becomes a one-line change."
+07-llms-and-genai,Gemma (open models),https://ai.google.dev/gemma,docs,intermediate,Free,9,"Small open-weight models that run locally, good for offline exercises."
+07-llms-and-genai,Llama docs,https://llama.meta.com/docs/overview,docs,intermediate,Free,9,Docs for the most widely used open-weight model family.
+07-llms-and-genai,llama.cpp,https://github.com/ggerganov/llama.cpp,tool,intermediate,Free,1,"CPU-friendly quantised inference, the engine underneath many local-LLM apps."
+07-llms-and-genai,Open WebUI,https://github.com/open-webui/open-webui,tool,beginner,Free,1,"A self-hosted ChatGPT-style UI on top of Ollama, useful for demos."
+07-llms-and-genai,Awesome LLM,https://github.com/Hannibal046/Awesome-LLM,repo,intermediate,Free,8,"A wide index of LLM papers, models and tools for exploration."
+07-llms-and-genai,Simon Willison's blog,https://simonwillison.net/,article,intermediate,Free,9,"Frequent, hands-on notes on new models, tools and prompt-injection risks."
+07-llms-and-genai,AI Engineering (Chip Huyen),https://learning.oreilly.com/library/view/-/9781098166298/,article,intermediate,Paid (book),9,A comprehensive book on building applications on foundation models.
+07-llms-and-genai,Awesome AI Engineering playbook (Eric-LLMs),https://github.com/Eric-LLMs/awesome-ai-engineering,repo,intermediate,Free,7,Mind maps and slide decks summarising the whole LLM-in-production stack (CC-BY-4.0).
+08-prompt-and-context-engineering,Anthropic docs (prompt engineering section),https://docs.anthropic.com,docs,beginner,Free,official,"Vendor guidance on clarity, examples, XML tagging, role prompting and long-context tips."
+08-prompt-and-context-engineering,OpenAI prompt engineering guide,https://platform.openai.com/docs/guides/prompt-engineering,docs,beginner,Free,8,"Concise official strategies: clear instructions, reference text, splitting tasks."
+08-prompt-and-context-engineering,Google AI for Developers (prompting docs),https://ai.google.dev,docs,beginner,Free,official,"Gemini's prompting and structured-output guides, a third vendor view to compare."
+08-prompt-and-context-engineering,Prompt Engineering Guide (site),https://www.promptingguide.ai/,docs,beginner–intermediate,Free,9,"Well-organised explanations of techniques (few-shot, CoT, ReAct) with examples."
+08-prompt-and-context-engineering,Prompt Engineering Guide (repo),https://github.com/dair-ai/Prompt-Engineering-Guide,repo,intermediate,Free,"1, 8","The same guide plus papers, lectures and notebooks."
+08-prompt-and-context-engineering,Anthropic courses (prompt engineering tutorial),https://github.com/anthropics/courses/tree/master,course,beginner,Free,9,An interactive notebook tutorial with exercises for each prompting technique.
+08-prompt-and-context-engineering,Prompt Engineering (Lilian Weng),https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/,article,intermediate,Free,9,A research-grounded survey of prompting methods and why they work.
+08-prompt-and-context-engineering,The Prompt Report,https://trigaten.github.io/Prompt_Survey_Site/,paper,advanced,Free,9,"A systematic taxonomy of dozens of prompting techniques, a reference for vocabulary."
+08-prompt-and-context-engineering,12-Factor Agents,https://github.com/humanlayer/12-factor-agents,article,intermediate,Free,9,"Argues for owning your prompts and your context window explicitly, which is the core of context engineering."
+08-prompt-and-context-engineering,System prompts of AI tools (collection),https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools,repo,advanced,Free,2,"Real-world (unverified, leaked) production prompts to study for structure. Analysis only, no copying."
+08-prompt-and-context-engineering,Instructor,https://python.useinstructor.com/,tool,intermediate,Free,9,Typed structured outputs with Pydantic validation and retries.
+08-prompt-and-context-engineering,Outlines,https://github.com/outlines-dev/outlines,tool,advanced,Free,9,"Constrained generation (regex, JSON schema) that guarantees output format with local models."
+08-prompt-and-context-engineering,Guardrails,https://github.com/guardrails-ai/guardrails,tool,intermediate,Free,9,"Validates and corrects LLM outputs against rules, as a safety layer around prompts."
+08-prompt-and-context-engineering,Promptfoo,https://github.com/promptfoo/promptfoo,tool,intermediate,Free,"1, 7",Regression-tests prompts across models and catches prompt changes that break behaviour.
+08-prompt-and-context-engineering,Prompt Engineering for LLMs (book),https://learning.oreilly.com/library/view/prompt-engineering-for/9781098156145/,article,intermediate,Paid (book),9,Book-length treatment by GitHub Copilot engineers on assembling context for an LLM.
+08-prompt-and-context-engineering,Awesome Prompt Engineering,https://github.com/promptslab/Awesome-Prompt-Engineering,repo,intermediate,Free,8,"Curated papers, tools and courses on prompting."
+08-prompt-and-context-engineering,awesome-chatgpt-prompts,https://github.com/f/awesome-chatgpt-prompts,repo,beginner,Free,8,"Many role-style prompt examples, useful as a critique exercise (what is weak about each?)."
+08-prompt-and-context-engineering,PromptSource,https://github.com/bigscience-workshop/promptsource,tool,advanced,Free,5,"A toolkit for writing prompt templates over datasets, showing how prompts are versioned at scale."
+08-prompt-and-context-engineering,Pezzo,https://github.com/pezzolabs/pezzo,tool,intermediate,Free,1,Open-source prompt management and versioning platform.
+08-prompt-and-context-engineering,Langfuse (prompt management),https://langfuse.com/,tool,intermediate,Free (OSS) / Paid cloud,"7, 9","Stores, versions and A/B-tests prompts linked to traces."
+08-prompt-and-context-engineering,Letta (MemGPT),https://github.com/letta-ai/letta,repo,advanced,Free,7,"Treats the context window like OS memory (paging and summarising), an advanced context-engineering design."
+09-rag,RAG Techniques (Nir Diamant),https://github.com/NirDiamant/RAG_Techniques,repo,intermediate–advanced,Free,9,"Dozens of notebook implementations (chunking, reranking, HyDE, fusion, graph RAG) to compare side by side."
+09-rag,Pinecone Learning Center,https://www.pinecone.io/learn/,article,beginner,Free,9,"Clear explainers on embeddings, vector search and RAG basics."
+09-rag,Vector databases (4-part series),http://thedataquarry.com/posts/vector-db-1/,article,intermediate,Free,9,"A neutral comparison of how vector DBs differ: indexing, storage, hybrid search."
+09-rag,What AI Engineers Should Know About Search,https://softwaredoug.com/blog/2024/06/25/what-ai-engineers-need-to-know-search?utm_source=pocket_shared,article,intermediate,Free,9,"A search expert's reminder that retrieval quality (BM25, relevance) matters more than the LLM."
+09-rag,LlamaIndex,https://www.llamaindex.ai/,tool,intermediate,Free (OSS),"9, 1","A data framework for ingesting, indexing and querying documents. RAG-first design."
+09-rag,LangChain,https://www.langchain.com/,tool,intermediate,Free (OSS),"9, 1","A widely used framework with loaders, splitters and retriever integrations."
+09-rag,LangChain for LLM Application Development (DeepLearning.AI),https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/,course,beginner,Free,8,A short guided course building document Q&A step by step.
+09-rag,Chroma,https://github.com/chroma-core/chroma,tool,beginner,Free,1,"An embedded, pip-installable vector store, perfect for offline course labs."
+09-rag,Qdrant,https://github.com/qdrant/qdrant,tool,intermediate,Free (OSS),1,"A production-grade vector DB with filtering and hybrid search, runnable in Docker."
+09-rag,Weaviate Academy,https://academy.weaviate.io/,course,beginner,Free,8,Free short courses on vector search concepts and hybrid retrieval.
+09-rag,Milvus,https://github.com/milvus-io/milvus,tool,advanced,Free (OSS),1,"A scale-out vector database, to show what changes at millions of vectors."
+09-rag,txtai,https://github.com/neuml/txtai,tool,intermediate,Free,1,An all-in-one embeddings database plus pipelines. Lightweight and fully local.
+09-rag,PrivateGPT,https://github.com/imartinez/privateGPT,repo,intermediate,Free,1,A reference app for fully private document Q&A with local models.
+09-rag,LocalGPT,https://github.com/PromtEngineer/localGPT,repo,intermediate,Free,1,"Another readable local ""chat with your docs"" codebase to study."
+09-rag,AnythingLLM,https://github.com/Mintplex-Labs/anything-llm,tool,beginner,Free,1,"A no-code desktop RAG app, useful for showing non-coders what RAG does."
+09-rag,Delveta (production RAG reference),https://github.com/Eric-LLMs/Delveta,repo,advanced,Free,7,A configurable pipeline (query rewrite → hybrid recall → RRF → rerank → relevance check) plus a golden-set eval. Good for studying real architecture.
+09-rag,LLMs-Lab,https://github.com/Eric-LLMs/LLMs-Lab,repo,intermediate,Free,7,"Standalone modules on RAG optimisation, function calling and agents."
+09-rag,DeepEval,https://github.com/confident-ai/deepeval,tool,intermediate,Free,7,"Pytest-style RAG metrics (faithfulness, answer relevancy) to measure retrieval changes."
+09-rag,Arize Phoenix,https://github.com/Arize-ai/phoenix,tool,intermediate,Free,7,Traces retrieval steps and visualises embeddings to debug bad answers.
+09-rag,awesome-sentence-embedding,https://github.com/Separius/awesome-sentence-embedding,repo,intermediate,Free,6,Background on the embedding models that drive retrieval quality.
+09-rag,Ollama (local embeddings + LLM),https://ollama.com,tool,beginner,Free,official,"Serves both embedding and chat models locally, so the full RAG stack runs offline."
+09-rag,Awesome RAG,https://github.com/frutik/Awesome-RAG,repo,intermediate,Free,9,A further index of RAG papers and tools.
+10-agentic-ai,LLM Powered Autonomous Agents (Lilian Weng),https://lilianweng.github.io/posts/2023-06-23-agent/,article,intermediate,Free,9,"The classic conceptual map of agents: planning, memory, tool use."
+10-agentic-ai,Agents (Chip Huyen),https://huyenchip.com/2025/01/07/agents.html,article,intermediate,Free,9,"A practical treatment of tool selection, planning and agent failure modes."
+10-agentic-ai,12-Factor Agents,https://github.com/humanlayer/12-factor-agents,article,intermediate,Free,9,"Engineering principles for reliable agents (own control flow, small focused agents, human-in-the-loop)."
+10-agentic-ai,The Brief History of AI Agents (talk),https://www.youtube.com/watch?v=f9YleTc8AwE,video,beginner,Free,9,Context on how agent ideas evolved through 2023–2024.
+10-agentic-ai,A Minimal ReAct Agent (LLMs-Lab),https://github.com/Eric-LLMs/LLMs-Lab/tree/main/Agent/Agent_Project,repo,intermediate,Free,7,"A small readable ReAct loop with custom tools, a good model for the course's first agent."
+10-agentic-ai,Anthropic docs (tool use),https://docs.anthropic.com,docs,intermediate,Free,official,Official tool/function-calling schema and agent-building guidance.
+10-agentic-ai,OpenAI platform docs (function calling),https://platform.openai.com/docs,docs,intermediate,Free,official,"The other major tool-calling format, useful for comparison."
+10-agentic-ai,LangGraph,https://langchain-ai.github.io/langgraph/,docs,intermediate,Free (OSS),official,Agents as explicit state graphs with checkpoints and human approval.
+10-agentic-ai,CrewAI docs,https://docs.crewai.com,docs,intermediate,Free (OSS),official,"Role-based multi-agent ""crews"" and flows with a gentle learning curve."
+10-agentic-ai,CrewAI (repo),https://github.com/joaomdmoura/crewAI,repo,intermediate,Free,1,Source and examples for the CrewAI framework.
+10-agentic-ai,AutoGen,https://github.com/microsoft/autogen,repo,advanced,Free,1,Microsoft's conversational multi-agent framework.
+10-agentic-ai,MetaGPT,https://github.com/geekan/MetaGPT,repo,advanced,Free,1,"A multi-agent ""software company"" with assigned roles, showing role decomposition."
+10-agentic-ai,Model Context Protocol,https://modelcontextprotocol.io,docs,intermediate,Free,official,The open standard for plugging tools and data into any agent host.
+10-agentic-ai,MCP specification,https://github.com/modelcontextprotocol/modelcontextprotocol,docs,advanced,Free,7,"The protocol's primitives (tools, resources, prompts) and transports."
+10-agentic-ai,MCP Python SDK,https://github.com/modelcontextprotocol/python-sdk,repo,intermediate,Free,7,The official SDK for writing your own MCP server in Python.
+10-agentic-ai,MCP reference servers,https://github.com/modelcontextprotocol/servers,repo,intermediate,Free,7,"Filesystem, fetch, git and memory servers to read and reuse."
+10-agentic-ai,FastMCP,https://github.com/jlowin/fastmcp,tool,beginner,Free,7,"Decorator-style MCP servers in a few lines, the fastest first MCP lab."
+10-agentic-ai,A2A (Agent2Agent protocol),https://github.com/a2aproject/A2A,docs,advanced,Free,7,An emerging standard for agents discovering and delegating to other agents.
+10-agentic-ai,Claude Code,https://github.com/anthropics/claude-code,tool,intermediate,Paid (usage),7,A production coding agent to study as a reference design.
+10-agentic-ai,OpenAI Codex CLI,https://github.com/openai/codex,tool,intermediate,Free (OSS),7,"An open-source terminal coding agent with sandboxed execution, readable source."
+10-agentic-ai,Mem0,https://github.com/mem0ai/mem0,tool,intermediate,Free (OSS),7,A drop-in long-term memory layer for agents.
+10-agentic-ai,LangMem,https://github.com/langchain-ai/langmem,tool,advanced,Free,7,"Semantic, episodic and procedural memory for LangGraph agents."
+10-agentic-ai,Agent-Memory-Paper-List,https://github.com/Shichun-Liu/Agent-Memory-Paper-List,repo,advanced,Free,7,A research index for agent memory designs.
+10-agentic-ai,GPT Researcher,https://github.com/assafelovic/gpt-researcher,repo,intermediate,Free,1,A complete research agent (plan → search → summarise → report) to dissect.
+10-agentic-ai,AgentOps,https://github.com/AgentOps-AI/agentops,tool,intermediate,Free / Paid,7,Session replay and cost tracking for debugging agent runs.
+11-ai-automation,n8n,https://n8n.io,tool,beginner,Free (self-host) / Paid cloud,official,"A visual workflow automation tool with AI/LLM nodes. It self-hosts in Docker, so it fits offline-first labs."
+11-ai-automation,n8n documentation,https://docs.n8n.io,docs,beginner–intermediate,Free,official,"Nodes, triggers, credentials and AI-agent node docs for building real workflows."
+11-ai-automation,Flowise,https://github.com/FlowiseAI/Flowise,tool,beginner,Free (OSS),1,A drag-and-drop builder for LLM chains and agents. Quick prototypes without code.
+11-ai-automation,Dify,https://github.com/langgenius/dify,tool,beginner–intermediate,Free (OSS) / Paid cloud,1,"A self-hostable LLM app platform with workflows, RAG and an API out of the box."
+11-ai-automation,Automate the Boring Stuff with Python,https://automatetheboringstuff.com/,course,beginner,Free,8,"The scripting fundamentals (files, email, spreadsheets, web) that every automation needs underneath."
+11-ai-automation,5 web scraping projects with Python,https://amankharwal.medium.com/5-web-scraping-projects-with-python-4bcc25ff039,article,intermediate,Free (Medium limits),6,"Ideas for the ""collect data"" step of an automation pipeline."
+11-ai-automation,FastAPI,https://fastapi.tiangolo.com,docs,intermediate,Free,official,The quickest way to expose a webhook or endpoint that a workflow tool can call.
+11-ai-automation,CrewAI docs (Flows),https://docs.crewai.com,docs,intermediate,Free,official,Event-driven flows that mix deterministic steps with agent steps.
+11-ai-automation,MCP reference servers,https://github.com/modelcontextprotocol/servers,repo,intermediate,Free,7,"Ready connectors (filesystem, git, fetch) an automation agent can call."
+11-ai-automation,Open Interpreter,https://github.com/KillianLucas/open-interpreter/,tool,intermediate,Free,1,"Lets an LLM run code on your machine. Powerful for desktop automation, and a good lesson in sandboxing risk."
+11-ai-automation,ShellGPT,https://github.com/TheR1D/shell_gpt,tool,beginner,Free,1,LLM help directly in the terminal for command generation and small scripted chores.
+11-ai-automation,AutoGPT,https://github.com/Significant-Gravitas/AutoGPT,tool,intermediate,Free,1,"An early autonomous-agent project, now with a workflow builder. Useful historical contrast with structured workflows."
+11-ai-automation,Adala,https://github.com/HumanSignal/Adala,tool,advanced,Free,1,"Agents specialised in automating data-labelling tasks, linking to module 12."
+11-ai-automation,LLM App (Pathway),https://github.com/pathwaycom/llm-app,tool,advanced,Free,1,"Real-time data pipelines feeding LLM apps, for ""always-fresh"" automations."
+11-ai-automation,Whisper.cpp,https://github.com/ggerganov/whisper.cpp,tool,intermediate,Free,1,Fast local speech-to-text for voice-note → task automations.
+11-ai-automation,Hermes Agent,https://github.com/NousResearch/hermes-agent,tool,advanced,Free,7,"A self-improving agent reachable from Telegram, Discord and Slack, an example of chat-channel automation."
+11-ai-automation,OpenClaw,https://github.com/openclaw/openclaw,tool,advanced,Free,7,"A local-first personal assistant with multi-channel messaging, a reference for assistant-style automation."
+11-ai-automation,Gradio,https://www.gradio.app/,tool,beginner,Free,9,"Wraps any Python function in a shareable web UI, which is handy for handing an automation to non-coders."
+11-ai-automation,Streamlit,https://streamlit.io/,tool,beginner,Free,9,Quick internal dashboards to trigger and monitor automations.
+11-ai-automation,12-Factor Agents,https://github.com/humanlayer/12-factor-agents,article,intermediate,Free,9,Explains when to use deterministic workflow code instead of a free-roaming agent. Key for reliable automation.
+12-data-annotation-and-rlhf,Illustrating RLHF (Hugging Face blog),https://huggingface.co/blog/rlhf,article,beginner,Free,5,"The clearest visual walkthrough of the three RLHF stages: SFT, reward model, PPO."
+12-data-annotation-and-rlhf,Reinforcement Learning from Human Feedback (Nathan Lambert),https://rlhfbook.com/,article,intermediate,Free (online),5,"A full, current book on preference data, reward models, PPO/DPO and evaluation."
+12-data-annotation-and-rlhf,RLHF in Notebooks,https://github.com/ash80/RLHF_in_notebooks,repo,intermediate,Free,5,"Step-by-step Colab notebooks (GPT-2, reward model, PPO) with video, small enough to run."
+12-data-annotation-and-rlhf,Training language models to follow instructions with human feedback (InstructGPT),https://arxiv.org/abs/2203.02155,paper,intermediate,Free,5,The paper that made RLHF the standard recipe for chat assistants.
+12-data-annotation-and-rlhf,Deep reinforcement learning from human preferences,https://arxiv.org/abs/1706.03741,paper,advanced,Free,5,"The original ""learn a reward from pairwise human comparisons"" idea."
+12-data-annotation-and-rlhf,Learning to summarize from human feedback,https://arxiv.org/abs/2009.01325,paper,advanced,Free,5,Shows that preference-trained models beat much larger supervised ones on a clear task.
+12-data-annotation-and-rlhf,Constitutional AI,https://arxiv.org/pdf/2212.08073.pdf,paper,advanced,Free,5,Replaces much human labelling with AI feedback guided by written principles (RLAIF).
+12-data-annotation-and-rlhf,Reward Hacking in RL (Lilian Weng),https://lilianweng.github.io/posts/2024-11-28-reward-hacking/,article,advanced,Free,5,Why reward models get gamed. Essential context for annotators and evaluators.
+12-data-annotation-and-rlhf,RLHF: Progress and Challenges (John Schulman talk),https://www.youtube.com/watch?v=hhiLw5Q_UFg,video,intermediate,Free,5,A first-hand account of RLHF's motivations and open problems.
+12-data-annotation-and-rlhf,Anthropic HH-RLHF dataset,https://github.com/anthropics/hh-rlhf,repo,intermediate,Free,5,A real chosen/rejected preference dataset. Inspect it to see what preference labels look like.
+12-data-annotation-and-rlhf,Stanford Human Preferences (SHP),https://huggingface.co/datasets/stanfordnlp/SHP,repo,intermediate,Free,5,"Naturally occurring human preferences across 18 domains, for reward-model exercises."
+12-data-annotation-and-rlhf,CVAT,https://github.com/opencv/cvat,tool,beginner,Free (OSS) / Paid cloud,4,"The tool source 4 recommends for image and video labelling (boxes, polygons, keypoints, tracking)."
+12-data-annotation-and-rlhf,Label Studio,https://github.com/heartexlabs/label-studio,tool,beginner,Free (OSS) / Paid enterprise,4,"One configurable tool for text, image, audio and LLM-response rating. Our default lab tool."
+12-data-annotation-and-rlhf,doccano,https://github.com/chakki-works/doccano,tool,beginner,Free,4,"A simple text annotation tool for NER, classification and seq2seq."
+12-data-annotation-and-rlhf,labelme,https://github.com/wkentaro/labelme,tool,beginner,Free,4,A lightweight desktop polygon and segmentation labeller that runs fully offline.
+12-data-annotation-and-rlhf,Rubrix (now Argilla),https://github.com/recognai/rubrix,tool,intermediate,Free,4,Text and LLM-feedback curation with a Python SDK.
+12-data-annotation-and-rlhf,Potato,https://github.com/davidjurgens/potato,tool,intermediate,Free,5,"An annotation platform for human evaluation and preference collection, including agent-trace evaluation."
+12-data-annotation-and-rlhf,Prodigy,https://prodi.gy/,tool,intermediate,Paid,4,"A scriptable active-learning annotator from the spaCy team, showing model-in-the-loop labelling."
+12-data-annotation-and-rlhf,AI Trainer Academy,https://aitrainer.work/academy,course,beginner,Free,3,A free RLHF-fundamentals course aimed at would-be raters. Note that the site sells referrals.
+12-data-annotation-and-rlhf,What are rubrics in AI training?,https://aitrainer.work/guides/what-are-rubrics-ai-training,article,beginner,Free,3,Explains the rubric-based grading used in real rating jobs.
+12-data-annotation-and-rlhf,AI training task examples & walkthrough,https://aitrainer.work/guides/ai-training-task-examples-and-walkthrough,article,beginner,Free,3,"Concrete examples of rating, ranking and rewrite tasks."
+12-data-annotation-and-rlhf,Your AI Product Needs Evals (Hamel Husain),https://hamel.dev/blog/posts/evals/,article,intermediate,Free,9,Shows that careful human labelling of your own outputs is the root of good evals.
+12-data-annotation-and-rlhf,awesome-dataset-tools,https://github.com/jsbroks/awesome-dataset-tools,repo,intermediate,Free,4,A wider list of dataset-management and labelling utilities.
+13-fine-tuning,Hugging Face Learn,https://huggingface.co/learn,course,intermediate,Free,official,"Course chapters on fine-tuning with `Trainer`, datasets and evaluation."
+13-fine-tuning,Fine-tuning a pretrained model (HF docs),https://huggingface.co/docs/transformers/training,docs,intermediate,Free,8,The canonical minimal fine-tuning recipe. Works with tiny models on CPU.
+13-fine-tuning,PEFT,https://github.com/huggingface/peft,tool,intermediate,Free,7,"The standard LoRA/QLoRA library, so you train a few MB of adapters instead of the whole model."
+13-fine-tuning,TRL,https://github.com/huggingface/trl,tool,intermediate,Free,7,"SFT, DPO, GRPO and PPO trainers behind one API. Covers both instruction tuning and preference tuning."
+13-fine-tuning,Unsloth,https://github.com/unslothai/unsloth,tool,intermediate,Free,"1, 7","Faster, lower-memory LoRA, so small-model fine-tunes fit a free Colab/Kaggle GPU."
+13-fine-tuning,LLaMA-Factory,https://github.com/hiyouga/LLaMA-Factory,tool,intermediate,Free,7,"Config- and web-UI-driven fine-tuning across many open models, with little code."
+13-fine-tuning,Axolotl,https://github.com/axolotl-ai-cloud/axolotl,tool,advanced,Free,9,"YAML-driven fine-tuning popular with practitioners, built for reproducible runs."
+13-fine-tuning,LLM Course (mlabonne),https://github.com/mlabonne/llm-course,course,intermediate,Free,1,"Notebooks on SFT, DPO, quantisation and model merging with clear explanations."
+13-fine-tuning,Mastering LLMs (Parlance Labs),https://parlance-labs.com/education/,video,intermediate,Free,9,"Talks on when fine-tuning is (and isn't) worth it, plus evals and tooling."
+13-fine-tuning,RLHF in Notebooks,https://github.com/ash80/RLHF_in_notebooks,repo,intermediate,Free,5,"A hands-on reward-model and PPO walkthrough on GPT-2, small enough for a laptop or Colab."
+13-fine-tuning,minRLHF,https://github.com/thomfoster/minRLHF,repo,advanced,Free,5,"A minimal educational PPO-for-LMs implementation, readable in an afternoon."
+13-fine-tuning,Fine-Tuning Language Models from Human Preferences,https://arxiv.org/abs/1909.08593,paper,advanced,Free,5,An early paper applying preference fine-tuning to GPT-2. Grounds the TRL examples.
+13-fine-tuning,LIMA dataset,https://huggingface.co/datasets/GAIR/lima,repo,intermediate,Free,5,"A tiny curated SFT set (about 1k examples), evidence that data quality beats quantity."
+13-fine-tuning,The Flan Collection,https://github.com/google-research/FLAN/tree/main/flan/v2,repo,advanced,Free,5,"A large instruction-tuning mixture, to show how instruction datasets are assembled."
+13-fine-tuning,OpenRLHF,https://github.com/OpenRLHF/OpenRLHF,tool,advanced,Free,"5, 7","A scalable distributed RLHF framework (Ray + vLLM + DeepSpeed), what you reach for at scale."
+13-fine-tuning,veRL,https://github.com/verl-project/verl,tool,advanced,Free,7,A production RL post-training framework for reasoning and tool-calling agents.
+13-fine-tuning,ART (Agent Reinforcement Trainer),https://github.com/OpenPipe/ART,tool,advanced,Free,7,Adds GRPO training loops to an existing agent app. Agent-specific RL fine-tuning.
+13-fine-tuning,DeepSpeed,https://github.com/microsoft/DeepSpeed,tool,advanced,Free,"1, 7",Memory and parallelism optimisations for training models that do not fit on one GPU.
+13-fine-tuning,Ludwig,https://github.com/ludwig-ai/ludwig,tool,intermediate,Free,1,A declarative low-code framework for fine-tuning LLMs and other models.
+13-fine-tuning,llama.cpp (GGUF quantisation),https://github.com/ggerganov/llama.cpp,tool,intermediate,Free,1,Convert and quantise your fine-tuned model to run locally on CPU.
+13-fine-tuning,Ollama (import custom models),https://ollama.com,tool,beginner,Free,official,Serve your own fine-tuned GGUF model behind a local API in one step.
+13-fine-tuning,OpenAI platform docs (fine-tuning guide),https://platform.openai.com/docs,docs,beginner,Paid API,official,"The hosted fine-tuning path, for comparison with self-hosted training."
+13-fine-tuning,LLM Engineer's Handbook,https://www.amazon.com/LLM-Engineers-Handbook-engineering-production/dp/1836200072,article,advanced,Paid (book),9,"End-to-end book covering data pipelines, fine-tuning and deploying an LLM system."
+14-deployment-and-llmops,FastAPI,https://fastapi.tiangolo.com,docs,beginner,Free,official,Turns your model or agent into a typed HTTP API with automatic docs. Our default serving layer.
+14-deployment-and-llmops,Docker documentation,https://docs.docker.com/,docs,intermediate,Free,8,Package the API plus model so it runs the same everywhere.
+14-deployment-and-llmops,vLLM documentation,https://docs.vllm.ai,docs,advanced,Free,official,"The standard high-throughput open-model server (PagedAttention, batching, OpenAI-compatible API)."
+14-deployment-and-llmops,vLLM (repo),https://github.com/vllm-project/vllm,tool,advanced,Free,"1, 7, 9",Source and examples for the serving engine.
+14-deployment-and-llmops,SGLang,https://github.com/sgl-project/sglang,tool,advanced,Free,7,"A fast structured-generation runtime and alternative to vLLM, strong on prefix reuse."
+14-deployment-and-llmops,text-generation-inference (HF),https://github.com/huggingface/text-generation-inference,tool,advanced,Free,9,Hugging Face's production text-generation server.
+14-deployment-and-llmops,Ollama,https://ollama.com,tool,beginner,Free,official,"The simplest local or edge deployment, good for small internal tools."
+14-deployment-and-llmops,LiteLLM,https://www.litellm.ai/,tool,intermediate,Free (OSS) / Paid,"9, 1, 7","A gateway giving routing, fallbacks, budgets and spend tracking across providers."
+14-deployment-and-llmops,Langfuse,https://langfuse.com,tool,intermediate,Free (OSS) / Paid cloud,"official, 7, 9","Open-source tracing, prompt versions, evals and cost dashboards. Self-hostable."
+14-deployment-and-llmops,LangSmith,https://www.langchain.com/langsmith,tool,intermediate,Freemium,"9, 7","Hosted tracing and dataset-based evaluation, tightly integrated with LangChain/LangGraph."
+14-deployment-and-llmops,Arize Phoenix,https://github.com/Arize-ai/phoenix,tool,intermediate,Free,7,"Open-source tracing plus RAG and agent eval, runs locally."
+14-deployment-and-llmops,W&B Weave,https://wandb.ai/site/weave/,tool,intermediate,Freemium,"9, 7",Lightweight instrumentation and eval harnesses with dataset versioning.
+14-deployment-and-llmops,Inspect (UK AISI),https://inspect.ai-safety-institute.org.uk/,tool,advanced,Free,9,A rigorous open-source eval framework used for model and agent safety testing.
+14-deployment-and-llmops,Hugging Face Evaluate,https://huggingface.co/docs/evaluate/en/index,tool,intermediate,Free,9,"Standard metrics (accuracy, BLEU, ROUGE) with one consistent API."
+14-deployment-and-llmops,DeepEval,https://github.com/confident-ai/deepeval,tool,intermediate,Free,7,Pytest-style LLM tests that fit straight into CI.
+14-deployment-and-llmops,Promptfoo,https://github.com/promptfoo/promptfoo,tool,intermediate,Free,"7, 1",Declarative regression tests and red-teaming for prompts and apps.
+14-deployment-and-llmops,Your AI Product Needs Evals (Hamel Husain),https://hamel.dev/blog/posts/evals/,article,intermediate,Free,9,"Why evals drive iteration speed, and how to start them."
+14-deployment-and-llmops,AI Evals FAQ (Husain & Shankar),https://hamel.dev/blog/posts/evals-faq/,article,intermediate,Free,9,"Practical answers on error analysis, LLM-as-judge and eval set size."
+14-deployment-and-llmops,Evaluating LLM-Evaluators (Eugene Yan),https://eugeneyan.com/writing/llm-evaluators/?utm_source=pocket_saves,article,advanced,Free,9,Evidence on when LLM-as-judge is trustworthy and how to calibrate it.
+14-deployment-and-llmops,NeMo Guardrails,https://github.com/NVIDIA/NeMo-Guardrails,tool,advanced,Free,7,"Programmable input, output and retrieval rails around a deployed bot."
+14-deployment-and-llmops,LLM Guard,https://github.com/protectai/llm-guard,tool,intermediate,Free,7,Detects prompt injection and sanitises PII and secrets in traffic.
+14-deployment-and-llmops,garak,https://github.com/NVIDIA/garak,tool,advanced,Free,7,Automated LLM vulnerability scanning (red-team probes).
+14-deployment-and-llmops,Microsoft Presidio,https://github.com/microsoft/presidio,tool,intermediate,Free,7,PII detection and anonymisation before logging or sending data to a provider.
+14-deployment-and-llmops,LLMOps short course (DeepLearning.AI),https://www.deeplearning.ai/short-courses/llmops/,course,intermediate,Free,8,"A guided intro to pipelines, versioning and deployment for LLM apps."
+14-deployment-and-llmops,awesome-production-machine-learning,https://github.com/EthicalML/awesome-production-machine-learning,repo,advanced,Free,6,"A large map of MLOps tooling: serving, monitoring, feature stores, orchestration."
+16-careers,The Rise of the AI Engineer,https://www.latent.space/p/ai-engineer,article,beginner,Free,9,Describes what the AI-engineer job actually is and how it differs from ML engineer.
+16-careers,How to Interview and Hire ML/AI Engineers (Eugene Yan),https://eugeneyan.com/writing/how-to-interview/?utm_source=pocket_saves,article,intermediate,Free,9,"The hiring side's view, so candidates know what is being assessed."
+16-careers,Latent Space podcast,https://www.latent.space/podcast,video,intermediate,Free,9,Keeps learners current on tools and hiring trends in AI engineering.
+16-careers,Latent Space 2025 AI Engineering Reading List,https://www.latent.space/p/2025-papers,article,intermediate,Free,9,The shared reading canon interviewers tend to assume.
+16-careers,AI Engineer World's Fair talks,https://www.ai.engineer/worldsfair,video,intermediate,Free,9,Conference talks from practitioners at companies hiring AI engineers.
+16-careers,aitrainer.work job board,https://aitrainer.work,job-board,beginner,Free,3,Aggregated AI-trainer / RLHF freelance listings by domain and pay. A side-income path while studying.
+16-careers,AI training jobs for developers & coders,https://aitrainer.work/guides/best-ai-training-platforms-developers-coders,article,beginner,Free,3,"Which rating platforms want coders, and what the coding-evaluation tasks look like."
+16-careers,Is AI training legit or a scam?,https://aitrainer.work/guides/is-ai-training-legit-scam-guide,article,beginner,Free,3,Red flags to check before giving any platform your ID or time.
+16-careers,GitHub Student Developer Pack,https://education.github.com/pack,tool,beginner,Free (students),8,Free tools and credits for building a portfolio.
+16-careers,Google Summer of Code,https://summerofcode.withgoogle.com/,job-board,intermediate,Free (paid stipend),8,"Paid open-source mentorship, a strong signal on a résumé."
+16-careers,Outreachy,https://www.outreachy.org/,job-board,intermediate,Free (paid stipend),8,Paid open-source internships for under-represented groups.
+16-careers,Google STEP internship,https://buildyourfuture.withgoogle.com/programs/step/,job-board,beginner,Free,8,An internship for early-year CS students.
+16-careers,Internshala,https://internshala.com,job-board,beginner,Free,8,"A large Indian internship portal, including many AI/ML and GenAI roles."
+16-careers,LinkedIn,https://linkedin.com,job-board,beginner,Free,8,The main job and networking platform. Contacting hiring managers directly works.
+16-careers,Devpost hackathons,https://devpost.com/hackathons,job-board,beginner,Free,8,"Online hackathons, a fast way to ship portfolio AI projects under a deadline."
+16-careers,Major League Hacking (MLH),https://mlh.io/,job-board,beginner,Free,8,A student hackathon league and fellowship programme.
+16-careers,Kaggle Competitions,https://www.kaggle.com/competitions,tool,intermediate,Free,8,"A public, ranked record of ML skill that recruiters recognise."
+16-careers,LeetCode,https://www.leetcode.com,tool,intermediate,Freemium,8,"Coding-interview practice, still used in many AI-engineer screens."
+16-careers,ML interview questions (InterviewBit),https://www.interviewbit.com/machine-learning-interview-questions/,article,intermediate,Free,8,A quick checklist of classic ML theory questions.
+16-careers,300+ industry real-world ML projects,https://github.com/ashishpatel26/Real-time-ML-Project,repo,intermediate,Free,6,Industry-flavoured project ideas to make a portfolio stand out.
+16-careers,IBM AI Engineering Professional Certificate,https://www.coursera.org/professional-certificates/ai-engineer,course,intermediate,Paid (audit options),8,A recognisable certificate for learners who need formal credentials.
+16-careers,AWS Certified Machine Learning – Specialty,https://aws.amazon.com/certification/certified-machine-learning-specialty/,course,advanced,Paid,8,A cloud ML credential that helps for enterprise-facing roles.
+16-careers,NVIDIA Deep Learning Institute,https://developer.nvidia.com/dli,course,intermediate,Free & Paid,8,GPU and DL certificates valued by hardware-adjacent employers.

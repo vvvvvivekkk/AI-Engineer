@@ -1,0 +1,9 @@
+flowchart LR
+    subgraph FULL[Full fine-tuning]
+      A1[All weights<br/>trainable] --> A2[Gradients + optimizer<br/>for every weight]
+      A2 --> A3[New full model<br/>GBs]
+    end
+    subgraph PEFT[PEFT / LoRA]
+      B1[Base weights<br/>frozen] --> B2[Small adapter<br/>trainable]
+      B2 --> B3[Adapter file<br/>MBs]
+    end

@@ -1,0 +1,10 @@
+flowchart LR
+    DEV[Developer pushes<br/>or opens PR] --> CO[Checkout code]
+    CO --> LINT[Lint<br/>ruff]
+    LINT --> TEST[Unit tests<br/>pytest]
+    TEST --> EV[Small eval set]
+    EV -->|main branch only| BUILD[docker build]
+    BUILD --> PUSH[Push image<br/>to registry]
+    PUSH --> DEP[Deploy]
+    TEST -.fail.-> STOP[Block merge]
+    EV -.score too low.-> STOP

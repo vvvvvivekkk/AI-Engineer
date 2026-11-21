@@ -1,0 +1,10 @@
+flowchart TD
+    S["'unbelievably fast'"] --> T["Tokenizer: tiktoken cl100k_base<br/>(learned vocab of sub-words)"]
+    T --> P1["un"]
+    T --> P2["belie"]
+    T --> P3["vably"]
+    T --> P4["' fast'"]
+    P1 --> I["IDs: 359, 32898, 89234, 5043"]
+    P2 --> I
+    P3 --> I
+    P4 --> I

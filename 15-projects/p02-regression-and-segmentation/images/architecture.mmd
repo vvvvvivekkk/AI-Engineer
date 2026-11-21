@@ -1,0 +1,12 @@
+flowchart TD
+    M[make_data.py] --> D1[data/diabetes.csv]
+    M --> D2[data/customers.csv<br/>synthetic, 4 hidden groups]
+    D1 --> GD[hand-written<br/>gradient descent]
+    D1 --> SK[Linear / Ridge /<br/>Gradient Boosting]
+    GD --> R[MAE, RMSE, R2<br/>residual plot]
+    SK --> R
+    D2 --> S[scale features]
+    S --> K[K-means for k = 2..8<br/>elbow + silhouette]
+    K --> P[profiles + names<br/>PCA 2-D plot]
+    R --> O[reports/]
+    P --> O

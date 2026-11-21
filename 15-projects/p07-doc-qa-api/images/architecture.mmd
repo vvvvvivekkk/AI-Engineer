@@ -1,0 +1,13 @@
+flowchart LR
+  M[make_pdfs.py<br/>10 policy PDFs] --> P[(data/pdfs)]
+  P --> I[ingest.py<br/>pypdf -> page-aware chunks]
+  I --> B[BM25<br/>keyword index]
+  I --> V[MiniLM embeddings<br/>FAISS index]
+  Q[POST /ask] --> B
+  Q --> V
+  B --> F[RRF fusion]
+  V --> F
+  F --> C{confidence<br/>>= threshold?}
+  C -- no --> NF[Not found in the documents]
+  C -- yes --> A[answer + citations<br/>doc + page]
+  A --> L[(logs/requests.jsonl)]

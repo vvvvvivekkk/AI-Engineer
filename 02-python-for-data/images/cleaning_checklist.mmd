@@ -1,0 +1,7 @@
+flowchart TD
+    A[Messy file] --> B[1. Remove duplicate rows]
+    B --> C[2. Clean text<br/>strip, title case, merge spellings]
+    C --> D[3. Fix types<br/>text prices to numbers, dates]
+    D --> E[4. Missing values<br/>drop, fill or keep]
+    E --> F[5. Impossible values<br/>negative quantity]
+    F --> G[Clean table + notes on every rule]

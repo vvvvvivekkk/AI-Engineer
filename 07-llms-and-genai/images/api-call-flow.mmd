@@ -1,0 +1,7 @@
+flowchart LR
+    C["Your Python code<br/>messages + settings"] --> SDK["Provider SDK<br/>openai / anthropic / google-genai"]
+    K[".env / env var<br/>API key"] -.read by.-> SDK
+    SDK -- "HTTPS request (JSON)" --> API["Provider servers<br/>run the LLM"]
+    API -- "response: text + usage" --> SDK
+    API -. "or a stream of events" .-> SDK
+    SDK --> R["Python object<br/>.output_text / .content / .text"]

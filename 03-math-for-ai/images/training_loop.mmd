@@ -1,0 +1,7 @@
+flowchart LR
+    A[Weights<br/>start random] --> B[Predict<br/>X @ W + b]
+    B --> C[Loss<br/>how wrong?]
+    C --> D[Gradient<br/>slope for each weight]
+    D --> E[Update<br/>w = w - lr x slope]
+    E -->|repeat| B
+    C -->|loss small enough| F[Trained model]

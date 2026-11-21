@@ -1,0 +1,8 @@
+flowchart LR
+  T1[IMAP Email Trigger] --> M[Map email fields]
+  T0[Manual Trigger + Sample email] --> M
+  M --> P[HTTP POST /triage<br/>our FastAPI]
+  P --> IF{route == human_review?}
+  IF -- true --> SL[Slack alert to reviewers]
+  IF -- false --> NO[Auto-filed]
+  SC[Schedule 18:00] --> G[HTTP GET /report/daily] --> EM[Email report to manager]

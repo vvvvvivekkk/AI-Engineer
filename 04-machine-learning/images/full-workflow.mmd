@@ -1,0 +1,9 @@
+flowchart TD
+    A[Load dataset] --> B[Explore: shape, balance, missing]
+    B --> C[train_test_split, lock test set away]
+    C --> D[Baseline model]
+    D --> E[Pipeline: scaler + model]
+    E --> F[Cross-validation on train]
+    F --> G[GridSearchCV picks settings]
+    G --> H[Final check on test set once]
+    H --> I[joblib.dump to file]

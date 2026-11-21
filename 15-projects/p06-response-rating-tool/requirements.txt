@@ -1,0 +1,14 @@
+# P6 response-rating tool - every package pinned to an exact version.
+streamlit==1.67.0
+pandas==3.0.5
+numpy==2.5.3
+scikit-learn==1.9.1
+python-dotenv==1.2.3
+pytest==9.1.1
+# local LLM provider (only needed for the optional LLM judge / LLM candidates)
+torch==2.15.0
+transformers==5.23.0
+# optional providers
+httpx==0.28.1
+anthropic==2.12.0
+openai==3.57.0

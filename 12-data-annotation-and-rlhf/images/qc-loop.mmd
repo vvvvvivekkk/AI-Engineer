@@ -1,0 +1,12 @@
+flowchart TD
+    A[Annotator labels a task] --> B{Is it a<br/>gold question?}
+    B -- yes --> C[Compare with known answer]
+    C --> D[Update annotator accuracy]
+    B -- no --> E{Overlap item?<br/>labelled by 2+ people}
+    E -- yes --> F[Compute agreement<br/>e.g. Cohen's kappa]
+    F --> G{Disagree?}
+    G -- yes --> H[Adjudicator decides]
+    G -- no --> I[Accept label]
+    E -- no --> J[Random spot check]
+    J --> I
+    H --> I

@@ -1,0 +1,7 @@
+flowchart LR
+    S([START]) --> L[llm node]
+    L --> C{tools_condition}
+    C -->|has tool calls| T[tools node]
+    T --> L
+    C -->|no tool calls| E([END])
+    L -.-> K[(checkpointer saves state)]

@@ -1,0 +1,4 @@
+# Files produced by running the notebooks/scripts (adapters, merged models). Regenerate any time.
+outputs/
+notebooks/outputs/
+notebooks/qlora-chai*/

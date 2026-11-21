@@ -1,0 +1,10 @@
+flowchart TD
+    A[New task] --> B{Need a GPU?}
+    B -- Yes --> C[Google Colab<br/>pick T4 GPU if needed]
+    B -- No --> D{Building an app,<br/>many files or Git?}
+    D -- Yes --> E[VS Code<br/>.py files + terminal]
+    D -- No --> F{Exploring data or<br/>teaching step by step?}
+    F -- Yes --> G{Can install<br/>software locally?}
+    G -- Yes --> H[Jupyter / VS Code<br/>notebook]
+    G -- No --> C
+    F -- No --> E

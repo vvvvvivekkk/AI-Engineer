@@ -1,0 +1,7 @@
+flowchart LR
+    I["Install Ollama<br/>ollama.com"] --> P["ollama pull llama3.2:1b"]
+    P --> S(("Local server<br/>localhost:11434"))
+    S --> T["Terminal<br/>ollama run"]
+    S --> R["REST API<br/>/api/chat, /api/generate"]
+    S --> Py["Python client<br/>import ollama"]
+    S --> O["OpenAI-compatible<br/>/v1 endpoint"]

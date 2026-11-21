@@ -1,0 +1,11 @@
+flowchart LR
+  IN[inbox/ .eml .json<br/>or n8n IMAP trigger] --> X[extract.py<br/>rules or LLM + Pydantic]
+  X --> K[workflow.find_article<br/>BM25 over 15 help articles]
+  K --> D[draft_reply]
+  D --> R{route}
+  R -- urgent / angry / money / legal --> H[(queue.db<br/>pending_review)]
+  R -- routine --> A[(queue.db<br/>auto_filed)]
+  R -- spam --> S[(discarded)]
+  H --> HU[human approves / rejects<br/>POST /queue/id/approve]
+  H --> REP[report.py<br/>daily summary]
+  A --> REP

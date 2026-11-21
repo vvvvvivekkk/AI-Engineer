@@ -1,0 +1,7 @@
+flowchart TD
+    T[TRACE: answer-question<br/>user u42, 1.9 s, $0.0011]
+    T --> S1[SPAN guardrails<br/>5 ms]
+    T --> S2[RETRIEVER search docs<br/>120 ms, 4 chunks]
+    T --> S3[GENERATION llm-call<br/>1.7 s, 410 in / 95 out tokens]
+    T --> S4[SPAN output check<br/>3 ms]
+    T --> SC[SCORE user_feedback = 1]

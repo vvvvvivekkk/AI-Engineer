@@ -1,0 +1,8 @@
+flowchart LR
+    M1[main] --> M2[main]
+    M2 -- git switch -c feature --> F1[feature:<br/>commit 1]
+    F1 --> F2[feature:<br/>commit 2]
+    F2 -- git push --> PR[Pull request<br/>on GitHub]
+    PR -- review + approve --> MG[Merge into main]
+    M2 --> MG
+    MG -- git pull --> M3[Your local main<br/>updated]

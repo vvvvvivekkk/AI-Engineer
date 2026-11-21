@@ -1,0 +1,6 @@
+flowchart LR
+    W([Webhook POST]) --> L[Classify with LLM]
+    L --> P[Parse category]
+    P --> I{Is urgent?}
+    I -->|true| S[Alert Slack]
+    I -->|false| E[Email support team]

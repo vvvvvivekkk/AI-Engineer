@@ -1,0 +1,8 @@
+flowchart LR
+    A["Tokens so far"] --> B["Transformer<br/>forward pass"]
+    B --> C["Probabilities for<br/>every vocab token"]
+    C --> D["Sampling<br/>(greedy / temperature / top-p)"]
+    D --> E["Append chosen token"]
+    E --> F{"End token or<br/>max_tokens?"}
+    F -- no --> A
+    F -- yes --> G["Finished answer"]

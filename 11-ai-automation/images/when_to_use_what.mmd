@@ -1,0 +1,8 @@
+flowchart TD
+    A{Is there an API?} -->|yes| B[Script or workflow calling the API]
+    A -->|no| C{Steps known in advance?}
+    C -->|yes| D{Stable website?}
+    D -->|yes| E[Playwright script]
+    D -->|no| F[Browser agent with limits]
+    C -->|no| G[Agent inside a workflow + human approval]
+    B --> H[Add an LLM step only for fuzzy parts]

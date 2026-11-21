@@ -1,0 +1,38 @@
+# docker-compose.yml - start several containers together with ONE command.
+#   docker compose up --build        (start everything, rebuild images if code changed)
+#   docker compose down              (stop and remove the containers)
+# Here: the FastAPI "api" service + a Streamlit "ui" service that talks to it.
+
+services:
+  api:                                  # service name; other services can reach it at http://api:8000
+    build: .                            # build the image from the Dockerfile in this folder
+    image: llm-chat-api:latest
+    ports:
+      - "8000:8000"                     # "HOST:CONTAINER" - your laptop's port 8000 -> container port 8000
+    env_file:
+      - .env                            # secrets and settings come from .env (never baked into the image)
+    environment:
+      APP_ENV: docker                   # a non-secret setting written inline
+    restart: unless-stopped             # restart automatically if it crashes
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+
+  ui:
+    image: python:3.13-slim             # no custom Dockerfile: use a plain Python image ...
+    working_dir: /ui
+    volumes:
+      - ./ui:/ui                        # ... and mount our ui/ folder into it
+      - ./requirements-ui.txt:/ui/requirements-ui.txt
+    command: >
+      sh -c "pip install --no-cache-dir -r requirements-ui.txt &&
+             streamlit run streamlit_app.py --server.port 8501 --server.address 0.0.0.0"
+    environment:
+      API_URL: http://api:8000          # inside the compose network, the API's hostname is its service name
+    ports:
+      - "8501:8501"
+    depends_on:
+      api:
+        condition: service_healthy      # wait until the API passes its health check

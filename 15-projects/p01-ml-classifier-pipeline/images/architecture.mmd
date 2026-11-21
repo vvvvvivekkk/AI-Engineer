@@ -1,0 +1,8 @@
+flowchart LR
+    A[make_data.py<br/>bundled sklearn data] --> B[data/*.csv]
+    B --> C[train / test split<br/>80% / 20%]
+    C --> D[4 Pipelines<br/>scaler + model]
+    D --> E[5-fold<br/>cross-validation]
+    E --> F[GridSearchCV<br/>tune the winner]
+    F --> G[score once on<br/>hidden test set]
+    G --> H[reports/<br/>markdown + confusion PNG]

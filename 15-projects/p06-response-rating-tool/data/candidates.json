@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "p001",
+    "category": "maths",
+    "prompt": "A shop sells pencils at 5 rupees each. Riya buys 6 pencils and pays with a 200 rupee note. How much change does she get?",
+    "answer_a": "Let's work it out step by step.\nCost of pencils = 6 x 5 = 30 rupees.\nChange = 200 - 30 = 165 rupees.\nFinal answer: 165",
+    "answer_b": "Let's work it out step by step.\nCost of pencils = 6 x 5 = 30 rupees.\nChange = 200 - 30 = 170 rupees.\nFinal answer: 170",
+    "reference": "170",
+    "gold": "B",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p002",
+    "category": "coding",
+    "prompt": "Write a Python function that counts how many words are in a sentence. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef word_count(text):\n    return len(text.split(' '))\n```\nThis function counts how many words are in a sentence and returns the result.",
+    "answer_b": "```python\ndef word_count(text):\n    return len(text.split())\n```\nThis function counts how many words are in a sentence and returns the result.",
+    "reference": "{\"function\": \"word_count\", \"args\": [[\"the cat sat\"], [\"  hello   world \"]], \"expected\": [3, 2]}",
+    "gold": "B",
+    "flaw": "buggy_code"
+  },
+  {
+    "id": "p003",
+    "category": "policy",
+    "prompt": "Can I share my work laptop password with a colleague who is covering my tasks while I'm on leave?",
+    "answer_a": "No. Passwords must never be shared, even with colleagues. Ask IT to give your colleague their own access to the files they need, and tell your manager who is covering which tasks.",
+    "answer_b": "Yes, that's fine for a short time. Send it to them on chat and change it when you are back.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p004",
+    "category": "maths",
+    "prompt": "A bus travels at 62 km per hour for 6 hours. How far does it travel?",
+    "answer_a": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 62 x 6 = 372 km.\nFinal answer: 372",
+    "answer_b": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 62 x 6 = 377.\nFinal answer: 377",
+    "reference": "372",
+    "gold": "A",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p005",
+    "category": "coding",
+    "prompt": "Write a Python function that counts how many words are in a sentence. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef word_count(text):\n    return len(text.split())\n```\nThis function counts how many words are in a sentence and returns the result.",
+    "answer_b": "```python\ndef word_count(*args):\n    # run whatever the user types - flexible!\n    return eval(input('Enter code: '))\n```\nThis lets the user type any Python they like, which is very flexible.",
+    "reference": "{\"function\": \"word_count\", \"args\": [[\"the cat sat\"], [\"  hello   world \"]], \"expected\": [3, 2]}",
+    "gold": "A",
+    "flaw": "unsafe_eval"
+  },
+  {
+    "id": "p006",
+    "category": "policy",
+    "prompt": "I clicked a link in a suspicious email. What now?",
+    "answer_a": "Don't worry, just delete the email and carry on. Telling IT will only create paperwork.",
+    "answer_b": "Disconnect from the network if you entered any details, then report it to the IT security team straight away. Change your password from a different, safe device. Reporting quickly limits the damage.",
+    "reference": "",
+    "gold": "B",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p007",
+    "category": "maths",
+    "prompt": "A bus travels at 74 km per hour for 5 hours. How far does it travel?",
+    "answer_a": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 74 x 5 = 370 km.\nFinal answer: 370",
+    "answer_b": "Let's work it out step by step.\nDistance = speed x time.\nThe rest is easy from here.",
+    "reference": "370",
+    "gold": "A",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p008",
+    "category": "coding",
+    "prompt": "Write a Python function that returns the sum of the even numbers in a list. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef sum_even(nums):\n    return sum(n for n in nums if n % 2 == 0)\n```\nThis function returns the sum of the even numbers in a list and returns the result.",
+    "answer_b": "You would write a function that returns the sum of the even numbers in a list. Loop over the input and build the answer.",
+    "reference": "{\"function\": \"sum_even\", \"args\": [[[1, 2, 3, 4]], [[5, 7]]], \"expected\": [6, 0]}",
+    "gold": "A",
+    "flaw": "no_code"
+  },
+  {
+    "id": "p009",
+    "category": "policy",
+    "prompt": "How many days of annual leave can I carry over to next year?",
+    "answer_a": "Check the leave policy for the exact number; a common rule is up to 5 unused days, used by the end of March. Your HR portal shows your balance, and HR can confirm.",
+    "answer_b": "Carry over as many as you like, there is no limit anywhere.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p010",
+    "category": "maths",
+    "prompt": "84 sweets are shared equally among 7 children. How many sweets does each child get?",
+    "answer_a": "Let's work it out step by step.\nEach share = total / number of children.\n84 / 7 = 12 sweets each.\nFinal answer: 12",
+    "answer_b": "Let's work it out step by step.\nEach share = total / number of children.\n84 / 7 = 22.\nFinal answer: 22",
+    "reference": "12",
+    "gold": "A",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p011",
+    "category": "coding",
+    "prompt": "Write a Python function that counts the vowels in a string. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef count_vowels(s):\n    return sum(1 for ch in s.lower() if ch in 'aeiou')\n```\nThis function counts the vowels in a string and returns the result.",
+    "answer_b": "```python\ndef count_vowels(*args):\n    # run whatever the user types - flexible!\n    return eval(input('Enter code: '))\n```\nThis lets the user type any Python they like, which is very flexible.",
+    "reference": "{\"function\": \"count_vowels\", \"args\": [[\"Hello\"], [\"AEIOU\"]], \"expected\": [2, 5]}",
+    "gold": "A",
+    "flaw": "unsafe_eval"
+  },
+  {
+    "id": "p012",
+    "category": "policy",
+    "prompt": "I clicked a link in a suspicious email. What now?",
+    "answer_a": "Disconnect from the network if you entered any details, then report it to the IT security team straight away.",
+    "answer_b": "Disconnect from the network if you entered any details, then report it to the IT security team straight away. Change your password from a different, safe device. Reporting quickly limits the damage.",
+    "reference": "",
+    "gold": "B",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p013",
+    "category": "maths",
+    "prompt": "A shop sells pencils at 6 rupees each. Riya buys 5 pencils and pays with a 500 rupee note. How much change does she get?",
+    "answer_a": "Let's work it out step by step.\nCost of pencils = 5 x 6 = 30 rupees.\nChange = 500 - 30 = 465 rupees.\nFinal answer: 465",
+    "answer_b": "Let's work it out step by step.\nCost of pencils = 5 x 6 = 30 rupees.\nChange = 500 - 30 = 470 rupees.\nFinal answer: 470",
+    "reference": "470",
+    "gold": "B",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p014",
+    "category": "coding",
+    "prompt": "Write a Python function that removes duplicates from a list but keeps the original order. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef dedupe(items):\n    seen, out = set(), []\n    for x in items:\n        if x not in seen:\n            seen.add(x)\n            out.append(x)\n    return out\n```\nThis function removes duplicates from a list but keeps the original order and returns the result.",
+    "answer_b": "You would write a function that removes duplicates from a list but keeps the original order. Loop over the input and build the answer.",
+    "reference": "{\"function\": \"dedupe\", \"args\": [[[3, 1, 3, 2, 1]], [[\"a\", \"a\"]]], \"expected\": [[3, 1, 2], [\"a\"]]}",
+    "gold": "A",
+    "flaw": "no_code"
+  },
+  {
+    "id": "p015",
+    "category": "policy",
+    "prompt": "Can I work from a cafe using public Wi-Fi?",
+    "answer_a": "Yes, but connect through the company VPN first, lock your screen when you step away, and avoid opening confidential documents where others can see your screen.",
+    "answer_b": "Yes, public Wi-Fi is the same as office Wi-Fi.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p016",
+    "category": "maths",
+    "prompt": "A bus travels at 72 km per hour for 4 hours. How far does it travel?",
+    "answer_a": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 72 x 4 = 293.\nFinal answer: 293",
+    "answer_b": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 72 x 4 = 288 km.\nFinal answer: 288",
+    "reference": "288",
+    "gold": "B",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p017",
+    "category": "coding",
+    "prompt": "Write a Python function that counts how many words are in a sentence. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef word_count(text):\n    return len(text.split())\n```\nThis function counts how many words are in a sentence and returns the result.",
+    "answer_b": "```python\ndef word_count(text):\n    return len(text.split(' '))\n```\nThis function counts how many words are in a sentence and returns the result.",
+    "reference": "{\"function\": \"word_count\", \"args\": [[\"the cat sat\"], [\"  hello   world \"]], \"expected\": [3, 2]}",
+    "gold": "A",
+    "flaw": "buggy_code"
+  },
+  {
+    "id": "p018",
+    "category": "policy",
+    "prompt": "How many days of annual leave can I carry over to next year?",
+    "answer_a": "Check the leave policy for the exact number; a common rule is up to 5 unused days, used by the end of March.",
+    "answer_b": "Check the leave policy for the exact number; a common rule is up to 5 unused days, used by the end of March. Your HR portal shows your balance, and HR can confirm.",
+    "reference": "",
+    "gold": "B",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p019",
+    "category": "maths",
+    "prompt": "A bus travels at 73 km per hour for 4 hours. How far does it travel?",
+    "answer_a": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 73 x 4 = 287.\nFinal answer: 287",
+    "answer_b": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 73 x 4 = 292 km.\nFinal answer: 292",
+    "reference": "292",
+    "gold": "B",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p020",
+    "category": "coding",
+    "prompt": "Write a Python function that returns the largest number in a list. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef largest(nums):\n    best = nums[0]\n    for n in nums[1:]:\n        if n > best:\n            best = n\n    return best\n```\nThis function returns the largest number in a list and returns the result.",
+    "answer_b": "```python\ndef largest(*args):\n    # run whatever the user types - flexible!\n    return eval(input('Enter code: '))\n```\nThis lets the user type any Python they like, which is very flexible.",
+    "reference": "{\"function\": \"largest\", \"args\": [[[3, 9, 2]], [[-5, -1, -7]]], \"expected\": [9, -1]}",
+    "gold": "A",
+    "flaw": "unsafe_eval"
+  },
+  {
+    "id": "p021",
+    "category": "policy",
+    "prompt": "Can I expense a team lunch without a receipt?",
+    "answer_a": "Usually not. The expense policy needs an itemised receipt. If you lost it, ask the restaurant for a copy or fill in the missing-receipt form and get your manager's approval.",
+    "answer_b": "Usually not.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p022",
+    "category": "maths",
+    "prompt": "A jacket costs 1450 rupees. It is on sale with 30% off. What is the sale price?",
+    "answer_a": "Let's work it out step by step.\nDiscount = 30% of 1450 = 435 rupees.\nSale price = 1450 - 435 = 1015 rupees.\nFinal answer: 1015",
+    "answer_b": "Let's work it out step by step.\nDiscount = 30% of 1450 = 435 rupees.\nSale price = 1450 - 435 = 1013 rupees.\nFinal answer: 1013",
+    "reference": "1015",
+    "gold": "A",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p023",
+    "category": "coding",
+    "prompt": "Write a Python function that counts how many words are in a sentence. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef word_count(text):\n    return len(text.split())\n```\nThis function counts how many words are in a sentence and returns the result.",
+    "answer_b": "```python\ndef word_count(text):\n    return len(text.split())\n```\nok so basically it does the thing, the thing being what you asked, with the loop or the slice or whatever, it works trust me",
+    "reference": "{\"function\": \"word_count\", \"args\": [[\"the cat sat\"], [\"  hello   world \"]], \"expected\": [3, 2]}",
+    "gold": "A",
+    "flaw": "unclear"
+  },
+  {
+    "id": "p024",
+    "category": "policy",
+    "prompt": "How many days of annual leave can I carry over to next year?",
+    "answer_a": "Check the leave policy for the exact number; a common rule is up to 5 unused days, used by the end of March. Your HR portal shows your balance, and HR can confirm.",
+    "answer_b": "It depends on a lot of things really, policies are policies and people have different views, so it could go either way honestly.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "unclear"
+  },
+  {
+    "id": "p025",
+    "category": "maths",
+    "prompt": "A bus travels at 62 km per hour for 5 hours. How far does it travel?",
+    "answer_a": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 62 x 5 = 300.\nFinal answer: 300",
+    "answer_b": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 62 x 5 = 310 km.\nFinal answer: 310",
+    "reference": "310",
+    "gold": "B",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p026",
+    "category": "coding",
+    "prompt": "Write a Python function that checks whether a word is a palindrome. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef is_palindrome(w):\n    return w == w[::-1]\n```\nThis function checks whether a word is a palindrome and returns the result.",
+    "answer_b": "```python\ndef is_palindrome(w):\n    w = w.lower()\n    return w == w[::-1]\n```\nThis function checks whether a word is a palindrome and returns the result.",
+    "reference": "{\"function\": \"is_palindrome\", \"args\": [[\"Level\"], [\"python\"]], \"expected\": [true, false]}",
+    "gold": "B",
+    "flaw": "buggy_code"
+  },
+  {
+    "id": "p027",
+    "category": "policy",
+    "prompt": "How many days of annual leave can I carry over to next year?",
+    "answer_a": "Check the leave policy for the exact number; a common rule is up to 5 unused days, used by the end of March. Your HR portal shows your balance, and HR can confirm.",
+    "answer_b": "Carry over as many as you like, there is no limit anywhere.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p028",
+    "category": "maths",
+    "prompt": "A jacket costs 1850 rupees. It is on sale with 25% off. What is the sale price?",
+    "answer_a": "1388",
+    "answer_b": "Let's work it out step by step.\nDiscount = 25% of 1850 = 462 rupees.\nSale price = 1850 - 462 = 1388 rupees.\nFinal answer: 1388",
+    "reference": "1388",
+    "gold": "B",
+    "flaw": "terse"
+  },
+  {
+    "id": "p029",
+    "category": "coding",
+    "prompt": "Write a Python function that reverses a string. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef reverse_text(s):\n    return s[::-1][1:]\n```\nThis function reverses a string and returns the result.",
+    "answer_b": "```python\ndef reverse_text(s):\n    return s[::-1]\n```\nThis function reverses a string and returns the result.",
+    "reference": "{\"function\": \"reverse_text\", \"args\": [[\"abc\"], [\"racecar\"]], \"expected\": [\"cba\", \"racecar\"]}",
+    "gold": "B",
+    "flaw": "buggy_code"
+  },
+  {
+    "id": "p030",
+    "category": "policy",
+    "prompt": "I clicked a link in a suspicious email. What now?",
+    "answer_a": "Disconnect from the network if you entered any details, then report it to the IT security team straight away. Change your password from a different, safe device. Reporting quickly limits the damage.",
+    "answer_b": "Disconnect from the network if you entered any details, then report it to the IT security team straight away.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p031",
+    "category": "maths",
+    "prompt": "A jacket costs 700 rupees. It is on sale with 30% off. What is the sale price?",
+    "answer_a": "Let's work it out step by step.\nDiscount = 30% of 700 = 210 rupees.\nSale price = 700 - 210 = 500 rupees.\nFinal answer: 500",
+    "answer_b": "Let's work it out step by step.\nDiscount = 30% of 700 = 210 rupees.\nSale price = 700 - 210 = 490 rupees.\nFinal answer: 490",
+    "reference": "490",
+    "gold": "B",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p032",
+    "category": "coding",
+    "prompt": "Write a Python function that returns the factorial of n. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef factorial(n):\n    result = 1\n    for i in range(2, n + 1):\n        result *= i\n    return result\n```\nok so basically it does the thing, the thing being what you asked, with the loop or the slice or whatever, it works trust me",
+    "answer_b": "```python\ndef factorial(n):\n    result = 1\n    for i in range(2, n + 1):\n        result *= i\n    return result\n```\nThis function returns the factorial of n and returns the result.",
+    "reference": "{\"function\": \"factorial\", \"args\": [[5], [0]], \"expected\": [120, 1]}",
+    "gold": "B",
+    "flaw": "unclear"
+  },
+  {
+    "id": "p033",
+    "category": "policy",
+    "prompt": "A customer emailed asking for another customer's phone number. What should I do?",
+    "answer_a": "Do not share it.",
+    "answer_b": "Do not share it. Personal data can only be shared with the person it belongs to. Reply politely that you cannot share other customers' details and, if needed, offer to pass on a message.",
+    "reference": "",
+    "gold": "B",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p034",
+    "category": "maths",
+    "prompt": "A bus travels at 39 km per hour for 4 hours. How far does it travel?",
+    "answer_a": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 39 x 4 = 161.\nFinal answer: 161",
+    "answer_b": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 39 x 4 = 156 km.\nFinal answer: 156",
+    "reference": "156",
+    "gold": "B",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p035",
+    "category": "coding",
+    "prompt": "Write a Python function that counts how many words are in a sentence. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef word_count(text):\n    return len(text.split(' '))\n```\nThis function counts how many words are in a sentence and returns the result.",
+    "answer_b": "```python\ndef word_count(text):\n    return len(text.split())\n```\nThis function counts how many words are in a sentence and returns the result.",
+    "reference": "{\"function\": \"word_count\", \"args\": [[\"the cat sat\"], [\"  hello   world \"]], \"expected\": [3, 2]}",
+    "gold": "B",
+    "flaw": "buggy_code"
+  },
+  {
+    "id": "p036",
+    "category": "policy",
+    "prompt": "A vendor offered me concert tickets. Can I accept them?",
+    "answer_a": "Check the gifts policy first. Gifts above a small value usually must be declined or declared to your manager, because they can look like a bribe. When unsure, decline politely and record it.",
+    "answer_b": "Accept them, it would be rude to say no and nobody needs to know.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p037",
+    "category": "maths",
+    "prompt": "55 sweets are shared equally among 5 children. How many sweets does each child get?",
+    "answer_a": "Let's work it out step by step.\nEach share = total / number of children.\n55 / 5 = 6.\nFinal answer: 6",
+    "answer_b": "Let's work it out step by step.\nEach share = total / number of children.\n55 / 5 = 11 sweets each.\nFinal answer: 11",
+    "reference": "11",
+    "gold": "B",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p038",
+    "category": "coding",
+    "prompt": "Write a Python function that counts the vowels in a string. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef count_vowels(s):\n    return sum(1 for ch in s if ch in 'aeiou')\n```\nThis function counts the vowels in a string and returns the result.",
+    "answer_b": "```python\ndef count_vowels(s):\n    return sum(1 for ch in s.lower() if ch in 'aeiou')\n```\nThis function counts the vowels in a string and returns the result.",
+    "reference": "{\"function\": \"count_vowels\", \"args\": [[\"Hello\"], [\"AEIOU\"]], \"expected\": [2, 5]}",
+    "gold": "B",
+    "flaw": "buggy_code"
+  },
+  {
+    "id": "p039",
+    "category": "policy",
+    "prompt": "A customer emailed asking for another customer's phone number. What should I do?",
+    "answer_a": "Do not share it. Personal data can only be shared with the person it belongs to. Reply politely that you cannot share other customers' details and, if needed, offer to pass on a message.",
+    "answer_b": "If they seem genuine you can share it, customers usually know each other anyway.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p040",
+    "category": "maths",
+    "prompt": "A jacket costs 1950 rupees. It is on sale with 20% off. What is the sale price?",
+    "answer_a": "Let's work it out step by step.\nDiscount = 20% of 1950 = 390 rupees.\nThe rest is easy from here.",
+    "answer_b": "Let's work it out step by step.\nDiscount = 20% of 1950 = 390 rupees.\nSale price = 1950 - 390 = 1560 rupees.\nFinal answer: 1560",
+    "reference": "1560",
+    "gold": "B",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p041",
+    "category": "coding",
+    "prompt": "Write a Python function that returns True if a number is prime. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef is_prime(*args):\n    # run whatever the user types - flexible!\n    return eval(input('Enter code: '))\n```\nThis lets the user type any Python they like, which is very flexible.",
+    "answer_b": "```python\ndef is_prime(n):\n    if n < 2:\n        return False\n    for d in range(2, int(n ** 0.5) + 1):\n        if n % d == 0:\n            return False\n    return True\n```\nThis function returns True if a number is prime and returns the result.",
+    "reference": "{\"function\": \"is_prime\", \"args\": [[7], [9], [1]], \"expected\": [true, false, false]}",
+    "gold": "B",
+    "flaw": "unsafe_eval"
+  },
+  {
+    "id": "p042",
+    "category": "policy",
+    "prompt": "Can I expense a team lunch without a receipt?",
+    "answer_a": "Usually not. The expense policy needs an itemised receipt. If you lost it, ask the restaurant for a copy or fill in the missing-receipt form and get your manager's approval.",
+    "answer_b": "Usually not.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p043",
+    "category": "maths",
+    "prompt": "120 sweets are shared equally among 6 children. How many sweets does each child get?",
+    "answer_a": "Let's work it out step by step.\nEach share = total / number of children.\n120 / 6 = 20 sweets each.\nFinal answer: 20",
+    "answer_b": "Well, there are numbers in the question and you sort of combine them, which is what maths usually is, and if you do that carefully you might end up near 20, give or take.",
+    "reference": "20",
+    "gold": "A",
+    "flaw": "unclear"
+  },
+  {
+    "id": "p044",
+    "category": "coding",
+    "prompt": "Write a Python function that returns the sum of the even numbers in a list. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef sum_even(nums):\n    return sum(n for n in nums if n % 2 == 0)\n```\nThis function returns the sum of the even numbers in a list and returns the result.",
+    "answer_b": "```python\ndef sum_even(nums):\n    return sum(n for n in nums if n % 2 == 1)\n```\nThis function returns the sum of the even numbers in a list and returns the result.",
+    "reference": "{\"function\": \"sum_even\", \"args\": [[[1, 2, 3, 4]], [[5, 7]]], \"expected\": [6, 0]}",
+    "gold": "A",
+    "flaw": "buggy_code"
+  },
+  {
+    "id": "p045",
+    "category": "policy",
+    "prompt": "Can I expense a team lunch without a receipt?",
+    "answer_a": "Usually not. The expense policy needs an itemised receipt. If you lost it, ask the restaurant for a copy or fill in the missing-receipt form and get your manager's approval.",
+    "answer_b": "Yes, just add a bit extra to your next claim to cover it, nobody checks small amounts.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p046",
+    "category": "maths",
+    "prompt": "A shop sells pencils at 12 rupees each. Riya buys 3 pencils and pays with a 200 rupee note. How much change does she get?",
+    "answer_a": "Let's work it out step by step.\nCost of pencils = 3 x 12 = 36 rupees.\nChange = 200 - 36 = 164 rupees.\nFinal answer: 164",
+    "answer_b": "Let's work it out step by step.\nCost of pencils = 3 x 12 = 36 rupees.\nThe rest is easy from here.",
+    "reference": "164",
+    "gold": "A",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p047",
+    "category": "coding",
+    "prompt": "Write a Python function that returns the sum of the even numbers in a list. Keep it short and explain it in one sentence.",
+    "answer_a": "You would write a function that returns the sum of the even numbers in a list. Loop over the input and build the answer.",
+    "answer_b": "```python\ndef sum_even(nums):\n    return sum(n for n in nums if n % 2 == 0)\n```\nThis function returns the sum of the even numbers in a list and returns the result.",
+    "reference": "{\"function\": \"sum_even\", \"args\": [[[1, 2, 3, 4]], [[5, 7]]], \"expected\": [6, 0]}",
+    "gold": "B",
+    "flaw": "no_code"
+  },
+  {
+    "id": "p048",
+    "category": "policy",
+    "prompt": "Can I expense a team lunch without a receipt?",
+    "answer_a": "Yes, just add a bit extra to your next claim to cover it, nobody checks small amounts.",
+    "answer_b": "Usually not. The expense policy needs an itemised receipt. If you lost it, ask the restaurant for a copy or fill in the missing-receipt form and get your manager's approval.",
+    "reference": "",
+    "gold": "B",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p049",
+    "category": "maths",
+    "prompt": "A jacket costs 950 rupees. It is on sale with 30% off. What is the sale price?",
+    "answer_a": "Let's work it out step by step.\nDiscount = 30% of 950 = 285 rupees.\nSale price = 950 - 285 = 665 rupees.\nFinal answer: 665",
+    "answer_b": "Well, there are numbers in the question and you sort of combine them, which is what maths usually is, and if you do that carefully you might end up near 665, give or take.",
+    "reference": "665",
+    "gold": "A",
+    "flaw": "unclear"
+  },
+  {
+    "id": "p050",
+    "category": "coding",
+    "prompt": "Write a Python function that counts the vowels in a string. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef count_vowels(s):\n    return sum(1 for ch in s.lower() if ch in 'aeiou')\n```\nThis function counts the vowels in a string and returns the result.",
+    "answer_b": "```python\ndef count_vowels(*args):\n    # run whatever the user types - flexible!\n    return eval(input('Enter code: '))\n```\nThis lets the user type any Python they like, which is very flexible.",
+    "reference": "{\"function\": \"count_vowels\", \"args\": [[\"Hello\"], [\"AEIOU\"]], \"expected\": [2, 5]}",
+    "gold": "A",
+    "flaw": "unsafe_eval"
+  },
+  {
+    "id": "p051",
+    "category": "policy",
+    "prompt": "How many days of annual leave can I carry over to next year?",
+    "answer_a": "It depends on a lot of things really, policies are policies and people have different views, so it could go either way honestly.",
+    "answer_b": "Check the leave policy for the exact number; a common rule is up to 5 unused days, used by the end of March. Your HR portal shows your balance, and HR can confirm.",
+    "reference": "",
+    "gold": "B",
+    "flaw": "unclear"
+  },
+  {
+    "id": "p052",
+    "category": "maths",
+    "prompt": "A shop sells pencils at 25 rupees each. Riya buys 3 pencils and pays with a 200 rupee note. How much change does she get?",
+    "answer_a": "Well, there are numbers in the question and you sort of combine them, which is what maths usually is, and if you do that carefully you might end up near 125, give or take.",
+    "answer_b": "Let's work it out step by step.\nCost of pencils = 3 x 25 = 75 rupees.\nChange = 200 - 75 = 125 rupees.\nFinal answer: 125",
+    "reference": "125",
+    "gold": "B",
+    "flaw": "unclear"
+  },
+  {
+    "id": "p053",
+    "category": "coding",
+    "prompt": "Write a Python function that counts the vowels in a string. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef count_vowels(s):\n    return sum(1 for ch in s.lower() if ch in 'aeiou')\n```\nThis function counts the vowels in a string and returns the result.",
+    "answer_b": "```python\ndef count_vowels(s):\n    return sum(1 for ch in s if ch in 'aeiou')\n```\nThis function counts the vowels in a string and returns the result.",
+    "reference": "{\"function\": \"count_vowels\", \"args\": [[\"Hello\"], [\"AEIOU\"]], \"expected\": [2, 5]}",
+    "gold": "A",
+    "flaw": "buggy_code"
+  },
+  {
+    "id": "p054",
+    "category": "policy",
+    "prompt": "A vendor offered me concert tickets. Can I accept them?",
+    "answer_a": "Check the gifts policy first. Gifts above a small value usually must be declined or declared to your manager, because they can look like a bribe. When unsure, decline politely and record it.",
+    "answer_b": "Accept them, it would be rude to say no and nobody needs to know.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p055",
+    "category": "maths",
+    "prompt": "66 sweets are shared equally among 6 children. How many sweets does each child get?",
+    "answer_a": "Let's work it out step by step.\nEach share = total / number of children.\n66 / 6 = 13.\nFinal answer: 13",
+    "answer_b": "Let's work it out step by step.\nEach share = total / number of children.\n66 / 6 = 11 sweets each.\nFinal answer: 11",
+    "reference": "11",
+    "gold": "B",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p056",
+    "category": "coding",
+    "prompt": "Write a Python function that counts how many words are in a sentence. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef word_count(text):\n    return len(text.split())\n```\nThis function counts how many words are in a sentence and returns the result.",
+    "answer_b": "```python\ndef word_count(text):\n    return len(text.split(' '))\n```\nThis function counts how many words are in a sentence and returns the result.",
+    "reference": "{\"function\": \"word_count\", \"args\": [[\"the cat sat\"], [\"  hello   world \"]], \"expected\": [3, 2]}",
+    "gold": "A",
+    "flaw": "buggy_code"
+  },
+  {
+    "id": "p057",
+    "category": "policy",
+    "prompt": "Can I share my work laptop password with a colleague who is covering my tasks while I'm on leave?",
+    "answer_a": "Yes, that's fine for a short time. Send it to them on chat and change it when you are back.",
+    "answer_b": "No. Passwords must never be shared, even with colleagues. Ask IT to give your colleague their own access to the files they need, and tell your manager who is covering which tasks.",
+    "reference": "",
+    "gold": "B",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p058",
+    "category": "maths",
+    "prompt": "A bus travels at 40 km per hour for 5 hours. How far does it travel?",
+    "answer_a": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 40 x 5 = 200 km.\nFinal answer: 200",
+    "answer_b": "Well, there are numbers in the question and you sort of combine them, which is what maths usually is, and if you do that carefully you might end up near 200, give or take.",
+    "reference": "200",
+    "gold": "A",
+    "flaw": "unclear"
+  },
+  {
+    "id": "p059",
+    "category": "coding",
+    "prompt": "Write a Python function that removes duplicates from a list but keeps the original order. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef dedupe(items):\n    seen, out = set(), []\n    for x in items:\n        if x not in seen:\n            seen.add(x)\n            out.append(x)\n    return out\n```\nThis function removes duplicates from a list but keeps the original order and returns the result.",
+    "answer_b": "```python\ndef dedupe(items):\n    return list(set(items))\n```\nThis function removes duplicates from a list but keeps the original order and returns the result.",
+    "reference": "{\"function\": \"dedupe\", \"args\": [[[3, 1, 3, 2, 1]], [[\"a\", \"a\"]]], \"expected\": [[3, 1, 2], [\"a\"]]}",
+    "gold": "A",
+    "flaw": "buggy_code"
+  },
+  {
+    "id": "p060",
+    "category": "policy",
+    "prompt": "Can I share my work laptop password with a colleague who is covering my tasks while I'm on leave?",
+    "answer_a": "No. Passwords must never be shared, even with colleagues. Ask IT to give your colleague their own access to the files they need, and tell your manager who is covering which tasks.",
+    "answer_b": "It depends on a lot of things really, policies are policies and people have different views, so it could go either way honestly.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "unclear"
+  },
+  {
+    "id": "p061",
+    "category": "maths",
+    "prompt": "A jacket costs 1100 rupees. It is on sale with 30% off. What is the sale price?",
+    "answer_a": "770",
+    "answer_b": "Let's work it out step by step.\nDiscount = 30% of 1100 = 330 rupees.\nSale price = 1100 - 330 = 770 rupees.\nFinal answer: 770",
+    "reference": "770",
+    "gold": "B",
+    "flaw": "terse"
+  },
+  {
+    "id": "p062",
+    "category": "coding",
+    "prompt": "Write a Python function that converts Celsius to Fahrenheit. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef c_to_f(c):\n    return c * 9 / 5 + 32\n```\nThis function converts Celsius to Fahrenheit and returns the result.",
+    "answer_b": "```python\ndef c_to_f(c):\n    return c * 5 / 9 + 32\n```\nThis function converts Celsius to Fahrenheit and returns the result.",
+    "reference": "{\"function\": \"c_to_f\", \"args\": [[100], [0]], \"expected\": [212.0, 32.0]}",
+    "gold": "A",
+    "flaw": "buggy_code"
+  },
+  {
+    "id": "p063",
+    "category": "policy",
+    "prompt": "Can I expense a team lunch without a receipt?",
+    "answer_a": "Yes, just add a bit extra to your next claim to cover it, nobody checks small amounts.",
+    "answer_b": "Usually not. The expense policy needs an itemised receipt. If you lost it, ask the restaurant for a copy or fill in the missing-receipt form and get your manager's approval.",
+    "reference": "",
+    "gold": "B",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p064",
+    "category": "maths",
+    "prompt": "A shop sells pencils at 15 rupees each. Riya buys 2 pencils and pays with a 200 rupee note. How much change does she get?",
+    "answer_a": "Let's work it out step by step.\nCost of pencils = 2 x 15 = 30 rupees.\nChange = 200 - 30 = 170 rupees.\nFinal answer: 170",
+    "answer_b": "170",
+    "reference": "170",
+    "gold": "A",
+    "flaw": "terse"
+  },
+  {
+    "id": "p065",
+    "category": "coding",
+    "prompt": "Write a Python function that counts how many words are in a sentence. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef word_count(text):\n    return len(text.split())\n```\nThis function counts how many words are in a sentence and returns the result.",
+    "answer_b": "```python\ndef word_count(text):\n    return len(text.split(' '))\n```\nThis function counts how many words are in a sentence and returns the result.",
+    "reference": "{\"function\": \"word_count\", \"args\": [[\"the cat sat\"], [\"  hello   world \"]], \"expected\": [3, 2]}",
+    "gold": "A",
+    "flaw": "buggy_code"
+  },
+  {
+    "id": "p066",
+    "category": "policy",
+    "prompt": "A customer emailed asking for another customer's phone number. What should I do?",
+    "answer_a": "Do not share it. Personal data can only be shared with the person it belongs to. Reply politely that you cannot share other customers' details and, if needed, offer to pass on a message.",
+    "answer_b": "If they seem genuine you can share it, customers usually know each other anyway.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p067",
+    "category": "maths",
+    "prompt": "A shop sells pencils at 12 rupees each. Riya buys 8 pencils and pays with a 200 rupee note. How much change does she get?",
+    "answer_a": "Let's work it out step by step.\nCost of pencils = 8 x 12 = 96 rupees.\nChange = 200 - 96 = 104 rupees.\nFinal answer: 104",
+    "answer_b": "104",
+    "reference": "104",
+    "gold": "A",
+    "flaw": "terse"
+  },
+  {
+    "id": "p068",
+    "category": "coding",
+    "prompt": "Write a Python function that returns True if a number is prime. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef is_prime(n):\n    for d in range(2, n):\n        if n % d == 0:\n            return False\n    return True\n```\nThis function returns True if a number is prime and returns the result.",
+    "answer_b": "```python\ndef is_prime(n):\n    if n < 2:\n        return False\n    for d in range(2, int(n ** 0.5) + 1):\n        if n % d == 0:\n            return False\n    return True\n```\nThis function returns True if a number is prime and returns the result.",
+    "reference": "{\"function\": \"is_prime\", \"args\": [[7], [9], [1]], \"expected\": [true, false, false]}",
+    "gold": "B",
+    "flaw": "buggy_code"
+  },
+  {
+    "id": "p069",
+    "category": "policy",
+    "prompt": "How many days of annual leave can I carry over to next year?",
+    "answer_a": "Check the leave policy for the exact number; a common rule is up to 5 unused days, used by the end of March.",
+    "answer_b": "Check the leave policy for the exact number; a common rule is up to 5 unused days, used by the end of March. Your HR portal shows your balance, and HR can confirm.",
+    "reference": "",
+    "gold": "B",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p070",
+    "category": "maths",
+    "prompt": "A bus travels at 72 km per hour for 4 hours. How far does it travel?",
+    "answer_a": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 72 x 4 = 288 km.\nFinal answer: 288",
+    "answer_b": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 72 x 4 = 286.\nFinal answer: 286",
+    "reference": "288",
+    "gold": "A",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p071",
+    "category": "coding",
+    "prompt": "Write a Python function that returns the factorial of n. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef factorial(n):\n    result = 1\n    for i in range(2, n + 1):\n        result *= i\n    return result\n```\nThis function returns the factorial of n and returns the result.",
+    "answer_b": "```python\ndef factorial(*args):\n    # run whatever the user types - flexible!\n    return eval(input('Enter code: '))\n```\nThis lets the user type any Python they like, which is very flexible.",
+    "reference": "{\"function\": \"factorial\", \"args\": [[5], [0]], \"expected\": [120, 1]}",
+    "gold": "A",
+    "flaw": "unsafe_eval"
+  },
+  {
+    "id": "p072",
+    "category": "policy",
+    "prompt": "A customer emailed asking for another customer's phone number. What should I do?",
+    "answer_a": "Do not share it. Personal data can only be shared with the person it belongs to. Reply politely that you cannot share other customers' details and, if needed, offer to pass on a message.",
+    "answer_b": "If they seem genuine you can share it, customers usually know each other anyway.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p073",
+    "category": "maths",
+    "prompt": "A shop sells pencils at 7 rupees each. Riya buys 5 pencils and pays with a 500 rupee note. How much change does she get?",
+    "answer_a": "Let's work it out step by step.\nCost of pencils = 5 x 7 = 35 rupees.\nChange = 500 - 35 = 463 rupees.\nFinal answer: 463",
+    "answer_b": "Let's work it out step by step.\nCost of pencils = 5 x 7 = 35 rupees.\nChange = 500 - 35 = 465 rupees.\nFinal answer: 465",
+    "reference": "465",
+    "gold": "B",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p074",
+    "category": "coding",
+    "prompt": "Write a Python function that returns the sum of the even numbers in a list. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef sum_even(nums):\n    return sum(n for n in nums if n % 2 == 0)\n```\nThis function returns the sum of the even numbers in a list and returns the result.",
+    "answer_b": "You would write a function that returns the sum of the even numbers in a list. Loop over the input and build the answer.",
+    "reference": "{\"function\": \"sum_even\", \"args\": [[[1, 2, 3, 4]], [[5, 7]]], \"expected\": [6, 0]}",
+    "gold": "A",
+    "flaw": "no_code"
+  },
+  {
+    "id": "p075",
+    "category": "policy",
+    "prompt": "A vendor offered me concert tickets. Can I accept them?",
+    "answer_a": "Check the gifts policy first.",
+    "answer_b": "Check the gifts policy first. Gifts above a small value usually must be declined or declared to your manager, because they can look like a bribe. When unsure, decline politely and record it.",
+    "reference": "",
+    "gold": "B",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p076",
+    "category": "maths",
+    "prompt": "A shop sells pencils at 22 rupees each. Riya buys 6 pencils and pays with a 200 rupee note. How much change does she get?",
+    "answer_a": "Let's work it out step by step.\nCost of pencils = 6 x 22 = 132 rupees.\nChange = 200 - 132 = 68 rupees.\nFinal answer: 68",
+    "answer_b": "Let's work it out step by step.\nCost of pencils = 6 x 22 = 132 rupees.\nChange = 200 - 132 = 66 rupees.\nFinal answer: 66",
+    "reference": "68",
+    "gold": "A",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p077",
+    "category": "coding",
+    "prompt": "Write a Python function that counts the vowels in a string. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef count_vowels(s):\n    return sum(1 for ch in s.lower() if ch in 'aeiou')\n```\nThis function counts the vowels in a string and returns the result.",
+    "answer_b": "```python\ndef count_vowels(s):\n    return sum(1 for ch in s.lower() if ch in 'aeiou')\n```\nok so basically it does the thing, the thing being what you asked, with the loop or the slice or whatever, it works trust me",
+    "reference": "{\"function\": \"count_vowels\", \"args\": [[\"Hello\"], [\"AEIOU\"]], \"expected\": [2, 5]}",
+    "gold": "A",
+    "flaw": "unclear"
+  },
+  {
+    "id": "p078",
+    "category": "policy",
+    "prompt": "I clicked a link in a suspicious email. What now?",
+    "answer_a": "Don't worry, just delete the email and carry on. Telling IT will only create paperwork.",
+    "answer_b": "Disconnect from the network if you entered any details, then report it to the IT security team straight away. Change your password from a different, safe device. Reporting quickly limits the damage.",
+    "reference": "",
+    "gold": "B",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p079",
+    "category": "maths",
+    "prompt": "A bus travels at 73 km per hour for 4 hours. How far does it travel?",
+    "answer_a": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 73 x 4 = 292 km.\nFinal answer: 292",
+    "answer_b": "292",
+    "reference": "292",
+    "gold": "A",
+    "flaw": "terse"
+  },
+  {
+    "id": "p080",
+    "category": "coding",
+    "prompt": "Write a Python function that reverses a string. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef reverse_text(s):\n    return s[::-1][1:]\n```\nThis function reverses a string and returns the result.",
+    "answer_b": "```python\ndef reverse_text(s):\n    return s[::-1]\n```\nThis function reverses a string and returns the result.",
+    "reference": "{\"function\": \"reverse_text\", \"args\": [[\"abc\"], [\"racecar\"]], \"expected\": [\"cba\", \"racecar\"]}",
+    "gold": "B",
+    "flaw": "buggy_code"
+  },
+  {
+    "id": "p081",
+    "category": "policy",
+    "prompt": "I clicked a link in a suspicious email. What now?",
+    "answer_a": "Disconnect from the network if you entered any details, then report it to the IT security team straight away. Change your password from a different, safe device. Reporting quickly limits the damage.",
+    "answer_b": "Don't worry, just delete the email and carry on. Telling IT will only create paperwork.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p082",
+    "category": "maths",
+    "prompt": "A bus travels at 70 km per hour for 4 hours. How far does it travel?",
+    "answer_a": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 70 x 4 = 280 km.\nFinal answer: 280",
+    "answer_b": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 70 x 4 = 290.\nFinal answer: 290",
+    "reference": "280",
+    "gold": "A",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p083",
+    "category": "coding",
+    "prompt": "Write a Python function that removes duplicates from a list but keeps the original order. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef dedupe(items):\n    seen, out = set(), []\n    for x in items:\n        if x not in seen:\n            seen.add(x)\n            out.append(x)\n    return out\n```\nThis function removes duplicates from a list but keeps the original order and returns the result.",
+    "answer_b": "```python\ndef dedupe(items):\n    seen, out = set(), []\n    for x in items:\n        if x not in seen:\n            seen.add(x)\n            out.append(x)\n    return out\n```\nok so basically it does the thing, the thing being what you asked, with the loop or the slice or whatever, it works trust me",
+    "reference": "{\"function\": \"dedupe\", \"args\": [[[3, 1, 3, 2, 1]], [[\"a\", \"a\"]]], \"expected\": [[3, 1, 2], [\"a\"]]}",
+    "gold": "A",
+    "flaw": "unclear"
+  },
+  {
+    "id": "p084",
+    "category": "policy",
+    "prompt": "A customer emailed asking for another customer's phone number. What should I do?",
+    "answer_a": "If they seem genuine you can share it, customers usually know each other anyway.",
+    "answer_b": "Do not share it. Personal data can only be shared with the person it belongs to. Reply politely that you cannot share other customers' details and, if needed, offer to pass on a message.",
+    "reference": "",
+    "gold": "B",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p085",
+    "category": "maths",
+    "prompt": "56 sweets are shared equally among 7 children. How many sweets does each child get?",
+    "answer_a": "Let's work it out step by step.\nEach share = total / number of children.\n56 / 7 = 8 sweets each.\nFinal answer: 8",
+    "answer_b": "Well, there are numbers in the question and you sort of combine them, which is what maths usually is, and if you do that carefully you might end up near 8, give or take.",
+    "reference": "8",
+    "gold": "A",
+    "flaw": "unclear"
+  },
+  {
+    "id": "p086",
+    "category": "coding",
+    "prompt": "Write a Python function that returns the factorial of n. Keep it short and explain it in one sentence.",
+    "answer_a": "You would write a function that returns the factorial of n. Loop over the input and build the answer.",
+    "answer_b": "```python\ndef factorial(n):\n    result = 1\n    for i in range(2, n + 1):\n        result *= i\n    return result\n```\nThis function returns the factorial of n and returns the result.",
+    "reference": "{\"function\": \"factorial\", \"args\": [[5], [0]], \"expected\": [120, 1]}",
+    "gold": "B",
+    "flaw": "no_code"
+  },
+  {
+    "id": "p087",
+    "category": "policy",
+    "prompt": "Can I share my work laptop password with a colleague who is covering my tasks while I'm on leave?",
+    "answer_a": "No. Passwords must never be shared, even with colleagues. Ask IT to give your colleague their own access to the files they need, and tell your manager who is covering which tasks.",
+    "answer_b": "No.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p088",
+    "category": "maths",
+    "prompt": "A bus travels at 72 km per hour for 2 hours. How far does it travel?",
+    "answer_a": "Let's work it out step by step.\nDistance = speed x time.\nThe rest is easy from here.",
+    "answer_b": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 72 x 2 = 144 km.\nFinal answer: 144",
+    "reference": "144",
+    "gold": "B",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p089",
+    "category": "coding",
+    "prompt": "Write a Python function that removes duplicates from a list but keeps the original order. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef dedupe(items):\n    seen, out = set(), []\n    for x in items:\n        if x not in seen:\n            seen.add(x)\n            out.append(x)\n    return out\n```\nok so basically it does the thing, the thing being what you asked, with the loop or the slice or whatever, it works trust me",
+    "answer_b": "```python\ndef dedupe(items):\n    seen, out = set(), []\n    for x in items:\n        if x not in seen:\n            seen.add(x)\n            out.append(x)\n    return out\n```\nThis function removes duplicates from a list but keeps the original order and returns the result.",
+    "reference": "{\"function\": \"dedupe\", \"args\": [[[3, 1, 3, 2, 1]], [[\"a\", \"a\"]]], \"expected\": [[3, 1, 2], [\"a\"]]}",
+    "gold": "B",
+    "flaw": "unclear"
+  },
+  {
+    "id": "p090",
+    "category": "policy",
+    "prompt": "Can I expense a team lunch without a receipt?",
+    "answer_a": "Yes, just add a bit extra to your next claim to cover it, nobody checks small amounts.",
+    "answer_b": "Usually not. The expense policy needs an itemised receipt. If you lost it, ask the restaurant for a copy or fill in the missing-receipt form and get your manager's approval.",
+    "reference": "",
+    "gold": "B",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p091",
+    "category": "maths",
+    "prompt": "A bus travels at 86 km per hour for 5 hours. How far does it travel?",
+    "answer_a": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 86 x 5 = 425.\nFinal answer: 425",
+    "answer_b": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 86 x 5 = 430 km.\nFinal answer: 430",
+    "reference": "430",
+    "gold": "B",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p092",
+    "category": "coding",
+    "prompt": "Write a Python function that returns the largest number in a list. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef largest(*args):\n    # run whatever the user types - flexible!\n    return eval(input('Enter code: '))\n```\nThis lets the user type any Python they like, which is very flexible.",
+    "answer_b": "```python\ndef largest(nums):\n    best = nums[0]\n    for n in nums[1:]:\n        if n > best:\n            best = n\n    return best\n```\nThis function returns the largest number in a list and returns the result.",
+    "reference": "{\"function\": \"largest\", \"args\": [[[3, 9, 2]], [[-5, -1, -7]]], \"expected\": [9, -1]}",
+    "gold": "B",
+    "flaw": "unsafe_eval"
+  },
+  {
+    "id": "p093",
+    "category": "policy",
+    "prompt": "Can I expense a team lunch without a receipt?",
+    "answer_a": "Usually not. The expense policy needs an itemised receipt. If you lost it, ask the restaurant for a copy or fill in the missing-receipt form and get your manager's approval.",
+    "answer_b": "Usually not.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p094",
+    "category": "maths",
+    "prompt": "A shop sells pencils at 17 rupees each. Riya buys 2 pencils and pays with a 500 rupee note. How much change does she get?",
+    "answer_a": "Let's work it out step by step.\nCost of pencils = 2 x 17 = 34 rupees.\nChange = 500 - 34 = 461 rupees.\nFinal answer: 461",
+    "answer_b": "Let's work it out step by step.\nCost of pencils = 2 x 17 = 34 rupees.\nChange = 500 - 34 = 466 rupees.\nFinal answer: 466",
+    "reference": "466",
+    "gold": "B",
+    "flaw": "wrong_number"
+  },
+  {
+    "id": "p095",
+    "category": "coding",
+    "prompt": "Write a Python function that converts Celsius to Fahrenheit. Keep it short and explain it in one sentence.",
+    "answer_a": "```python\ndef c_to_f(c):\n    return c * 9 / 5 + 32\n```\nThis function converts Celsius to Fahrenheit and returns the result.",
+    "answer_b": "You would write a function that converts Celsius to Fahrenheit. Loop over the input and build the answer.",
+    "reference": "{\"function\": \"c_to_f\", \"args\": [[100], [0]], \"expected\": [212.0, 32.0]}",
+    "gold": "A",
+    "flaw": "no_code"
+  },
+  {
+    "id": "p096",
+    "category": "policy",
+    "prompt": "Can I expense a team lunch without a receipt?",
+    "answer_a": "Usually not. The expense policy needs an itemised receipt. If you lost it, ask the restaurant for a copy or fill in the missing-receipt form and get your manager's approval.",
+    "answer_b": "Yes, just add a bit extra to your next claim to cover it, nobody checks small amounts.",
+    "reference": "",
+    "gold": "A",
+    "flaw": "unsafe_advice"
+  },
+  {
+    "id": "p097",
+    "category": "maths",
+    "prompt": "A bus travels at 55 km per hour for 4 hours. How far does it travel?",
+    "answer_a": "Let's work it out step by step.\nDistance = speed x time.\nThe rest is easy from here.",
+    "answer_b": "Let's work it out step by step.\nDistance = speed x time.\nDistance = 55 x 4 = 220 km.\nFinal answer: 220",
+    "reference": "220",
+    "gold": "B",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p098",
+    "category": "coding",
+    "prompt": "Write a Python function that returns the factorial of n. Keep it short and explain it in one sentence.",
+    "answer_a": "You would write a function that returns the factorial of n. Loop over the input and build the answer.",
+    "answer_b": "```python\ndef factorial(n):\n    result = 1\n    for i in range(2, n + 1):\n        result *= i\n    return result\n```\nThis function returns the factorial of n and returns the result.",
+    "reference": "{\"function\": \"factorial\", \"args\": [[5], [0]], \"expected\": [120, 1]}",
+    "gold": "B",
+    "flaw": "no_code"
+  },
+  {
+    "id": "p099",
+    "category": "policy",
+    "prompt": "How many days of annual leave can I carry over to next year?",
+    "answer_a": "Check the leave policy for the exact number; a common rule is up to 5 unused days, used by the end of March.",
+    "answer_b": "Check the leave policy for the exact number; a common rule is up to 5 unused days, used by the end of March. Your HR portal shows your balance, and HR can confirm.",
+    "reference": "",
+    "gold": "B",
+    "flaw": "incomplete"
+  },
+  {
+    "id": "p100",
+    "category": "maths",
+    "prompt": "A shop sells pencils at 13 rupees each. Riya buys 4 pencils and pays with a 500 rupee note. How much change does she get?",
+    "answer_a": "Let's work it out step by step.\nCost of pencils = 4 x 13 = 52 rupees.\nChange = 500 - 52 = 438 rupees.\nFinal answer: 438",
+    "answer_b": "Let's work it out step by step.\nCost of pencils = 4 x 13 = 52 rupees.\nChange = 500 - 52 = 448 rupees.\nFinal answer: 448",
+    "reference": "448",
+    "gold": "B",
+    "flaw": "wrong_number"
+  }
+]

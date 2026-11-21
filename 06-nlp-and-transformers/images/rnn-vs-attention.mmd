@@ -1,0 +1,13 @@
+flowchart LR
+    subgraph RNN["RNN: one step at a time"]
+        direction LR
+        r1["the"] --> r2["cat"] --> r3["sat"] --> r4["down"]
+    end
+    subgraph ATT["Attention: everyone sees everyone"]
+        direction LR
+        a1["the"] <--> a2["cat"]
+        a2 <--> a3["sat"]
+        a1 <--> a3
+        a3 <--> a4["down"]
+        a2 <--> a4
+    end

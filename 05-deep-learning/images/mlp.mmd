@@ -1,0 +1,7 @@
+flowchart LR
+    I[Input: 64 pixels] --> H1[Linear 64 to 64]
+    H1 --> R1[ReLU]
+    R1 --> H2[Linear 64 to 10]
+    H2 --> L[10 logits]
+    L --> SM[softmax]
+    SM --> P[10 probabilities, pick the biggest]

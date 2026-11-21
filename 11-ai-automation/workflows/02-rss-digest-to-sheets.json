@@ -1,0 +1,224 @@
+{
+  "name": "02 Daily RSS digest (schedule -> RSS -> LLM summary -> Google Sheet)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "id": "267526ab-9109-4e7e-ac45-b10a70886d24",
+      "name": "Every morning 8am",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://hnrss.org/frontpage",
+        "options": {}
+      },
+      "id": "c829abd0-c5f2-40a2-9daa-1b81466f21d7",
+      "name": "Read RSS feed",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.1,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "maxItems": 5
+      },
+      "id": "55264da6-76e2-45ed-a589-1c4320cfd4d8",
+      "name": "Keep first 5",
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        440,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: 'gpt-5-mini', messages: [ { role: 'system', content: 'Summarise this news item in one sentence of at most 20 words for a busy engineer.' }, { role: 'user', content: $json.title + '\\n' + ($json.contentSnippet || '') } ] }) }}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "18e77f10-bde4-44d3-8722-61f412666520",
+      "name": "Summarise with LLM",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        300
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "REPLACE_WITH_YOUR_CREDENTIAL_ID",
+          "name": "OpenAI header auth (Authorization: Bearer ...)"
+        }
+      },
+      "notes": "Model name is a placeholder - check the provider's models page. Credential: Header Auth with Name=Authorization, Value=Bearer YOUR_KEY."
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "388d17b9-d62c-4e66-9bc6-351b53e5869a",
+              "name": "date",
+              "value": "={{ $now.toFormat('yyyy-MM-dd') }}",
+              "type": "string"
+            },
+            {
+              "id": "6873fca5-5849-4de3-bd8b-dd480f619ef0",
+              "name": "title",
+              "value": "={{ $('Keep first 5').item.json.title }}",
+              "type": "string"
+            },
+            {
+              "id": "087c0b26-8882-44e9-bd05-1513029315c7",
+              "name": "summary",
+              "value": "={{ $json.choices[0].message.content }}",
+              "type": "string"
+            },
+            {
+              "id": "5908df78-f7bd-4142-9fe4-f5537f1dfc2e",
+              "name": "link",
+              "value": "={{ $('Keep first 5').item.json.link }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "bade8b52-728f-4244-8fbf-0e2dca2c6095",
+      "name": "Shape row",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        880,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "REPLACE_WITH_YOUR_SPREADSHEET_ID",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": []
+        },
+        "options": {}
+      },
+      "id": "03dc0882-25ba-411d-a0b3-4501df768752",
+      "name": "Append to Google Sheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1100,
+        300
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "REPLACE_WITH_YOUR_CREDENTIAL_ID",
+          "name": "Google Sheets account"
+        }
+      },
+      "notes": "The sheet's first row must contain the headers: date, title, summary, link"
+    }
+  ],
+  "connections": {
+    "Every morning 8am": {
+      "main": [
+        [
+          {
+            "node": "Read RSS feed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read RSS feed": {
+      "main": [
+        [
+          {
+            "node": "Keep first 5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Keep first 5": {
+      "main": [
+        [
+          {
+            "node": "Summarise with LLM",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Summarise with LLM": {
+      "main": [
+        [
+          {
+            "node": "Shape row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Shape row": {
+      "main": [
+        [
+          {
+            "node": "Append to Google Sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}

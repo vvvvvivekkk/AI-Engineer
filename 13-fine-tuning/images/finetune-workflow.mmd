@@ -1,0 +1,9 @@
+flowchart LR
+    A[Define task<br/>and eval] --> B[Build chat-format<br/>JSONL data]
+    B --> C[Baseline: measure<br/>base model]
+    C --> D[Train LoRA or<br/>QLoRA adapter]
+    D --> E[Evaluate on<br/>held-out set]
+    E --> F{Better?}
+    F -- no --> B
+    F -- yes --> G[Save / merge adapter]
+    G --> H[Push to Hub<br/>with model card]

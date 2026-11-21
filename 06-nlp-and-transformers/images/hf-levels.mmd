@@ -1,0 +1,5 @@
+flowchart LR
+    L1["Level 1: pipeline()<br/>one line, everything automatic"] --> L2["Level 2: AutoTokenizer + AutoModel<br/>see IDs, logits, probabilities"]
+    L2 --> L3["Level 3: raw tensors<br/>hidden states, attention weights"]
+    HUB[("Hugging Face Hub<br/>models + model cards")] -.downloads.-> L1
+    HUB -.downloads.-> L2

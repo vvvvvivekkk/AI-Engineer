@@ -1,0 +1,6 @@
+flowchart LR
+    A["Raw text<br/>'I love NLP'"] --> B["Tokens<br/>I | ' love' | ' N' | LP"]
+    B --> C["Token IDs<br/>40, 3021, 452, 12852"]
+    C --> D["Embeddings<br/>one vector per token"]
+    D --> E["Transformer<br/>layers"]
+    E --> F["Output<br/>label / vector / next token"]

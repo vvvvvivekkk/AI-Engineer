@@ -1,0 +1,8 @@
+flowchart LR
+  subgraph Indexing [Indexing - offline]
+    D[Documents] --> L[Load + metadata] --> C[Chunk] --> E[Embed] --> I[(Vector index + BM25)]
+  end
+  subgraph Query [Answering - every question]
+    Q[Question] --> R[Retrieve top 20] --> RR[Rerank to top 4] --> P[Prompt with sources] --> G[LLM answer with citations]
+  end
+  I --> R

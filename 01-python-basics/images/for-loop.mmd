@@ -1,0 +1,6 @@
+flowchart TD
+    S[Start] --> N{Any items left<br/>in the collection?}
+    N -- Yes --> T[Take the next item<br/>into the loop variable]
+    T --> B[Run the indented block]
+    B --> N
+    N -- No --> E[Continue after the loop]

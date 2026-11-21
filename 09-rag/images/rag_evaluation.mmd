@@ -1,0 +1,7 @@
+flowchart LR
+  T[Test set: question + source doc] --> R[Retrieval]
+  R --> M1[hit rate at k, MRR]
+  R --> G[Generation]
+  G --> M2[Faithfulness: supported by sources?]
+  G --> M3[Correctness: key facts, relevance]
+  G --> M4[Citations valid?]

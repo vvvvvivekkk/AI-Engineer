@@ -1,0 +1,13 @@
+chunking,retriever,chunks,hit@1,hit@3,hit@5,MRR
+fixed-80,bm25,36,0.846,0.846,0.885,0.858
+fixed-80,dense,36,0.962,1.0,1.0,0.974
+fixed-80,hybrid,36,0.846,0.923,0.962,0.879
+fixed-80,hybrid+rerank,36,0.923,1.0,1.0,0.962
+fixed-80-overlap-20,bm25,42,0.808,0.846,0.846,0.833
+fixed-80-overlap-20,dense,42,0.885,0.962,0.962,0.929
+fixed-80-overlap-20,hybrid,42,0.846,0.885,0.962,0.876
+fixed-80-overlap-20,hybrid+rerank,42,0.923,1.0,1.0,0.955
+headings,bm25,73,0.846,0.846,0.885,0.856
+headings,dense,73,0.885,1.0,1.0,0.936
+headings,hybrid,73,0.808,0.885,0.962,0.865
+headings,hybrid+rerank,73,1.0,1.0,1.0,1.0

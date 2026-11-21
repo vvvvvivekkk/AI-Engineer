@@ -1,0 +1,20 @@
+product,prompt_files,words,has_tool_schema_file,identity_line,xml_sections,markdown_sections,tool_rules,examples,step_by_step_workflow,planning_or_todo,think_scratchpad,output_format_rules,emphasis_caps,safety_refusals,environment_context,memory_or_context_mgmt,citations,confidentiality
+Cursor Prompts,6,20062,yes,17,60,19,36,43,12,86,58,85,78,0,9,55,11,0
+Devin AI,2,6445,no,2,0,7,3,3,1,9,3,9,3,0,2,0,21,1
+Lovable,1,3203,yes,1,0,15,2,2,6,5,0,5,27,0,1,0,0,0
+Manus Agent Tools & Prompt,3,3642,yes,5,21,49,4,0,9,9,0,15,0,0,0,2,4,0
+Perplexity,1,1489,no,0,3,0,0,2,0,2,0,13,26,0,1,2,19,0
+v0 Prompts and Tools,1,7029,yes,3,1,43,4,6,5,24,0,10,52,8,3,14,3,0
+Windsurf,2,7243,yes,3,15,1,7,33,7,11,0,17,27,0,6,29,1,0
+Replit,1,1270,yes,2,5,8,0,1,13,0,0,1,2,0,0,0,0,0
+NotionAi,1,5116,yes,2,8,13,7,8,1,2,1,22,6,4,2,1,40,0
+Kiro,3,7837,no,7,2,60,0,2,24,19,2,27,80,6,6,2,6,0
+Cluely,2,3435,no,2,104,0,0,0,1,0,1,19,19,0,0,6,0,0
+Junie,1,918,no,1,2,12,0,0,0,0,1,2,0,0,0,0,0,0
+Same.dev,1,5579,yes,6,22,0,8,0,6,12,2,16,42,0,0,0,2,0
+Trae,2,3932,yes,2,36,2,4,13,13,20,15,26,31,2,2,1,9,0
+VSCode Agent,9,18348,no,36,100,9,76,15,6,38,0,57,59,8,7,4,6,0
+Warp.dev,1,2405,no,1,5,17,3,3,0,0,0,9,19,4,4,1,1,0
+Anthropic,8,68393,yes,8,305,167,51,87,30,74,28,217,186,137,35,55,194,0
+Augment Code,2,4037,yes,7,0,42,3,2,3,13,0,8,4,0,3,5,0,0
+Comet Assistant,1,8063,yes,0,89,71,6,19,2,2,5,28,27,16,3,0,63,0

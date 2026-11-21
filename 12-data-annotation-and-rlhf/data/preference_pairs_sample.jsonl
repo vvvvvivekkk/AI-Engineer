@@ -1,0 +1,20 @@
+{"prompt": "Explain what a CPU is in one sentence.", "chosen": "A CPU is the chip that carries out a computer's instructions, like the brain of the machine.", "rejected": "CPU stands for something about computers."}
+{"prompt": "What is a variable in Python?", "chosen": "A variable is a name that points to a value, for example age = 21 stores 21 under the name age.", "rejected": "It's a thing. Look it up."}
+{"prompt": "How do I reverse a list in Python?", "chosen": "Use my_list.reverse() to reverse in place, or my_list[::-1] to get a reversed copy.", "rejected": "You can't reverse lists in Python."}
+{"prompt": "What causes rain?", "chosen": "Water vapour rises, cools and condenses into droplets; when droplets grow heavy they fall as rain.", "rejected": "Rain happens when clouds are sad."}
+{"prompt": "Give me a tip for a job interview.", "chosen": "Prepare two short stories about problems you solved, using situation, action and result.", "rejected": "Just wing it, interviews don't matter."}
+{"prompt": "What is 12 times 12?", "chosen": "12 times 12 is 144.", "rejected": "12 times 12 is 124."}
+{"prompt": "Why is the sky blue?", "chosen": "Air scatters short blue wavelengths of sunlight more than red ones, so blue light reaches our eyes from every direction.", "rejected": "Because it reflects the ocean."}
+{"prompt": "What does HTML stand for?", "chosen": "HTML stands for HyperText Markup Language, used to structure web pages.", "rejected": "HTML is a programming language for databases."}
+{"prompt": "How can I save money on groceries?", "chosen": "Plan meals for the week, make a shopping list, and compare unit prices on shelf labels.", "rejected": "Stop eating."}
+{"prompt": "Summarise photosynthesis.", "chosen": "Plants use sunlight, water and carbon dioxide to make sugar and release oxygen.", "rejected": "Plants eat dirt to grow."}
+{"prompt": "What is overfitting?", "chosen": "Overfitting is when a model memorises its training data and performs badly on new data.", "rejected": "Overfitting means the model is too small."}
+{"prompt": "How do I make a cup of tea?", "chosen": "Boil water, steep the tea bag for three minutes, remove it, then add milk or sugar if you like.", "rejected": "Put tea in cold water and drink immediately."}
+{"prompt": "What is a prime number?", "chosen": "A prime number is a whole number above 1 whose only divisors are 1 and itself, like 7.", "rejected": "A prime number is any odd number."}
+{"prompt": "Translate 'thank you' into Spanish.", "chosen": "'Thank you' in Spanish is 'gracias'.", "rejected": "'Thank you' in Spanish is 'merci'."}
+{"prompt": "Is it safe to look at the sun?", "chosen": "No. Looking directly at the sun can damage your eyes; use certified eclipse glasses.", "rejected": "Yes, it is fine for a few minutes."}
+{"prompt": "What is an API?", "chosen": "An API is a set of rules that lets one program request data or actions from another program.", "rejected": "API is a type of computer virus."}
+{"prompt": "How many continents are there?", "chosen": "By the most common convention there are seven continents.", "rejected": "There are three continents."}
+{"prompt": "Write a polite way to decline a meeting.", "chosen": "Thank you for the invite. I can't attend this one, but please share the notes and I'll follow up.", "rejected": "No."}
+{"prompt": "What does a GPU do?", "chosen": "A GPU does many simple calculations in parallel, which makes it fast for graphics and training neural networks.", "rejected": "A GPU stores your files."}
+{"prompt": "What is the boiling point of water at sea level?", "chosen": "Water boils at 100 degrees Celsius (212 Fahrenheit) at sea level.", "rejected": "Water boils at 50 degrees Celsius."}

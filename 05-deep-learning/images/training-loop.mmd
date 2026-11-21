@@ -1,0 +1,9 @@
+flowchart TD
+    A[Take next batch xb, yb] --> B[logits = model xb]
+    B --> C[loss = loss_fn logits, yb]
+    C --> D[optimizer.zero_grad]
+    D --> E[loss.backward]
+    E --> F[optimizer.step]
+    F -->|more batches| A
+    F -->|end of epoch| G[Evaluate on validation set]
+    G -->|next epoch| A

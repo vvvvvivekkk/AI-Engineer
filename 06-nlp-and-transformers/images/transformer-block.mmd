@@ -1,0 +1,10 @@
+flowchart TD
+    IN["Token embeddings<br/>+ positional encoding"] --> LN1["Layer norm"]
+    LN1 --> ATT["Multi-head<br/>self-attention"]
+    ATT --> ADD1(("+ residual"))
+    IN --> ADD1
+    ADD1 --> LN2["Layer norm"]
+    LN2 --> FFN["Feed-forward<br/>network"]
+    FFN --> ADD2(("+ residual"))
+    ADD1 --> ADD2
+    ADD2 --> OUT["To next block<br/>(repeat N times)"]

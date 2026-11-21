@@ -1,0 +1,6 @@
+model,MAE,RMSE,R2
+our_gradient_descent,42.794,53.853,0.453
+linear_regression,42.794,53.853,0.453
+ridge(alpha=1),42.812,53.777,0.454
+gradient_boosting,42.703,52.675,0.476
+baseline_mean,64.006,73.222,-0.012

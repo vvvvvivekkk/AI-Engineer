@@ -1,0 +1,13 @@
+# P10 fine-tuning (LoRA SFT + DPO) - every package pinned to an exact version.
+torch==2.15.0
+transformers==5.23.0
+peft==0.22.0
+accelerate==1.16.0
+safetensors==0.8.0
+tokenizers==0.23.3
+huggingface_hub==2.4.0
+# TRL path (Colab T4 notebook and `python -m src.trl_train`)
+trl==1.18.2
+datasets==5.2.0
+python-dotenv==1.2.3
+pytest==9.1.1

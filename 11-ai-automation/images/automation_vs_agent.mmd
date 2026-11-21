@@ -1,0 +1,12 @@
+flowchart LR
+    subgraph Workflow
+      direction LR
+      T1([Trigger]) --> A1[Step A] --> B1[Step B] --> C1[Step C]
+    end
+    subgraph Agent
+      direction LR
+      G([Goal]) --> L{LLM picks next step}
+      L -->|tool| X[Run tool]
+      X --> L
+      L -->|done| D([Result])
+    end

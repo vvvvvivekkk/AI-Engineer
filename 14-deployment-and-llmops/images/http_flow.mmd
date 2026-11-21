@@ -1,0 +1,11 @@
+flowchart LR
+    C[Client<br/>browser, app, curl] -->|POST /chat<br/>JSON body| S[uvicorn server]
+    S --> F[FastAPI routing]
+    F --> V{pydantic<br/>validation}
+    V -->|bad shape| E[422 error]
+    V -->|ok| R[route function]
+    R -->|raise HTTPException| E2[400 / 401 error]
+    R -->|return dict| J[200 + JSON response]
+    J --> C
+    E --> C
+    E2 --> C

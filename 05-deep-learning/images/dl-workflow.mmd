@@ -1,0 +1,11 @@
+flowchart TD
+    A[Data to tensors, scale inputs] --> B[Split train / val / test]
+    B --> C[DataLoader makes batches]
+    C --> D[Define nn.Module]
+    D --> E[Loss + optimizer]
+    E --> F[Training loop]
+    F --> G[Plot train and val loss]
+    G -->|overfitting| H[Dropout, weight decay, early stopping]
+    H --> F
+    G -->|good| I[Test once in eval mode]
+    I --> J[torch.save state_dict]

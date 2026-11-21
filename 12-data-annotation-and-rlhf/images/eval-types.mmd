@@ -1,0 +1,7 @@
+flowchart LR
+    Q[Is my model good?] --> B[Benchmarks<br/>fixed public tests]
+    Q --> J[LLM-as-judge<br/>model grades with rubric]
+    Q --> H[Human evaluation<br/>people rate or compare]
+    B --> B1[cheap, comparable<br/>risk: contamination]
+    J --> J1[fast, scalable<br/>risk: position and length bias]
+    H --> H1[most trusted<br/>risk: slow, costly]

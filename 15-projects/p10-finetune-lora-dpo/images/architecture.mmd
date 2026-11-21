@@ -1,0 +1,9 @@
+flowchart LR
+  G[make_data.py<br/>1,500 email -> JSON pairs<br/>300 chosen/rejected pairs] --> SFT[Step 1: LoRA SFT<br/>sft_lora_cpu.py / TRL SFTTrainer]
+  P6[P6 preference export] -. optional .-> DPO
+  SFT --> DPO[Step 2: DPO<br/>dpo_cpu.py hand-written loss<br/>/ TRL DPOTrainer]
+  DPO --> M[Step 3: merge adapter<br/>merge_export.py]
+  M --> GG[llama.cpp<br/>convert to GGUF]
+  GG --> OL[Ollama model<br/>served to P7 / P9]
+  E[evaluate: JSON validity<br/>exact match, per field] --- SFT
+  E --- DPO

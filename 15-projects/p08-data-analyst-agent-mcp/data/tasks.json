@@ -1,0 +1,17 @@
+[
+  {"id": "T1", "question": "Which region's revenue fell most last quarter, and why?",
+   "expected_tools": ["get_schema", "sql_query", "python_calc", "sql_query", "search_notes"],
+   "answer_must_contain": ["North", "Kettle"]},
+  {"id": "T2", "question": "What were the top 3 products by revenue in 2025?",
+   "expected_tools": ["sql_query"],
+   "answer_must_contain": ["Ergo Chair"]},
+  {"id": "T3", "question": "Plot the monthly revenue trend for 2025.",
+   "expected_tools": ["make_chart", "sql_query"],
+   "answer_must_contain": ["outputs/charts/"]},
+  {"id": "T4", "question": "Which region and month had unusually high discounts?",
+   "expected_tools": ["sql_query", "python_calc", "search_notes"],
+   "answer_must_contain": ["South", "2025-08"]},
+  {"id": "T5", "question": "Are there duplicate orders in the data? When and where?",
+   "expected_tools": ["sql_query", "search_notes"],
+   "answer_must_contain": ["2025-07-14", "West"]}
+]

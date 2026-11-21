@@ -1,0 +1,13 @@
+AI Trainer - Python Coding (Freelance, Remote)
+
+We are looking for software developers to help train and evaluate AI models on programming tasks.
+Responsibilities
+- Evaluate AI-generated Python code for correctness, efficiency, readability and security.
+- Rank and compare model responses against detailed rubrics and write clear justifications.
+- Write high-quality prompts and reference solutions for coding problems.
+- Create adversarial test cases (red-teaming) that expose model weaknesses.
+Requirements
+- Strong Python skills and debugging ability; familiarity with data structures and algorithms.
+- Excellent written English and attention to detail.
+- Ability to follow detailed guidelines consistently.
+- Experience with unit testing is a plus.

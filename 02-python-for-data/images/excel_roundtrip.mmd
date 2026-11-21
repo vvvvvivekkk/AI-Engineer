@@ -1,0 +1,5 @@
+flowchart LR
+    X[practice-datasets.xlsx<br/>several sheets] -->|pd.read_excel<br/>sheet_name=None| P[dict of DataFrames]
+    P --> Q[clean, merge,<br/>groupby]
+    Q -->|pd.ExcelWriter| R[report.xlsx<br/>one sheet per table]
+    R -->|openpyxl| S[styled report<br/>bold headers, formats, formulas]

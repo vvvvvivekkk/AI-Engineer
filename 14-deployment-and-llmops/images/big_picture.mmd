@@ -1,0 +1,12 @@
+flowchart LR
+    U[User] --> UI[Web UI<br/>Streamlit / Gradio]
+    UI -->|HTTP JSON| API[FastAPI service]
+    subgraph Docker container
+    API --> G[Guardrails]
+    G --> L[LLM client]
+    end
+    L --> P[Hosted LLM API]
+    L --> V[vLLM server<br/>open model on GPU]
+    API -.traces, cost.-> LF[Langfuse]
+    API -.metrics.-> M[Dashboard + alerts]
+    GH[GitHub Actions CI/CD] -.builds and ships.-> API

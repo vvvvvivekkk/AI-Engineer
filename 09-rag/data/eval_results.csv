@@ -1,0 +1,13 @@
+chunking,retriever,num_chunks,avg_chunk_words,hit@1,hit@3,hit@5,MRR,questions
+fixed-80,bm25,36,64.5,0.846,0.846,0.885,0.858,26
+fixed-80,dense,36,64.5,0.962,1.0,1.0,0.974,26
+fixed-80,hybrid,36,64.5,0.846,0.923,0.962,0.879,26
+fixed-80,hybrid+rerank,36,64.5,0.923,1.0,1.0,0.962,26
+fixed-80-overlap-20,bm25,42,68.1,0.808,0.846,0.846,0.833,26
+fixed-80-overlap-20,dense,42,68.1,0.885,0.962,0.962,0.929,26
+fixed-80-overlap-20,hybrid,42,68.1,0.846,0.885,0.962,0.876,26
+fixed-80-overlap-20,hybrid+rerank,42,68.1,0.923,1.0,1.0,0.955,26
+headings,bm25,73,33.9,0.846,0.846,0.885,0.856,26
+headings,dense,73,33.9,0.885,1.0,1.0,0.936,26
+headings,hybrid,73,33.9,0.808,0.885,0.962,0.865,26
+headings,hybrid+rerank,73,33.9,1.0,1.0,1.0,1.0,26

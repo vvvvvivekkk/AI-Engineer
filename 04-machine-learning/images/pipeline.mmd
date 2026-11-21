@@ -1,0 +1,8 @@
+flowchart LR
+    X[Raw features X] --> S1[Step 1: StandardScaler]
+    S1 --> S2[Step 2: LogisticRegression]
+    S2 --> P[Prediction]
+    subgraph Pipeline
+    S1
+    S2
+    end

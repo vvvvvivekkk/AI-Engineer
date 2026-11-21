@@ -1,0 +1,8 @@
+# Files Docker should NOT copy into the image (smaller, faster, and no secrets inside the image)
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/
+.venv/
+ui/

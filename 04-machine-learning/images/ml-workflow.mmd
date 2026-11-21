@@ -1,0 +1,8 @@
+flowchart LR
+    A[Get data] --> B[Look at it]
+    B --> C[Split train / test]
+    C --> D[Train model on train]
+    D --> E[Evaluate on test]
+    E -->|not good enough| F[Improve: features, model, settings]
+    F --> D
+    E -->|good| G[Save and use model]

@@ -1,0 +1,380 @@
+{
+  "name": "P9 Support inbox triage (calls FastAPI)",
+  "nodes": [
+    {
+      "parameters": {
+        "mailbox": "INBOX",
+        "postProcessAction": "read",
+        "format": "simple",
+        "options": {}
+      },
+      "id": "6973730f-8aca-5c57-ae95-f6e872e1bd2c",
+      "name": "IMAP Email Trigger",
+      "type": "n8n-nodes-base.emailReadImap",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "credentials": {
+        "imap": {
+          "id": "REPLACE_WITH_YOUR_CREDENTIAL_ID",
+          "name": "Support mailbox IMAP (placeholder - create your own)"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "c5ef63a2-145b-562d-b199-c9838b4c16e2",
+      "name": "Manual Trigger (test)",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "ef3b129b-166a-54b7-a6db-9200075dfc91",
+              "name": "from",
+              "value": "Asha Rao <asha.rao@gmail.com>",
+              "type": "string"
+            },
+            {
+              "id": "4c865076-b3ba-50ca-b906-7ed064040c4b",
+              "name": "subject",
+              "value": "DAMAGED ITEM!!!",
+              "type": "string"
+            },
+            {
+              "id": "16bd8f75-4262-59be-b59a-d12895919477",
+              "name": "textPlain",
+              "type": "string",
+              "value": "My SmartKettle 2 (order ORD-12345) arrived damaged and it started smoking! I want a refund."
+            },
+            {
+              "id": "52935f17-13ce-5257-8435-dbf067e1a205",
+              "name": "date",
+              "value": "2026-11-20T09:15:00",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "70843793-9b9a-57a2-baa1-49654e579b88",
+      "name": "Sample email",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        220,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "24fc22e0-1888-5f51-841c-a19945ff7e97",
+              "name": "from",
+              "value": "={{ $json.from }}",
+              "type": "string"
+            },
+            {
+              "id": "7361e196-e5f9-55dd-bb65-6981b2faeca0",
+              "name": "subject",
+              "value": "={{ $json.subject }}",
+              "type": "string"
+            },
+            {
+              "id": "d4ab522d-4bbb-5ff4-962d-9b5d4bea78b7",
+              "name": "body",
+              "value": "={{ $json.textPlain }}",
+              "type": "string"
+            },
+            {
+              "id": "8eda8ce6-e7ab-57f8-b95c-6395f30bb1f6",
+              "name": "received_at",
+              "value": "={{ $json.date }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "58d87d18-e28f-50bd-9ff0-784e011700c0",
+      "name": "Map email fields",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        440,
+        100
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8000/triage",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ from: $json.from, subject: $json.subject, body: $json.body, received_at: $json.received_at }) }}",
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "27061e25-6632-5c9e-a840-a61121f20416",
+      "name": "POST /triage",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        100
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "79d8322c-6d2a-5ed0-bfa1-7e6c3d5bafc2",
+              "leftValue": "={{ $json.route }}",
+              "rightValue": "human_review",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "13a5e5c8-754e-55d5-8312-52a547a88070",
+      "name": "Needs human approval?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        880,
+        100
+      ]
+    },
+    {
+      "parameters": {
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "#support-approvals",
+          "mode": "name"
+        },
+        "text": "=:rotating_light: Ticket #{{ $json.ticket_id }} needs approval\nReasons: {{ $json.reasons.join(', ') }}\nSummary: {{ $json.ticket.summary }}\nReview: http://localhost:8000/docs (POST /queue/{{ $json.ticket_id }}/approve)",
+        "otherOptions": {}
+      },
+      "id": "55984cd0-a0d4-5083-b1dd-a190346f2d3d",
+      "name": "Alert reviewers (Slack)",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [
+        1100,
+        0
+      ],
+      "credentials": {
+        "slackApi": {
+          "id": "REPLACE_WITH_YOUR_CREDENTIAL_ID",
+          "name": "Slack bot token (placeholder - create your own)"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "2eefe198-4aee-5fce-a262-0ac51fd079d7",
+      "name": "Auto-filed (no action)",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1100,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 18
+            }
+          ]
+        }
+      },
+      "id": "ed7b73e6-c103-55e0-ad06-57a36ff0ab3c",
+      "name": "Every day at 18:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        460
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://host.docker.internal:8000/report/daily",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "text"
+            }
+          }
+        }
+      },
+      "id": "d99a5d75-460a-525d-89fc-5cbd34d90ce0",
+      "name": "GET /report/daily",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        460
+      ]
+    },
+    {
+      "parameters": {
+        "fromEmail": "support-bot@gadgetco.example",
+        "toEmail": "support-manager@gadgetco.example",
+        "subject": "=Support inbox daily summary {{ $now.toFormat('yyyy-MM-dd') }}",
+        "emailFormat": "text",
+        "text": "={{ $json.data }}",
+        "options": {}
+      },
+      "id": "7d604aeb-3f7e-57be-8a68-e89b54f093a0",
+      "name": "Email report to manager",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        440,
+        460
+      ],
+      "credentials": {
+        "smtp": {
+          "id": "REPLACE_WITH_YOUR_CREDENTIAL_ID",
+          "name": "Outgoing mail SMTP (placeholder - create your own)"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "IMAP Email Trigger": {
+      "main": [
+        [
+          {
+            "node": "Map email fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual Trigger (test)": {
+      "main": [
+        [
+          {
+            "node": "Sample email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sample email": {
+      "main": [
+        [
+          {
+            "node": "Map email fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Map email fields": {
+      "main": [
+        [
+          {
+            "node": "POST /triage",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "POST /triage": {
+      "main": [
+        [
+          {
+            "node": "Needs human approval?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Needs human approval?": {
+      "main": [
+        [
+          {
+            "node": "Alert reviewers (Slack)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Auto-filed (no action)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Every day at 18:00": {
+      "main": [
+        [
+          {
+            "node": "GET /report/daily",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GET /report/daily": {
+      "main": [
+        [
+          {
+            "node": "Email report to manager",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}

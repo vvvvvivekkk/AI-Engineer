@@ -1,0 +1,25 @@
+flowchart LR
+    subgraph Data and evaluation
+    T[AI trainer / annotator]
+    EV[Evaluation specialist]
+    end
+    subgraph Build with models
+    P[Prompt engineer]
+    AE[AI engineer]
+    end
+    subgraph Build and run models
+    ML[ML engineer]
+    OPS[MLOps / LLMOps]
+    end
+    subgraph Product and customers
+    PM[AI product manager]
+    SE[Solutions engineer / DevRel]
+    end
+    T --> EV
+    T --> P
+    P --> AE
+    AE --> ML
+    AE --> OPS
+    AE --> SE
+    EV --> PM
+    AE --> PM

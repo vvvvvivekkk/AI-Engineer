@@ -1,0 +1,7 @@
+flowchart LR
+  Q[Question] --> V[Vector search: meaning]
+  Q --> B[BM25: keywords]
+  V --> F[Reciprocal rank fusion]
+  B --> F
+  F --> X[Cross-encoder reranker]
+  X --> T[Top 3-5 chunks]

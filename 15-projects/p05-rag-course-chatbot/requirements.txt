@@ -1,0 +1,15 @@
+# Exact versions this project was tested with (Python 3.13, CPU).
+# PyTorch: the CPU build was used here (2.15.0+cpu). In Colab, keep Colab's own torch.
+# For a CPU-only local install:  pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0
+transformers==5.23.0
+sentence-transformers==6.3.0
+faiss-cpu==1.16.0
+numpy==2.5.3
+pandas==3.0.5
+tabulate==0.10.0
+httpx==0.28.1
+python-dotenv==1.2.3
+gradio==6.32.0
+pytest==9.1.1
+# Optional alternative vector store (not needed by default code): pip install chromadb
