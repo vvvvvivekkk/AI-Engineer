@@ -1,0 +1,41 @@
+text,label,kind,tfidf_logreg,embedding_bag_nn,zero_shot_nli,zero_shot_sst2
+"Oh wonderful, it stopped working after two days. Just what I needed.",negative,sarcasm,positive,negative,positive,positive
+"Great, another charger that melts. Thanks a lot.",negative,sarcasm,positive,negative,positive,positive
+Fantastic way to waste forty dollars.,negative,sarcasm,positive,negative,positive,negative
+I just love waiting three weeks for a package that arrives crushed.,negative,sarcasm,positive,negative,negative,negative
+"Best paperweight I have ever bought, since it does nothing else.",negative,sarcasm,positive,negative,positive,positive
+"Sure, if you enjoy burnt toast every morning, this is perfect.",negative,sarcasm,positive,negative,positive,positive
+"Wow, the strap snapped on day one. Superb engineering.",negative,sarcasm,negative,negative,positive,positive
+Truly amazing how fast the paint peeled off.,negative,sarcasm,positive,negative,positive,positive
+"Exceeded my expectations, sturdy and elegant.",positive,unseen_words,negative,negative,positive,positive
+"Brilliant gadget, it works flawlessly.",positive,unseen_words,positive,negative,positive,positive
+"Delighted with this purchase, top notch craftsmanship.",positive,unseen_words,positive,negative,positive,positive
+"Comfortable, quiet and gorgeous.",positive,unseen_words,negative,negative,positive,positive
+A joy to use every single day.,positive,unseen_words,positive,negative,positive,positive
+Shoddy stitching and it smells weird.,negative,unseen_words,positive,negative,negative,negative
+"Mediocre at best, frankly a letdown.",negative,unseen_words,positive,negative,negative,negative
+"It leaks, it rattles and it overheats.",negative,unseen_words,positive,negative,negative,negative
+"Dreadful experience, the seller ignored my emails.",negative,unseen_words,negative,negative,negative,negative
+Junk. Fell apart in a week.,negative,unseen_words,negative,negative,negative,negative
+I can't say I'm unhappy with it.,positive,negation,positive,negative,negative,positive
+Never had a single problem with this kettle.,positive,negation,positive,negative,positive,negative
+Nothing about this blender is good.,negative,negation,negative,negative,negative,negative
+"I wouldn't call it great, or even okay.",negative,negation,positive,negative,negative,negative
+No complaints whatsoever.,positive,negation,negative,negative,negative,positive
+"Not the worst lamp, not the best either, but I kept it and use it daily.",positive,negation,positive,negative,negative,positive
+Hardly works and barely charges.,negative,negation,negative,negative,negative,negative
+I don't regret this at all.,positive,negation,positive,negative,positive,positive
+Not once did it fail me.,positive,negation,positive,negative,positive,positive
+"It isn't anything like the photos, and not in a good way.",negative,negation,positive,negative,negative,negative
+"Pricey, but honestly worth it for the quality.",positive,mixed,positive,negative,positive,positive
+Looks beautiful but broke within a month.,negative,mixed,positive,negative,negative,negative
+"Slow delivery, yet the headphones sound incredible.",positive,mixed,positive,negative,positive,positive
+"Lovely colour, shame it doesn't actually hold water.",negative,mixed,positive,negative,negative,positive
+"The box was damaged, however the keyboard itself is excellent.",positive,mixed,positive,negative,positive,positive
+"Cheap price, cheap quality. You get what you pay for.",negative,mixed,negative,negative,negative,negative
+"A little heavy, but it is the most reliable backpack I've owned.",positive,mixed,positive,negative,positive,positive
+"Nice design, terrible battery, I sent it back.",negative,mixed,negative,negative,negative,positive
+"Customer service was rude, but they replaced it and the new one is great.",positive,mixed,positive,negative,positive,positive
+"Started strong, then died after the warranty ended.",negative,mixed,negative,negative,positive,negative
+"Five stars for looks, zero stars for function.",negative,mixed,positive,negative,negative,negative
+It took a while to set up but now I use it every day and love it.,positive,mixed,positive,negative,positive,positive
