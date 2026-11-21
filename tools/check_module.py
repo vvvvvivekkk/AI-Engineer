@@ -26,7 +26,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
-SECRET_RE = re.compile(r"(sk-[A-Za-z0-9_\-]{20,}|sk-ant-[A-Za-z0-9_\-]{20,}|AIza[0-9A-Za-z_\-]{30,}|hf_[A-Za-z0-9]{30,}|ghp_[A-Za-z0-9]{30,})")
+SECRET_RE = re.compile(r"(?<![A-Za-z0-9])(sk-[A-Za-z0-9_\-]{20,}|sk-ant-[A-Za-z0-9_\-]{20,}|AIza[0-9A-Za-z_\-]{30,}|hf_[A-Za-z0-9]{30,}|ghp_[A-Za-z0-9]{30,})")
 REQUIRED_MD = ["README.md", "concepts.md", "exercises.md", "trainer-notes.md", "resources.md"]
 SKIP_RUN_MARKER = "colab-only"   # notebooks whose filename contains this are not executed locally
 

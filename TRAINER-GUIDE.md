@@ -62,8 +62,8 @@ With 3 trainers: merge B+C and D+E. With 8+: give every pair of modules its own 
 | What | Weight | Where |
 |---|---|---|
 | Weekly exercises | 30% | `exercises.md` in each module (solutions are for trainers and self-checking) |
-| Projects 1–9 | 40% | `15-projects/` — use each project README's "how to explain it in an interview" section as the oral check |
-| Capstone (Project 10) + demo | 20% | 5-minute demo + Q&A |
+| Projects P1–P10 | 40% | `15-projects/` — use each project README's "how to explain it in an interview" section as the oral check |
+| Capstone (one project extended end to end) + demo | 20% | 5-minute demo + Q&A |
 | Mock interview | 10% | `16-careers/` question bank |
 
 ## 7. Keeping the repo healthy
