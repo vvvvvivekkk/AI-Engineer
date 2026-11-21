@@ -1,0 +1,10 @@
+flowchart LR
+    T[Full table<br/>600 orders] --> S1[App rows]
+    T --> S2[Store rows]
+    T --> S3[Website rows]
+    S1 --> A1[sum revenue]
+    S2 --> A2[sum revenue]
+    S3 --> A3[sum revenue]
+    A1 --> C[Small result table<br/>one row per channel]
+    A2 --> C
+    A3 --> C

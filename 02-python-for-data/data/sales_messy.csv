@@ -1,0 +1,86 @@
+order_id,order_date,customer_name,city,product,quantity,price
+O10079,2026-01-27,Lakshmi Rao,mumbai,USB-C Charger,2.0,"1,199"
+O10001,2026-01-01,Lakshmi Joshi,New Delhi,a5 notebook (5 pack),3.0,Rs 249
+O10069,2026-01-25,Varun Joshi,chennai ,Steel Water Bottle,4.0,449
+O10023,2026-01-08,Ananya Menon,Mumbai,STEEL WATER BOTTLE,3.0,449
+O10013,2026-01-04,Pooja Joshi,,steel water bottle,2.0,Rs 449
+O10034,2026-01-11,Sneha Sharma,Bangalore,GEL PEN SET,5.0,149
+O10011,2026-01-03,Rahul Iyer,chennai ,Cotton T-Shirt,1.0,Rs 499
+O10019,2026-01-07,Diya Singh,Bengaluru,Wireless Mouse,3.0,799
+O10005,2026-01-02,Diya Rao,bengaluru,Gel Pen Set,5.0,149
+O10067,2026-01-24,Diya Singh,bengaluru,USB-C Charger,,"1,199"
+O10041,2026-01-13,Tanvi Das,Bengaluru,USB-C Charger,1.0,1199
+O10048,2026-01-16,Rohan Singh,HYDERABAD,USB-C CHARGER,3.0,1199
+O10036,2026-01-11,Diya Rao,bengaluru,STEEL WATER BOTTLE,2.0,449
+O10073,2026-01-25,Sneha Sharma,bengaluru,Desk Organizer,3.0,599
+O10056,2026-01-21,Rohan Singh, Hyderabad,A5 Notebook (5 pack),4.0,249
+O10055,2026-01-20,Diya Rao,Bengaluru ,COTTON T-SHIRT,3.0,499
+O10034,2026-01-11,Sneha Sharma,Bangalore,GEL PEN SET,5.0,149
+O10078,2026-01-26,Vikram Bose,mumbai,Gel Pen Set,4.0,149
+O10043,2026-01-13,Sneha Sharma,Bengaluru,WIRELESS MOUSE,,799
+O10050,2026-01-18,Vikram Kulkarni,MUMBAI,Cotton T-Shirt,2.0,499
+O10012,2026-01-04,Rahul Iyer,Chennai,Backpack,2.0,1799
+O10031,2026-01-10,Diya Singh,Bengaluru ,Cotton T-Shirt,2.0,499
+O10040,2026-01-12,Lakshmi Rao,Mumbai,A5 NOTEBOOK (5 PACK),2.0,249
+O10029,2026-01-10,Meera Joshi,Bengaluru,Cotton T-Shirt,1.0,499
+O10010,,Pooja Menon,HYDERABAD,steel water bottle,2.0,Rs 449
+O10065,2026-01-24,Vikram Khan,Bengaluru ,Gel Pen Set,3.0,149
+O10006,2026-01-02,Vikram Bose,Mumbai,A5 Notebook (5 pack),2.0,249
+O10046,2026-01-15,Vikram Bose,mumbai,cotton t-shirt,2.0,499
+O10032,2026-01-10,Vikram Kulkarni,Mumbai,hoodie,2.0,"1,299"
+O10035,2026-01-11,Pooja Menon, Hyderabad,A5 Notebook (5 pack),2.0,249
+O10045,2026-01-15,Isha Rao,Pune,Gel Pen Set,3.0,149
+O10061,2026-01-22,Pooja Kulkarni,bengaluru,Gel Pen Set,4.0,149
+O10017,2026-01-05,Pooja Menon,HYDERABAD,Gel Pen Set,5.0,Rs 149
+O10066,2026-01-24,Lakshmi Rao,Mumbai,COTTON T-SHIRT,1.0,Rs 499
+O10008,2026-01-03,Sneha Singh,chennai ,HOODIE,2.0,"1,299"
+O10070,2026-01-25,Ananya Menon,Mumbai,Backpack,2.0,1799
+O10057,2026-01-21,Meera Joshi,Bengaluru ,a5 notebook (5 pack),4.0,249
+O10020,2026-01-07,Rahul Iyer,Chennai,Gel Pen Set,4.0,Rs 149
+O10071,2026-01-25,Pooja Khan,,Wireless Mouse,2.0,799
+O10026,2026-01-09,Lakshmi Gupta,Hyderabad,Bluetooth Headphones,-2.0,"2,499"
+O10054,2026-01-20,Diya Khan,Mumbai,ceramic mug set,4.0,699
+O10014,2026-01-04,Diya Rao,Bangalore,Hoodie,3.0,1299
+O10062,2026-01-23,Siddharth Iyer,Chennai,A5 Notebook (5 pack),6.0,249
+O10004,2026-01-02,Karthik Iyer, Hyderabad,A5 Notebook (5 pack),,249
+O10018,2026-01-06,Vikram Khan,Bengaluru ,Wireless Mouse,,Rs 799
+O10039,2026-01-12,Ananya Menon,MUMBAI,DESK ORGANIZER,2.0,599
+O10009,2026-01-03,Rahul Gupta,Bengaluru,GEL PEN SET,6.0,149
+O10068,2026-01-24,Sneha Patel,Bangalore,Wireless Mouse,1.0,799
+O10007,2026-01-02,Vikram Bose,MUMBAI,LED Desk Lamp,2.0,"1,499"
+O10037,2026-01-11,Vikram Bose,Mumbai,Hoodie,2.0,Rs 1299
+O10077,2026-01-26,Lakshmi Gupta,Hyderabad ,LED Desk Lamp,4.0,1499
+O10063,2026-01-23,Rahul Nair,Hyderabad,COTTON T-SHIRT,1.0,499
+O10051,2026-01-19,Karthik Sharma,bengaluru,a5 notebook (5 pack),5.0,Rs 249
+O10047,2026-01-16,Pooja Joshi,HYDERABAD,Ceramic Mug Set,2.0,699
+O10049,2026-01-18,Aarav Iyer,Pune,USB-C CHARGER,3.0,1199
+O10016,2026-01-04,Vikram Khan,Bangalore,cotton t-shirt,2.0,Rs 499
+O10028,2026-01-10,Pooja Menon, Hyderabad,Cotton T-Shirt,2.0,499
+O10042,2026-01-13,Rohan Reddy,delhi,USB-C Charger,2.0,"1,199"
+O10059,2026-01-22,Lakshmi Gupta,Hyderabad,A5 NOTEBOOK (5 PACK),3.0,249
+O10027,2026-01-09,Rahul Reddy,pune ,USB-C CHARGER,4.0,Rs 1199
+O10049,2026-01-18,Aarav Iyer,Pune,USB-C CHARGER,3.0,1199
+O10025,2026-01-08,Vikram Bose,mumbai,Cotton T-Shirt,3.0,499
+O10044,2026-01-14,Tanvi Das,bengaluru,Backpack,1.0,"1,799"
+O10021,2026-01-07,Isha Rao,pune ,Gel Pen Set,5.0,149
+O10076,2026-01-26,Siddharth Iyer,chennai ,Gel Pen Set,4.0,Rs 149
+O10058,2026-01-21,Unknown,,BACKPACK,1.0,"1,799"
+O10033,2026-01-11,Tanvi Kulkarni,delhi,A5 Notebook (5 pack),4.0,249
+O10006,2026-01-02,Vikram Bose,Mumbai,A5 Notebook (5 pack),2.0,249
+O10060,2026-01-22,Sneha Sharma,Bengaluru ,Gel Pen Set,2.0,149
+O10064,2026-01-23,Pooja Menon,Hyderabad ,cotton t-shirt,4.0,499
+O10074,2026-01-25,Vikram Kulkarni,mumbai,COTTON T-SHIRT,2.0,499
+O10038,2026-01-11,Lakshmi Joshi,New Delhi,A5 Notebook (5 pack),7.0,249
+O10030,2026-01-10,Rahul Iyer,Chennai,BACKPACK,3.0,1799
+O10002,2026-01-01,Rahul Iyer,Chennai,Bluetooth Headphones,2.0,2499
+O10053,2026-01-19,Pooja Kulkarni,Bengaluru ,BLUETOOTH HEADPHONES,3.0,2499
+O10022,2026-01-07,Karthik Iyer,hyderabad,Gel Pen Set,5.0,149
+O10003,2026-01-01,Karthik Iyer,HYDERABAD,Gel Pen Set,6.0,149
+O10024,2026-01-08,Diya Khan,MUMBAI,Desk Organizer,2.0,599
+O10080,2026-01-27,Sneha Sharma,Bengaluru,USB-C CHARGER,1.0,Rs 1199
+O10075,2026-01-26,Rahul Iyer,Chennai,wireless mouse,2.0,Rs 799
+O10021,2026-01-07,Isha Rao,pune ,Gel Pen Set,5.0,149
+O10061,2026-01-22,Pooja Kulkarni,bengaluru,Gel Pen Set,4.0,149
+O10072,2026-01-25,Vikram Bose,MUMBAI,USB-C Charger,2.0,1199
+O10015,2026-01-04,Diya Khan,MUMBAI,hoodie,5.0,"1,299"
+O10052,,Ananya Menon,MUMBAI,Hoodie,2.0,"1,299"
